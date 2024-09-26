@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+
+:root {
+    --clr: #e9e9e9;
+}
+
+.container-counter {
+    display: flex;
+    padding: 1.5em 3.1em;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #3479d2;
+    box-shadow: 2px 2px 25px -7px --clr;
+    cursor: pointer;
+    width: 70%;
+}
+
+.container-counter div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-counter h4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantidad-stock {
+    display: block;
+    font-size: 10px;
+    color: #e9e9e9;
+}

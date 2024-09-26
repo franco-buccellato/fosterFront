@@ -1,0 +1,10 @@
+.container-usuario {
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.container-usuario span {
+    display: inline-block;
+    /* display: flex; */
+}

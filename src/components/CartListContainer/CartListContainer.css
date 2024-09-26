@@ -1,0 +1,29 @@
+.cart-container {
+    display: flex;
+    text-align: center;
+    justify-content:baseline;
+    flex-direction: column;
+    height: 40vw;
+    text-decoration: none;
+    margin-top: 20vh;
+}
+
+.informacion-carrito {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #da6266;
+}
+
+.informacion-carrito h3 {
+    text-align: center;
+    font-size: 1.2vw;
+    width: 100%;
+    list-style: none;
+    color: #fff;
+}
+
+.container-return {
+    margin-top: 10%;
+}

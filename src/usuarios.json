@@ -1,0 +1,15 @@
+{
+    "_id": {
+        "$oid": "649baa66fde0250c6e23c474"
+    },
+    "nombre": "fosters",
+    "contrasenia": "fosters1234",
+    "descuento": {
+        "$numberDouble": "0.8"
+    },
+    "utilidad": {
+        "$numberInt": "10"
+    },
+    "proveedor": "fosters",
+    "idUsuario": "fostersid"
+}

@@ -1,0 +1,236 @@
+/* ----- Variables ----- */
+/* ----- Global ----- */
+* {
+    box-sizing: border-box;
+}
+
+
+h3 {
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+    color: #b7b7b7;
+}
+.container-item-detail img {
+    max-width: 80%;
+    filter: drop-shadow(1px 1px 3px #b7b7b7);
+}
+
+
+.container-item-detail  {
+    padding: 150px 0;
+    background-color: #DEDEDE;
+}
+/* ----- Product Section ----- */
+.product {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    margin: auto;
+    padding: 2.5em 0;
+    width: 50%;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+/* ----- Photo Section ----- */
+.product__photo {
+    position: relative;
+}
+.photo-container {
+    position: absolute;
+    left: -2.5em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+.photo-main {
+    border-radius: 6px 6px 0 0;
+    background-color: #3479d2;
+    background: radial-gradient(#76a9ec, #3479d2);
+}
+
+
+.photo-main .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    color: #fff;
+}
+.photo-main .controls i {
+    cursor: pointer;
+}
+.photo-main img {
+    position: absolute;
+    left: -1.5em;
+    top: 2em;
+    /* min-width: 20vw;
+    height: auto; */
+    min-height: 30vw;
+    width: auto;
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+.photo-album {
+    padding: 0.7em 1em;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+}
+.photo-album ul {
+    display: flex;
+    justify-content: space-around;
+    list-style:none
+}
+.photo-album li {
+    float: left;
+    width: 55px;
+    height: 55px;
+    padding: 7px;
+    border-radius: 3px;
+}
+/* ----- Informations Section ----- */
+.product__info {
+    padding: 0.8em 0;
+}
+.title h1, .title-codigoId h1 {
+    margin-bottom: 0.1em;
+    color: #CD1F26;
+    font-size: 2.1em;
+    font-weight: 900;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-codigoId {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title .span-subtitulo {
+    display: flex;
+    font-size: 1.1em;
+    color: #3479d2;
+}
+
+.title .span-contenido {
+    display: flex;
+    font-size: 1.1em;
+    color: #3f3f3f;
+    padding-left: 2%;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #3479d2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.variant {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.variant-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.variant-div-modelo {
+    display: flex;
+    width: 100%;
+}
+
+.description span{
+    display: flex;
+    font-size: 1.1em;
+    color: #a6a6a6;
+}
+
+.buy--btn {
+    padding: 1.5em 3.1em;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #fff;
+    background-color: #3479d2;
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer;
+}
+.buy--btn:active {
+    transform: scale(0.97);
+}
+/* ----- Footer Section ----- */
+footer {
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+footer a {
+    color: #4c4c4c;
+}
+footer a:hover {
+    color: #3479d2;
+}
+
+.cartel_oferta {
+    color: #3479d2;
+    font-size:35px;
+}
+
+.boton-carrito {
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    padding: .5em 3.1em;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #3479d2;
+    box-shadow: 2px 2px 25px -7px --clr;
+    cursor: pointer;
+    width: 70%;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 800px) {
+
+    .container-item-detail  {
+        padding: 150px 0;
+    }
+    .product {
+        display: grid;
+        grid-template-columns: 0.9fr 1fr;
+        margin: auto;
+        padding: 2.5em 0;
+        width: 50%;
+        min-width: 400px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .product__photo {
+        visibility:hidden;
+    }
+
+    .photo-container {
+        position: absolute;
+        left: -2.5em;
+        display: grid;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+    }
+}

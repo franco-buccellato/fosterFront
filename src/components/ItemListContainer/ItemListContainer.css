@@ -1,0 +1,204 @@
+.section-item-list-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20vh;
+}
+
+.item-list-container {
+    position: relative;
+    display: flex;
+    color: #3479d2;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.container-titulo {
+    display: flex;
+    margin: 0 10%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-titulo h4 {
+    font-size: 30px;
+    color: #3e79c7;
+}
+
+
+.container-filtros-productos {
+    width: 95%;
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0vw 0vw;
+    background-color: #7e7e7e93;
+    box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.15);
+    /* border-radius: 25px; */
+}
+
+.container-filtros-botones {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 1vw;
+}
+
+.container-filtros-botones a {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 1vw;
+}
+
+.container-filtros-botones div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.container-input-filtros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    width: 30%;
+    /* background-color: #da6266; */
+    margin: 5px 0;
+}
+
+.container-input-filtros label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.container-input-filtros input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.container-input-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1% 0;
+    border-radius: 10px;
+    background-color: #3e79c7;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.container-input-submit:hover {
+    box-shadow: 3px 4px 7px 5px rgba(0, 0, 0, 0.15);
+}
+
+.container-input-submit input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.informacion-filtros {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200%;
+    height: 20vh;
+    background-color: #7e7e7e93;
+    margin: 100px -50%;
+}
+
+.informacion-filtros h3 {
+    text-align: center;
+    font-size: 1.2vw;
+    width: 100%;
+    list-style: none;
+    color: #fff;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 1000px) {
+    .container-filtros-productos {
+        width: 95%;
+        margin: 0 2.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: nowrap;
+        padding: 0vw;
+    }
+    .container-input-filtros {
+        flex-direction: row;
+        height: 5vw;
+        max-width: none;
+        width: 80%;
+    }
+    
+    .container-input-filtros label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        font-weight: bold;
+    }
+
+    .container-filtros-botones {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .container-filtros-botones div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .informacion-filtros {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background-color: #da6266;
+        margin: 50px 0;
+        padding: 10px;
+    }
+    
+    .informacion-filtros h3 {
+        text-align: center;
+        font-size: 5vw;
+        width: 100%;
+        list-style: none;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-input-filtros {
+        margin: 5px auto;
+    }
+}

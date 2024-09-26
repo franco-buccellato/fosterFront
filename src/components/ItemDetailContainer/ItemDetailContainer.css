@@ -1,0 +1,8 @@
+.container-navigation {
+    height: 135px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.73) 52.48%);
+}
+
+.leftbar {
+    display: none;
+}

@@ -1,0 +1,15 @@
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.imagen-skf {
+    margin-left: 10px;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 800px) {
+    .nav-link {
+        display: inline;
+    }
+}

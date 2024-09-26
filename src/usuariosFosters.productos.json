@@ -1,0 +1,8305 @@
+[{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d2"
+  },
+  "id": "10000",
+  "nombre": "ALTERNADOR AIRE  IVECO DAILY 70c17",
+  "precio": 47830.66,
+  "rubro": "Acero",
+  "codigoFabrica": "504247757",
+  "tipoModificacion": "A",
+  "marca": "Iveco",
+  "modelos": [
+    "DAILY 70C17"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Fqukay-tiSMCCOuu5hvXiUD4jxugn5S3",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.208Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d3"
+  },
+  "id": "10000-2",
+  "nombre": "ALTERNADOR AIRE  IVECO DAILY 70c17   ( NSK DOBLE)",
+  "precio": 61326.61,
+  "rubro": "Acero",
+  "codigoFabrica": "504247757",
+  "tipoModificacion": "A",
+  "marca": "Iveco",
+  "modelos": [
+    "DAILY 70C17"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1XZ44YDoFqEIZsM5krPndFwJUJ5nLBXVV",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.526Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d4"
+  },
+  "id": "10001",
+  "nombre": "ALTERNADOR AIRE   8X65X26 C/BULON 2 RODAMIENTOS",
+  "precio": 23329.51,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32260",
+  "tipoModificacion": "A",
+  "marca": "Fiat",
+  "modelos": [
+    "ARGO 1.6 16V",
+    "CRONOS",
+    "GRAND CHEROKEE",
+    "PALIO 1.6 16V",
+    "PUNTO 1.6 16V",
+    "47"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1EId1SgfOh4idyy4lXO4PLsUgtao7A7ys",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.632Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d5"
+  },
+  "id": "10004",
+  "nombre": "ALTERNADOR AIRE    IVECO STRALIS   17X74X46",
+  "precio": 48384.16,
+  "rubro": "Acero",
+  "codigoFabrica": 504046191,
+  "tipoModificacion": "A",
+  "marca": "Iveco",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ipfO540YShpt_ViyeXfMg8LXGjss4GpN",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.690Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d6"
+  },
+  "id": "10003",
+  "nombre": "POLY V   MOTOR 1.8   8X56X24",
+  "precio": 19609.62,
+  "rubro": "Acero",
+  "codigoFabrica": "8X56X24",
+  "tipoModificacion": "A",
+  "marca": "Chevrolet",
+  "modelos": [
+    "SPIN"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=180t025nxfZ81_rzSJXjdhrWMZ_-VgTCf",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.623Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d7"
+  },
+  "id": "10006",
+  "nombre": "ALTERNADOR AIRE   IVECO DAILY  BUJE 8X70X22",
+  "precio": 20936.68,
+  "rubro": "Nylon",
+  "codigoFabrica": "504084453",
+  "tipoModificacion": "A",
+  "marca": "Iveco",
+  "modelos": [
+    "DAILY 70C17"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1gOhqaPyBEkiUGkNnpLCSxXDSHuygZ4q_",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.678Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d8"
+  },
+  "id": "10005",
+  "nombre": "ALTERNADOR AIRE  8X65X25/28 2 RODAMIENTOS",
+  "precio": 20493.16,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-31002",
+  "tipoModificacion": "A",
+  "marca": "Volkswagen Audi",
+  "modelos": [
+    "BORA TDI 1.9",
+    "POLO TDI",
+    "GOLF TDI",
+    "A3 TDI"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12-7lj8KreYP2nIR3_9t7WOB1IMhuF168",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.698Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169d9"
+  },
+  "id": "80300",
+  "nombre": "ALTERNADOR AIRE  10X70X22 C/ENG",
+  "precio": 27354.61,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-60012",
+  "tipoModificacion": "",
+  "marca": "Chevrolet",
+  "modelos": [
+    "SONIC",
+    "SPARK"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1_rFe30br3jpNhcPmVngwHLDNUbNwqaMn",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.759Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169da"
+  },
+  "id": "84000",
+  "nombre": "ALTERNADOR MOTOR 1.4 TDCI",
+  "precio": 26700.82,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-33060",
+  "tipoModificacion": "",
+  "marca": "Citroen",
+  "modelos": [
+    "C3"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JVaTI_-CSMh1BUX-n2MypXTNucO7TSIE",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.843Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169db"
+  },
+  "id": "84430",
+  "nombre": "ALTERNADOR MOTOR DIESEL 17X64X26",
+  "precio": 14513.58,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "BMW",
+  "modelos": [
+    "SENDA",
+    "GOL 1.9D"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-1OBD1avn5MEVORu_Ij6mpFtqWTEto3y",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.894Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169dc"
+  },
+  "id": "84435",
+  "nombre": "AIRE ACONDICIONADO",
+  "precio": 21420.19,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-38212",
+  "tipoModificacion": "",
+  "marca": "BMW",
+  "modelos": [
+    "SAVEIRO",
+    "SENDA",
+    "TRANSPORTER",
+    "VENTO",
+    "GOL 1.9D",
+    "GOL 1.9D"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-vtwvZrZKdQnxmO2vypq5_4tVi7v_LcC",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.953Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169dd"
+  },
+  "id": "84440",
+  "nombre": "DISTRIBUCION 1.7 TDCI 12X65X31.5",
+  "precio": 37611.96,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-25150",
+  "tipoModificacion": "",
+  "marca": "Chevrolet",
+  "modelos": [
+    "CORSA 8V",
+    "CORSA II",
+    "MERIVA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.955Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169de"
+  },
+  "id": "84448",
+  "nombre": "DISTRIBUCION 1.6 16V 17X64X29",
+  "precio": 14023.67,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-80000",
+  "tipoModificacion": "",
+  "marca": "Chevrolet",
+  "modelos": [
+    "AVEO",
+    "MERIVA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=126keseN1K-26czquOToEZ2NwwUj_aWBq",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:36.965Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169df"
+  },
+  "id": "84449",
+  "nombre": "DISTRIBUCION 1.6 16V 17X64X29",
+  "precio": 14513.58,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-80000",
+  "tipoModificacion": "",
+  "marca": "Chevrolet",
+  "modelos": [
+    "AVEO",
+    "CRUZE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=16GyPx3JcUe0RmDUfqZS_CVU2-IRkWWDt",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.071Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e0"
+  },
+  "id": "84500",
+  "nombre": "ALTERNADOR / AIRE ACIONDICIONADO 1.6 EMBUTIDA 17X70X25",
+  "precio": 12472.65,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-34034",
+  "tipoModificacion": "",
+  "marca": "Ford",
+  "modelos": [
+    "KA",
+    "MONDEO",
+    "FIESTA",
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17CqRFyQb37-rjGc_Mpb4wek8oGcA55rl",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.089Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e1"
+  },
+  "id": "84501",
+  "nombre": "ALTERNADOR AIRE ACCONDICIONADO 17X70X31",
+  "precio": 15438.92,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "M",
+  "marca": "Ford Chevrolet Volkswagen",
+  "modelos": [
+    "F100",
+    "BLAZER",
+    "S10",
+    "TOUAREG"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1HYRTJ8NfzbjepAzjKPpzrgxgYgsRTXE_",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.141Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e2"
+  },
+  "id": "84520",
+  "nombre": "ALTERNADOR POLY V 17X50X25  Sin Buje",
+  "precio": 21862.42,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-21338 ",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "UP"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12TRPrndhz4GEElnvRd57f0G-GUjUQtZS",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.184Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e3"
+  },
+  "id": "84595",
+  "nombre": "DISTRIBUCION 1.8 17X56X25/14",
+  "precio": 18740.16,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-04754",
+  "tipoModificacion": "",
+  "marca": "Fiat",
+  "modelos": [
+    "IDEA",
+    "MAREA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1azIC4I_K2X5gGbtrdmuTYPl7WfmqS3TZ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.182Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e5"
+  },
+  "id": "84600-2",
+  "nombre": "ALTERNADOR 1.8 MAS FINA 84600  ( 21,00MM PISADA )",
+  "precio": 11184.08,
+  "rubro": "Chapa",
+  "codigoFabrica": "FINA",
+  "tipoModificacion": "A",
+  "marca": "Chevrolet",
+  "modelos": [
+    "MERIVA",
+    "CORSA 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1KBbB3vOeyF48jf_zAZNUmGxmVD0fIlbd",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.224Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e6"
+  },
+  "id": "84601",
+  "nombre": "ALTERNADOR 1.8",
+  "precio": 16062.53,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-04752",
+  "tipoModificacion": "",
+  "marca": "Fiat",
+  "modelos": [
+    "STRADA",
+    "PUNTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1fogSDTfsFRXjf-4KcjgkBbg8dl8Bv9gk",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.261Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e7"
+  },
+  "id": "84602",
+  "nombre": "ALTERNADOR 1.8",
+  "precio": 16161.74,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-04752",
+  "tipoModificacion": "",
+  "marca": "Fiat",
+  "modelos": [
+    "STRADA",
+    "PUNTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JrdLGAIdIPSwCjnLVT4ojMNzLbMzoYM4",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.294Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e8"
+  },
+  "id": "84603",
+  "nombre": "AIRE ALTERNADOR  17X70X26",
+  "precio": 12831.41,
+  "rubro": "Chapa",
+  "codigoFabrica": 90500229,
+  "tipoModificacion": "",
+  "marca": "Fiat",
+  "modelos": [
+    "SIENA",
+    "PUNTO",
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14WeOpOzPx09YUZJRNVQbjMCA-x7JLuPA",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.354Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169e9"
+  },
+  "id": "84604",
+  "nombre": "AIRE ALTERNADOR  17X70X26",
+  "precio": 7545.6,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-04839",
+  "tipoModificacion": "A",
+  "marca": "Ford Dodge",
+  "modelos": [
+    "FIESTA",
+    "ESCORT",
+    "JOURNEY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14nU8TFeRA5o2UumKnscheD_rM6-3HrEF",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.369Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169ea"
+  },
+  "id": "84605",
+  "nombre": "ALTERNADOR AIRE  10X78X25  1.,3 MPI",
+  "precio": 11341.01,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "Fiat",
+  "modelos": [
+    "PALIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1LqVYsKh-XlFkl6W7lXorM0dOwSKZdMld",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.426Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169eb"
+  },
+  "id": "84606",
+  "nombre": "ALTERNADOR  MOTOR 2.5 17X76X21",
+  "precio": 10680.94,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "Fiat",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=16HbjESoEsZ9CCYBYH1DtBKIZjgr7i2XN",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.441Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169ec"
+  },
+  "id": "84610",
+  "nombre": "ALTERNADOR AIIRE MOTOR 1.9 ( 10X37X28)",
+  "precio": 27209.93,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-33017",
+  "tipoModificacion": "",
+  "marca": "Citroen",
+  "modelos": [
+    "BERLINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1dwST32w5HFaf5zTPAhyT2NYvGojzMQ8L",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.475Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169ed"
+  },
+  "id": "84611",
+  "nombre": "ACCESORIOS VW   SCIROCCO 17X58X20",
+  "precio": 24929.14,
+  "rubro": "Acero",
+  "codigoFabrica": "529008310 REP",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "SCIROCCO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1DmNx4vQ5W1cQdKuxu0Yi6k64NBzX5FHx",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.530Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169ef"
+  },
+  "id": "84613",
+  "nombre": "ACCESORIOS VW   SCIROCCO 17X70X25 ( 90500299)",
+  "precio": 12002.88,
+  "rubro": "Chapa",
+  "codigoFabrica": 90500229,
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "SCIROCCO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1EoMYDSfpuSMIxqxkPfsxsM32FXffk312",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.588Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f0"
+  },
+  "id": "84630",
+  "nombre": "ALTERNADOR A/A  VW AMAROK 4X4 3.0 V6 2017 17X55X28",
+  "precio": 67087.06,
+  "rubro": "Chapa",
+  "codigoFabrica": 532085310,
+  "tipoModificacion": "A",
+  "marca": "Volkswagen",
+  "modelos": [
+    "AMAROK"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1VD2ng97qAQzdltKqphP_1g2AeRVNW6xC",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.578Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f1"
+  },
+  "id": "84631",
+  "nombre": "ALTERNADOR A/A  VW AMAROK 4X4 3.0 V6 2017 17X55X28",
+  "precio": 63296.17,
+  "rubro": "Nylon",
+  "codigoFabrica": 532085310,
+  "tipoModificacion": "A",
+  "marca": "Volkswagen",
+  "modelos": [
+    "AMAROK"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1OP9IwrpwPOFH6EWq4CfmDczRLyFK2c2V",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.627Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f2"
+  },
+  "id": "84645",
+  "nombre": "ALTERNADOR AIRE AMAROK  ( 8X70X29 )",
+  "precio": 18441.52,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-31008",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "AMAROK"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PAStHOmTpjhZZdjNVfxk7iCE9RfmGWQu",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f3"
+  },
+  "id": "84645-2",
+  "nombre": "ALTERNADOR AIRE AMAROK  ( 8X70X29 ) DOBLE ROD",
+  "precio": 23163.12,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-31008",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "AMAROK"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PAStHOmTpjhZZdjNVfxk7iCE9RfmGWQu",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f4"
+  },
+  "id": "84646",
+  "nombre": "ALTERNADOR AIRE  BUJE HEX 8X78X26",
+  "precio": 14582.61,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-31004",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "POLO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1vr45EBzLByxSG36AjA5un8-nEGTfJGgu",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.777Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f5"
+  },
+  "id": "84647",
+  "nombre": "ALTERNADOR AIRE  17X78X26",
+  "precio": 8778.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33020",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "PÓLO",
+    "GOLF"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18rHWfb-p7RJwoml_nw_QrOd38T88dFsB",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.824Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f6"
+  },
+  "id": "84648",
+  "nombre": "ALTERNADOR AIRE MULTICANAL",
+  "precio": 18700.93,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-35002",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "CORSA 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17bRSWz0J5I4feOxnb818PF2z8yw0X-Mk",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.834Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f7"
+  },
+  "id": "84649",
+  "nombre": "ALTERNADOR AIRE   17X70X26",
+  "precio": 12105.09,
+  "rubro": "Chapa",
+  "codigoFabrica": "038-903315",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "FOX",
+    "SURAN"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Cokht8hpqwy091XoSDxVV-_hQJSQ5_n8",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.844Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f8"
+  },
+  "id": "84650",
+  "nombre": "ALTERNADOR AIRE MULTICANAL",
+  "precio": 13072.85,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-31041",
+  "tipoModificacion": "",
+  "marca": "Mercedes Benz",
+  "modelos": [
+    "SPRINTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1zfGgTPZOqvDDDctGHHNqPYreIITIZRg_",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.904Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169f9"
+  },
+  "id": "84651",
+  "nombre": "ACCESORIO VW SCIROCCO  17X76.30X25.70   REPUESTOS",
+  "precio": 14157.41,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "Volkswagen",
+  "modelos": [
+    "SCIROCCO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1DDkH4x3gy3Xu9mm3zMsXP0kCKxQJ1BlT",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:37.924Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169fa"
+  },
+  "id": "84655",
+  "nombre": "ALTERNADOR A/A MULTIVIA   CHERY TIGGO  17X64/68X25",
+  "precio": 16275,
+  "rubro": "Nylon",
+  "codigoFabrica": "APV2942",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1H4uU9vIbrdltu1O9GQbJ7YXr2PueFN35",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.017Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169fb"
+  },
+  "id": "84668",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 10260.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-123762",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BERLINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1IRO9WRdPlFnBbZYVM97ZwdlvnbYj5VaM",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.120Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169fc"
+  },
+  "id": "84671",
+  "nombre": "ALTERNADOR AIRE  17X76X21",
+  "precio": 10260.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Y-7l9IiVi-Ph8weMJH5Y9hmoPZnmU_pZ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.203Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169fd"
+  },
+  "id": "84679",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 10260.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-236668  5751-740",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BERLINGO",
+    "PICASSO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18vmexMuMZOVqHnMu89MAR1w8BT03WQCP",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.184Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169fe"
+  },
+  "id": "84690",
+  "nombre": "ALTERNADOR AIRE 17X60X26",
+  "precio": 7545.6,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36018",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "VENTO",
+    "GALAXY",
+    "PARTNER",
+    "QUBO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1mEHaTeVcW3TVYgVMxEe90LElqD7ji_gN",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.186Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a4169ff"
+  },
+  "id": "84691",
+  "nombre": "ALTERNADOR AIRE 17X60X26 EMBUTIDA",
+  "precio": 12472.81,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-36018",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "VENTO",
+    "GALAXY",
+    "PARTNER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1hGIF_1m9tDzvLO9pHMesRhisu502OoRx",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.216Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a00"
+  },
+  "id": "84692",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 10260.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BERLINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ggij9vty0SN9z6xW4Q7jZOFFqdhx_5lG",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.317Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a01"
+  },
+  "id": "84693",
+  "nombre": "ALTERNADOR AIRE 10X65X26",
+  "precio": 12191.41,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10XkRiyZ4l7mx0aDZIYF6hrueTyRc0kGb",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.357Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a02"
+  },
+  "id": "84694",
+  "nombre": "ALTERNADOR AIRE 17X62X26   KANGOO 1,6",
+  "precio": 15346.89,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.431Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a03"
+  },
+  "id": "84695",
+  "nombre": "17X65X18",
+  "precio": 12543.41,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1HR65WhRayPQf3EzhHT_ULi3tZsLYfN7H",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.466Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a04"
+  },
+  "id": "84696",
+  "nombre": "ACCESORIOS 17X65X25            JOURNEY",
+  "precio": 9301.09,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "JOURNEY",
+    "KUGGA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17TRWVWKF0YBidDtWonGFV53gCebhrP9Z",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.468Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a05"
+  },
+  "id": "84697",
+  "nombre": "ALTERNADOR AIRE VARIOS 17X65X26",
+  "precio": 7545.6,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-35603",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "JOURNEY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1J0795V80k_EATqpTCrV5eJrbQFEb61KX",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.469Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a06"
+  },
+  "id": "84697-2",
+  "nombre": "ALTOERNADOR AIRE DOBLE RUL 17X65X26",
+  "precio": 15499.51,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1J0795V80k_EATqpTCrV5eJrbQFEb61KX",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.553Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a07"
+  },
+  "id": "84698",
+  "nombre": "ALTERNADOR AIRE VARIOS 17X65X26",
+  "precio": 12831.94,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-35603",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1lmgtJtH26hJnzzeVtYey8ycNGPmxuLkT",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.614Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a08"
+  },
+  "id": "84699",
+  "nombre": "ACCESORIOS 17X65X25            JOURNEY",
+  "precio": 14756.79,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "JOURNEY",
+    "KUGGA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ntnjbyynia66usqAMXce73yFuaNZm8cV",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.659Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a09"
+  },
+  "id": "84700",
+  "nombre": "ALTERNADOR AIRE MOT 1.7  17X68X22  HASTA 1993",
+  "precio": 11104.97,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12Kg4KQmhmiTfs1YlQidQxvZU_kuAiHtA",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.790Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a0a"
+  },
+  "id": "84703",
+  "nombre": "ALTERNADOR AIRE VARIOS",
+  "precio": 10260.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-123747",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PUNTO",
+    "TIPO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Yg1Zc_Ju1ql8dg-eSTPExkOLkbGRRI-2",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.792Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a0b"
+  },
+  "id": "84704",
+  "nombre": "ALTERNADOR AIRE VARIOS MOT 1.6  16V",
+  "precio": 10260.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-230025",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1CmdDwA9X2PFwiEc2C7s8PxLR-suqry9O",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.791Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a0c"
+  },
+  "id": "84710",
+  "nombre": "10X65X26",
+  "precio": 15660.18,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.799Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a0d"
+  },
+  "id": "84734",
+  "nombre": "ALTERNADOR AIRE MULTICANAL ( CORREA 5PK)",
+  "precio": 20165.11,
+  "rubro": "Nylon",
+  "codigoFabrica": 94702967,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA 8V",
+    "AGILECELTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1WUXPoR-ZOCdh0rQ_0GyhQ0Crllhynwav",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.820Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a0e"
+  },
+  "id": "84735",
+  "nombre": "ALTERNADOR AIRE   12X70X26",
+  "precio": 13066.01,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1n6v_ZNhd8xV1Gn_9j7a6tPBtylKl4G7U",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:38.872Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a0f"
+  },
+  "id": "84736",
+  "nombre": "ALTERNADOR AIRE   12X70X26",
+  "precio": 16661.54,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1KghridqDgSkGyR4yUvKrEuFJjqHf0kuh",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.003Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a11"
+  },
+  "id": "84738",
+  "nombre": "ALTERNADOR AIRE   17X70X30",
+  "precio": 10095.24,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GRAND CHEROKEE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ZazraqIUo67Pt-nuBqjY_O9jOA6Li06Q",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.073Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a12"
+  },
+  "id": "84739",
+  "nombre": "ALTERNADOR AIRE   17X70X30",
+  "precio": 12831.41,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Y5aVNvDe8Fxsq5x0XQp-2ZzxvCToQ0ym",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.053Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a13"
+  },
+  "id": "84740",
+  "nombre": "ALTERNADOR AIRE  VARIOS  ( 17X70X23)",
+  "precio": 9417.51,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1e1nh8cGFlOncw1Z248r97I9hseZh8n39",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.144Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a14"
+  },
+  "id": "84741",
+  "nombre": "ALTERNADOR AIRE MOT 1.8",
+  "precio": 16727.3,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.212Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a15"
+  },
+  "id": "84742",
+  "nombre": "ALTERNADOR AIRE 17X70X23",
+  "precio": 12002.88,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.280Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a16"
+  },
+  "id": "84745",
+  "nombre": "ROLDANA 8X65X25",
+  "precio": 15803.47,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-113371",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1l9ivvM1KS6X2mhx8Wnrvz9T4TwbgdSf6",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.428Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a17"
+  },
+  "id": "84748",
+  "nombre": "ACCESORIOS  F-239069,4 REPUESTOS     KUGGA",
+  "precio": 13203.97,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-239069.4",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KUGGA",
+    "JOURNEY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10sD6wZcybbaqHEXKLRJgQpijmJJ204ZM",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.379Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a18"
+  },
+  "id": "84749",
+  "nombre": "ACCESORIOS F-239071,04 REPUESTO    KUGGA",
+  "precio": 14055.5,
+  "rubro": "Chapa",
+  "codigoFabrica": "F-239071.04",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KUGGA",
+    "JOURNEY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PhZghMk8LEEuXhuCQGj_MaSeHdkZz8tb",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.380Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a19"
+  },
+  "id": "84750",
+  "nombre": "ALTERNADOR AIRE  VARIOS  ( 17X70X26/14)  AMAROK",
+  "precio": 15602.5,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "AMAROK",
+    "JEEP COMPASS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12oRzSfODEv1DpoBYMkmr6Pq0HhtuvXLx",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.411Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a1a"
+  },
+  "id": "84751",
+  "nombre": "ALTERNADOR AIRE MOT 1.7  17X70X26",
+  "precio": 8778.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "95WF 216A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1_I3z_dZPvje3Nm2qG3d-SCBsmYPVsJ4s",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.441Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a1b"
+  },
+  "id": "84752",
+  "nombre": "ALTERNADOR AIRE  17X73X22",
+  "precio": 8098.38,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA",
+    "ESCORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-IbbNsRcm3Gn-eNua8JpadlK9qD3diaH",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.547Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a1c"
+  },
+  "id": "84753",
+  "nombre": "ALTERNADOR AIRE MOT  16 V  10,50X70X29/33",
+  "precio": 16818.85,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32301",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14aetfU3_hHoFz5nzbcmf4XabLcOGxyXV",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.594Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a1d"
+  },
+  "id": "84754",
+  "nombre": "ALTERNADOR AIRE 17X70X22",
+  "precio": 11312.03,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1P6eTfUor9fvp_QfR5ZnKL9tKbno_0Y1f",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.624Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a1e"
+  },
+  "id": "84755",
+  "nombre": "ALTERNADOR AIRE 17X70X22",
+  "precio": 9573.27,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1QypJszOtkc1JGgOAjsGaG0cxg9S6rrsv",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.666Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a1f"
+  },
+  "id": "84756",
+  "nombre": "ALTERNADOR AIRE 17X76X18",
+  "precio": 9286.81,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1sZHHpaPFQYBtQYGW-9scw3y5gAMJpPqH",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.656Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a20"
+  },
+  "id": "84757",
+  "nombre": "ALTERNADOR AIRE 17X70X24",
+  "precio": 14525.79,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PÓLO",
+    "GOLF",
+    "TRANSPORTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10LnuZydPQeb0NN5Kp7BvdunPfk4xwl2r",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.705Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a21"
+  },
+  "id": "84758",
+  "nombre": "17X76X19",
+  "precio": 11891.38,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JRUvBsbuQyVbbgI1qieltYJXcdOZQWXd",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.785Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a22"
+  },
+  "id": "84759",
+  "nombre": "ALTERNADOR AIRE 17X70X24",
+  "precio": 10556.18,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PÓLO",
+    "GOLF",
+    "TRANSPORTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=115xFUGBww-3earQW1whKYx23bRIRLHFr",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.805Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a23"
+  },
+  "id": "84760",
+  "nombre": "ALTERNADOR AIRE 17X65X21",
+  "precio": 8776.75,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1O8MOjLeQpovPct-Dg0TNGudFJMAxwHwZ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.843Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a24"
+  },
+  "id": "84761",
+  "nombre": "ALTERNADOR AIRE 17X56X21 MOT 1.4 TDCI",
+  "precio": 12366.07,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA",
+    "EXPLORER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1OtSzNy4BmXEBcZXfG1DiznjYE3iG8Y2O",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.864Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a25"
+  },
+  "id": "84762",
+  "nombre": "ALTERNADOR VARIOS 17X65X18",
+  "precio": 9459.03,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1FLl-dO7nLf7sIJ61NZkw4WkptkRsgAET",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.865Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a27"
+  },
+  "id": "84765",
+  "nombre": "ALTERNADOR AIRE 17X85X32",
+  "precio": 10589.66,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MAXXION"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.905Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a29"
+  },
+  "id": "84768",
+  "nombre": "ALTERNADOR AIRE MOT 1.8 2.0 16 V 17X54X32",
+  "precio": 10123.61,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-26310",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "CLIO II",
+    "LAGUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18Lp2G4jm6VVe5-3gdg7Qprg96CttL360",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:39.996Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a2a"
+  },
+  "id": "84778",
+  "nombre": "DISTRIBUCION 30X70X21,50",
+  "precio": 16352.04,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-70001",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MONZA",
+    "ASTRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1T4-MTUqAJoAn95vwyUSxK9Pyjac7D9PR",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.024Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a2b"
+  },
+  "id": "84779",
+  "nombre": "10X80X26",
+  "precio": 12127.23,
+  "rubro": "Nylon",
+  "codigoFabrica": "10X80X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.050Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a2c"
+  },
+  "id": "84780",
+  "nombre": "POLY V  10X80X23",
+  "precio": 12127.26,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-123662  580802",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=19-cxQH8Rt471ZDACfF32REFF1sbBCCGG",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.091Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a2d"
+  },
+  "id": "84781",
+  "nombre": "ALTERNADOR AIRE 10X80X26      MOT 1.3",
+  "precio": 13870.61,
+  "rubro": "Nylon",
+  "codigoFabrica": "10X80X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.144Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a2e"
+  },
+  "id": "84785",
+  "nombre": "POLY V  17X90X29",
+  "precio": 11269.91,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-04766",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS",
+    "RANGER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1IlirJ6gr-bwESdzcpiiQPm0rEBP8PBe0",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.142Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a2f"
+  },
+  "id": "84787",
+  "nombre": "POLY  V RANGER 4 CIL  F100 4.9 17X90X30",
+  "precio": 11269.91,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X90X30",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "RANGER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ckwUHpeG9LwhKtJ9ZbWS8Opb99sohkay",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.282Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a30"
+  },
+  "id": "84810",
+  "nombre": "ALTERNADOR AIRE   17X80X26",
+  "precio": 10383.05,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X80X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIRE 1.3"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14hIKEGygbtcyQyH7XGyBTKm1R0moCCln",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.305Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a31"
+  },
+  "id": "84811",
+  "nombre": "ALTERNADOR AIRE  17X80X23  MOT 1.3",
+  "precio": 10383.05,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X80X23",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1B1uSgH2YuIoFSmaSB8Im6QGlPJI0Z4y-",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a32"
+  },
+  "id": "84833",
+  "nombre": "DISTRIBUCION   20X60X29",
+  "precio": 12828.86,
+  "rubro": "Nylon",
+  "codigoFabrica": 633272,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "128 EUROPA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a37"
+  },
+  "id": "84897",
+  "nombre": "DISTRIBUCION",
+  "precio": 30085.45,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12151",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1BSgafM-bs7_zqoHjmnnwlusWvgpsWYcA",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.419Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a38"
+  },
+  "id": "84903",
+  "nombre": "DISTRIBUCION",
+  "precio": 30084.25,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12153",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 1.9"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PTuy2nJUulPu1sCK2KRAsBdn6Pe3oaQt",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.432Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a39"
+  },
+  "id": "84917",
+  "nombre": "DISTRIBUCION",
+  "precio": 20618.3,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12200",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "TIPO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1V0C5wVU-DBHnlbjPiZqJ-vt5wjp_iNP0",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.522Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a3a"
+  },
+  "id": "84921-N",
+  "nombre": "DISTRIBUCION 25X64X34 DUCATO NYLON 2.5 2.8",
+  "precio": 25232.22,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-22380 636406",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10LzOlyQiVHhEuRwei9f94_yLhHxq2JzM",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a3b"
+  },
+  "id": "84921",
+  "nombre": "DISTRIBUCION   25X64X34",
+  "precio": 27930.96,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-22380 636406",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10LzOlyQiVHhEuRwei9f94_yLhHxq2JzM",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.705Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a3c"
+  },
+  "id": "84944",
+  "nombre": "DISTRIBUCION MOVIL NAFTA",
+  "precio": 32364.78,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-16200",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "21",
+    "TRAFIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1x45ogsgrUAMIl8OAx32zk3CIAKcjrtxx",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.704Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a3d"
+  },
+  "id": "84945",
+  "nombre": "DISTRIBUCION MOVIL NAFTA",
+  "precio": 20314.97,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-16200",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "21",
+    "TRAFIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1qqjJhSRWjLAk_HhDLn0mOCb_sjj-EORg",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.696Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a3e"
+  },
+  "id": "84946",
+  "nombre": "DISTRIBUCION MOVIL NAFTA",
+  "precio": 21980.45,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-16200",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "21",
+    "TRAFIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=16i_L9nvPoiJicICDe1FyUeG8G0o2T9M6",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.689Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a3f"
+  },
+  "id": "84952",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 17091.85,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-36022",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "LAGUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1GyQzc24Bk4D7QL9z6_WrC0BwfehwEdBV",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.836Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a40"
+  },
+  "id": "84959",
+  "nombre": "DISTRIBUCION MOVIL DIESEL",
+  "precio": 32956.12,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-16210",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRAFIC",
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1SSz8qIjaOxrZWXOP36lF139rtvWDI1e6",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.882Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a41"
+  },
+  "id": "85000",
+  "nombre": "ALTERNADOR VARIOS   17X94X26",
+  "precio": 13069.32,
+  "rubro": "Nylon",
+  "codigoFabrica": "17x94x26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SPRINTER",
+    "MAXXION",
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1P7jQ0X-bFHVbxh0Q2397IUiisIxtavqc",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.900Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a42"
+  },
+  "id": "85008",
+  "nombre": "ALTERNADOR AIRE MOT  2.2",
+  "precio": 13069.32,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36003",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "LAGUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1DBotiWkaowVMe6Ru7s_nXLdtwOj1Hkty",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.908Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a43"
+  },
+  "id": "85015",
+  "nombre": "ALTERNADOR   V",
+  "precio": 12831.41,
+  "rubro": "Chapa",
+  "codigoFabrica": "F-137209",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIRE 1.3",
+    "DUCATO 2.5",
+    "19"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1OudKY2XHxlq_f7ZmP3S_JNvAb5x6PkZa",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.919Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a44"
+  },
+  "id": "85019",
+  "nombre": "DISTRIBUCION MOTOR 1.3 DISESEL",
+  "precio": 22612.94,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12630",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "147"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:40.941Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a45"
+  },
+  "id": "85034",
+  "nombre": "F-225807/10",
+  "precio": 17878.07,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-225807/10",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1KbL9sxqWPqqrYg5kV-PNtXolMTNI8EpM",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.040Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4b9ee3a8fd94a416a46"
+  },
+  "id": "85035",
+  "nombre": "AA ALTERNADOR MULTICANAL 940703810094",
+  "precio": 12028.66,
+  "rubro": "Nylon",
+  "codigoFabrica": {
+    "$numberLong": "940703810094"
+  },
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "S10"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1eQDVTDYjqja5U7ZE-qN2sw6AQJjVix_M",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.100Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42008a"
+  },
+  "id": "85037",
+  "nombre": "ALTERNADOR MOT 2.0    MULT ECOSPORT 17X70X26 6 CANALES",
+  "precio": 14290.4,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-4793",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Kmo9KQbYFMj1SGtFkVy62R_cRnP5osbD",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.129Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42008b"
+  },
+  "id": "85038",
+  "nombre": "ALTERNADOR MOT 2.0   17X70X26 MULTICANAL ECOSPORT 17/10X70X26",
+  "precio": 15966.52,
+  "rubro": "Nylon",
+  "codigoFabrica": "17/10X70X26 CON BUJE",
+  "tipoModificacion": "M",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12eO1fjwjvJ4ACMdqKcUE7fOrgNGm19Dq",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.130Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42008c"
+  },
+  "id": "85039",
+  "nombre": "ALTERNADOR MOT 2.0  FOCUS/ECOSPORT",
+  "precio": 14326.36,
+  "rubro": "Nylon",
+  "codigoFabrica": "CM5Z-6B209-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT",
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1OFA3ESErnoXgUE5bCZoOYh4R-6_VTiny",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.179Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42008d"
+  },
+  "id": "85042",
+  "nombre": "ALTERNADOR 8X65X26",
+  "precio": 13066.43,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-31002",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GOLF"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1fYen4AGP3Et2s3fqCgqeB-m56K5kFRSg",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.180Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42008e"
+  },
+  "id": "85043",
+  "nombre": "ALTERNADOR MULTICANAL",
+  "precio": 12147.46,
+  "rubro": "Nylon",
+  "codigoFabrica": "377-145299",
+  "tipoModificacion": "M",
+  "marca": "",
+  "modelos": [
+    "GOLF"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18qPsN4DdKRp0f7w8KjtRInBgXw333KAD",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.312Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42008f"
+  },
+  "id": "85044",
+  "nombre": "DISTRIBUCION DIESEL",
+  "precio": 28880.79,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26101",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19",
+    "CLIO",
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PeCBN2K467ydHce02Fd5XI2FbZAFzU8S",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.401Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420090"
+  },
+  "id": "85045",
+  "nombre": "AIRE ACONDICIONADO",
+  "precio": 11150.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "VIRTUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12TDfglYy8v5pB1yT2ItpZ4E_vDZM8Tl4",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.403Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420091"
+  },
+  "id": "85048",
+  "nombre": "ALTERNADOR MOTOR 2.0",
+  "precio": 13200.02,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-35603",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TORO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1bKUysIGTz_6vgA0tjH7NCtNAdL9IEW2y",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.411Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420092"
+  },
+  "id": "85049",
+  "nombre": "ALTERNADOR MOTOR 2.0",
+  "precio": 15339.3,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32093",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TORO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=13uo0vMuylUbKDn4WB4JJm595_z36wDqk",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.437Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420093"
+  },
+  "id": "85050",
+  "nombre": "DISTRIBUCION",
+  "precio": 47071.22,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-27404  F-49332",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MAXXION"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1XXZPK8mfStlHabJR_p_MSflVRukloe_e",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.468Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420094"
+  },
+  "id": "85052",
+  "nombre": "POLY V 17X70X28",
+  "precio": 10495.34,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SPRINTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18DoPtsPSUcSXzwGc9ugnwIhBiLgR8JHT",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.566Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420095"
+  },
+  "id": "85055",
+  "nombre": "AIRE ALTERNADOR  MERCEDEZ BENZ GLK 280/300 V6",
+  "precio": 21763.66,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GLK 280",
+    "GLK 300"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1thL7gPdeq8T1f6PJJHNSEXi1RNSh0Q85",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.625Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420096"
+  },
+  "id": "85074",
+  "nombre": "POLY V  8X65X29",
+  "precio": 13056.17,
+  "rubro": "Chapa",
+  "codigoFabrica": 551811,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PASSAT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1S9TYcMSPN8ijTFVr48Z1sqW9Mv0B_cZM",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.627Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420097"
+  },
+  "id": "85088",
+  "nombre": "POLY V",
+  "precio": 12043.42,
+  "rubro": "Chapa",
+  "codigoFabrica": 511814,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "NEW BEETLE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15c9_et_6QRoO7HevI-J6PaLmS2Rp3Udf",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.734Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420098"
+  },
+  "id": "85100",
+  "nombre": "ALTERNADOR AIRE  17X60X31",
+  "precio": 11262.05,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36040",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MASTER",
+    "MASTER II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1J5rusNrjSTVLkIqbk1oW3g7QBTqNe__H",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.715Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a420099"
+  },
+  "id": "85116",
+  "nombre": "DISTRIBUCION",
+  "precio": 13825.55,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-77E-6B-209",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1EeAY5dXnoXK9usTAyadnO-T-NolFQovX",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:41.717Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42009a"
+  },
+  "id": "85250",
+  "nombre": "8X70X29",
+  "precio": 12673.47,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14X9uV4mgXpCp5WTliLL8v4-Z3g8iV3Vy",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.586Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42009b"
+  },
+  "id": "85251",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 12671.85,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36013 F-120850",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRAFIC - 19"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=102jgiTDI-7g4mS2zncLffbbhiPwuzERU",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.566Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42009c"
+  },
+  "id": "85252",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 16280.11,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-36013 F-120850 10X70X30",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRAFIC - 19"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1VpagFsVZMaTAegbm_muep41aoYFDyd9s",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.585Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42009d"
+  },
+  "id": "85253",
+  "nombre": "10X70X26 EMBUTIDA",
+  "precio": 15228.18,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-sqgOrd4DMJvBHyxajtAVxqigUa-O4ob",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.585Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a42009f"
+  },
+  "id": "85300",
+  "nombre": "ALTERNADOR AIRE 8X56X21",
+  "precio": 23090.68,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-36023 F-122573",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Eyz_NXnuJef2I_sG2Pcul-Ifea5N48hL",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.594Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a0"
+  },
+  "id": "85300-N",
+  "nombre": "ALTERNADOR AIRE 8X56X21",
+  "precio": 21579.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36023 F-122573",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1BohJeGWv6amp7oT2X58QnjVVy2FPVZsY",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.583Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a1"
+  },
+  "id": "85300-2",
+  "nombre": "ALTERNADOR AIRE MOTOR 1.2  ANCHO 8X56X24,00MM",
+  "precio": 23273.88,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-36023 F-122573",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1_t5MSRzAcvn1q3svdWgRnuNTMvavlhG1",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.810Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a2"
+  },
+  "id": "85300-2N",
+  "nombre": "ALTERNADOR AIRE MOTOR 1.2  ANCHO 8X56X24,00MM",
+  "precio": 21579.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36023 F-122573",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1_t5MSRzAcvn1q3svdWgRnuNTMvavlhG1",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.865Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a3"
+  },
+  "id": "85301",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 23957.26,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-36006",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "SCENIC",
+    "MEGANE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1E-FzshEARxoge9eIDQSRUX5Hrl20_8tE",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.858Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a4"
+  },
+  "id": "85302",
+  "nombre": "ALTERNADOR AIRE 17X76X20  MOT 1.4",
+  "precio": 11315.53,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Dwy356dxDu_orgZqz9KQWOBKc_x0g7ro",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.875Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a5"
+  },
+  "id": "85305",
+  "nombre": "DISTRIBUCION RAYADO 10X54X32 DOBLE RODAMIENTO",
+  "precio": 22208.48,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-26020 F-123778",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO",
+    "CLIO",
+    "MEGANELAGUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15EqL8KYkTCYGG_cm9hadhWfnXyn_ZknK",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.857Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a6"
+  },
+  "id": "85306",
+  "nombre": "ACCESORIOS  10X60X30 ( DOBLE ROD )",
+  "precio": 23037.09,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23140 F-123906",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MASTER",
+    "MASTER II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=185gRSrpes8tqs5jlb0ctUAixQvT26di8",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:42.956Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a8"
+  },
+  "id": "85318",
+  "nombre": "DISTRIBUCION FIJO ( DOBLE ROD )  8X60X30/40",
+  "precio": 23037.92,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23256",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "GOL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=19YWwqUywpPySuIMmTESjKOAH7vgtRY5T",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.036Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200a9"
+  },
+  "id": "85321",
+  "nombre": "ALTERNADOR  MOT NAFTA",
+  "precio": 14368.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33010",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1cI8sMJhnDggqBeyquPsBWNt7Ix-jjRD5",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.057Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200aa"
+  },
+  "id": "85334",
+  "nombre": "DISTRIBUCION EXENTRICO",
+  "precio": 30113,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-13201 F-120959",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "520063",
+    "605"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1TSmYQjVROnUrmcGR0QdN5XB_C9dfkMOI",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.085Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ab"
+  },
+  "id": "85353",
+  "nombre": "10X70X25    CHAPA EMBUTIDA",
+  "precio": 14784.67,
+  "rubro": "Chapa",
+  "codigoFabrica": "10X70X25 CHAPA EMBUTIDA",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.116Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ac"
+  },
+  "id": "85358",
+  "nombre": "ALTERNADOR",
+  "precio": 14660.74,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23240",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "VENTOPICASSO",
+    "XANTIA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=120urTzuQ6OSVbYb22_PQSfohTpye4I_3",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.152Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ad"
+  },
+  "id": "85359",
+  "nombre": "ALTERNADOR Y A/A MOTOR 2.0 // 1.9 DIESEL - 2.0 SPORT",
+  "precio": 16078.66,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-36016",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "XANTIA",
+    "MEGANE",
+    "CLIO II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1U6ZwYJ4H2awYKCIz4c38OPS1hgKEi8qL",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.202Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ae"
+  },
+  "id": "85361",
+  "nombre": "DISTRIBUCION FIJO",
+  "precio": 15601.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23244",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PARTNER",
+    "GALAXY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1XMleI6al9Tp6l0ROMFjaGs-wp24T5ZfW",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200af"
+  },
+  "id": "85362",
+  "nombre": "DISTRUBCION FIJO DOBLE RODAMIENTO",
+  "precio": 28734.91,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23244",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PARTNER",
+    "GALAXY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1v0Eikp9wQ8IzWqwZsAdySxYCKJVqNrQW",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.271Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b0"
+  },
+  "id": "85370",
+  "nombre": "ALTERNADOR Y A/A 1.3 16V 17X65X23",
+  "precio": 9978.93,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17gZMnY-6GvbwQgvBAP7d6wPjB8PcNrA_",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.316Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b1"
+  },
+  "id": "85373",
+  "nombre": "ALTERNADOR 1,3 MPI 17X80X21",
+  "precio": 10927.15,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO",
+    "PUNTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1M3bpnRECr9vjXg4rQ4ksZzvfs7ZdDVSQ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.324Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b2"
+  },
+  "id": "85374",
+  "nombre": "ALTERNADOR Y A/A DIRECCION ASISTIDA  10X65X26",
+  "precio": 15900.76,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-36026",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17k-I00Lo4nZn-ErrvAc8uQ3omjnIM91Y",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.355Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b3"
+  },
+  "id": "85374-2",
+  "nombre": "10X65X26/2 DOBLE RODAMIENTO",
+  "precio": 21812.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-122332",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17k-I00Lo4nZn-ErrvAc8uQ3omjnIM91Y",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.406Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b4"
+  },
+  "id": "85375",
+  "nombre": "ALTERNADOR Y A/A 10X65X26",
+  "precio": 15195.86,
+  "rubro": "Chapa",
+  "codigoFabrica": "F-122332 5751.520",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=191RP6PW35_bvfulv4buIE_z1zH2qRlt-",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.447Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b5"
+  },
+  "id": "85377",
+  "nombre": "AIRE ACONDICIONADO 1.9D Y 1.8 TD",
+  "precio": 14728.27,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33006",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1OOl2_gjPVYz0Bletw8hMK1GDJr-DJypd",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.459Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b6"
+  },
+  "id": "85378",
+  "nombre": "ALTERNADOR Y A/A 17X60X26",
+  "precio": 13069.32,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18-1aw1_TGTW41BYOQSFfEHZr0ijQPt15",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b7"
+  },
+  "id": "85379",
+  "nombre": "POLEA ACCESORIO",
+  "precio": 9976.9,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "XSARA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1N_Zyq3yzLdwWYj3ni9yFbo9BoUm4GLMN",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.516Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b8"
+  },
+  "id": "85381",
+  "nombre": "ALTERNADOR Y A/A 10X70X27",
+  "precio": 21997.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33023 F-123259",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "PARTNER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1gdqlRIIt-wh9qhVWMSEeNKGxHpUEKDpb",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.567Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200b9"
+  },
+  "id": "85384",
+  "nombre": "DISTRIBUCION (6203)",
+  "precio": 28882.03,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26101",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19",
+    "CLIO",
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.623Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ba"
+  },
+  "id": "85385",
+  "nombre": "DISTRIBUCION (6005)",
+  "precio": 32076.82,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26101",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19",
+    "CLIO",
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11aFYOnJrtPSPMUKC-o15t2jmOnOnOA3A",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.667Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200bb"
+  },
+  "id": "85388",
+  "nombre": "DISTRIBUCION MOVIL 1.8 Y 1.9 D (DESDE 1994)",
+  "precio": 14368.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-13241",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS",
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1_PDA5SRhgdJCUBizWYEsj5diDQSXUakD",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.671Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200bc"
+  },
+  "id": "85392",
+  "nombre": "DISTRIBUCION 1.8 Y 1.9 D (HASTA 1994)",
+  "precio": 14368.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-13240",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS",
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15B5dn07qfZaq_4zRQCcdU7PoiKhg7gM3",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.702Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200bd"
+  },
+  "id": "85411",
+  "nombre": "POLY V 17X60X30",
+  "precio": 9810.01,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1FrYexmrFLDHAB9t_j_A8laE-0h9vtNvP",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200be"
+  },
+  "id": "85417",
+  "nombre": "REPUESTO SOPORTE DE ALUMINIO",
+  "precio": 15953.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33008",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15ChKl1kFvAYskUMP-z8DwevBj5FRePzy",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.766Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200bf"
+  },
+  "id": "85418",
+  "nombre": "REPUESTO SOPORTE DE ALUMINIO",
+  "precio": 15953.37,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-33008",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15noUw8r5NkOFornpaKyfZwDOHKZ_8Lof",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.814Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c0"
+  },
+  "id": "85421",
+  "nombre": "REPUESTO SOPORTE FUNDICION",
+  "precio": 20869.52,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-33008",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-jWyW649gM-RDEbXF0mJtrXyh1lIFFcG",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.880Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c1"
+  },
+  "id": "85422",
+  "nombre": "ALTERNADOR 1.3 8V Y 16V 17X65X23",
+  "precio": 15192.18,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO",
+    "SIENA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1MftYfFjq8em9W2-f_pI1p-eL867perIl",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.917Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c2"
+  },
+  "id": "85425",
+  "nombre": "REPUESTO SOPORTE DE ALUMINIO 8X60X26",
+  "precio": 11653.81,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14JqkOp_IpAngEQC3fBYdaErwYsLuK8LQ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.920Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c3"
+  },
+  "id": "85426",
+  "nombre": "REPUESTO 10X60X26",
+  "precio": 11653.81,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1V3-8iFKlg5EkloucueQrOXXflyraMPp8",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.949Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c4"
+  },
+  "id": "85427",
+  "nombre": "REPUESTO ACCESORIO",
+  "precio": 12216.47,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BERLINGO",
+    "XSARA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10AKsS5V7LBxi_ZwD58VbobTcPKE6jmG8",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:43.972Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c5"
+  },
+  "id": "85428",
+  "nombre": "POLY V NAFTA 17X60X25",
+  "precio": 8912.9,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1r5MMfoHMVGTRwxVFgDWGwt8wTIr3dYb9",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.010Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c6"
+  },
+  "id": "85429",
+  "nombre": "ALTERNADOR AIRE SOP PICO ROJO 122661",
+  "precio": 15900.76,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33042  VKM-33005",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "KA",
+    "KUGGA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1MdRf2rgpSqHfk5CoSdo5WstSwWijbJiq",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.071Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c7"
+  },
+  "id": "85430",
+  "nombre": "ALTERNADOR 1.9D 17X60X25",
+  "precio": 9022.55,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "XSARA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1AY-OgabV-rpD994u5HeFZCrLJoKvq8E1",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.124Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c8"
+  },
+  "id": "85431",
+  "nombre": "REPUESTO",
+  "precio": 13675.95,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "XSARA",
+    "XANTIA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1516RvNqRXwrZ85PMmf-Jxhf1rSE0dHuO",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.134Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200c9"
+  },
+  "id": "85432",
+  "nombre": "ALTERNADOR Y A/A",
+  "precio": 12023.28,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33042  VKM-33005",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "GOL 1.9D"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JZHOIrTzUhj3tX14G45IzwSexvWhMrEF",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.163Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ca"
+  },
+  "id": "85433",
+  "nombre": "ALTERNADOR Y A/A",
+  "precio": 15664.84,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-33042  VKM-33005",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "GOL 1.9D"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1LNYQXYUwcuGOeKXZnfmNmCLgwU0XX9Ob",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.184Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200cb"
+  },
+  "id": "85435",
+  "nombre": "ALTERNADOR Y A/A MOTOR 1.9D XUD9 DW8",
+  "precio": 21994.66,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33013",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL",
+    "GOL 1.9D",
+    "PARTNER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1gdQ4QMxIOUEUamf7Cyq0KtvfypqGU5TW",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.218Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200cc"
+  },
+  "id": "85436",
+  "nombre": "ALTERNADOR Y A/A",
+  "precio": 29452.51,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-33013 F-122662",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO",
+    "GACEL",
+    "GOL 1.9D",
+    "PARTNER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.307Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200cd"
+  },
+  "id": "85437",
+  "nombre": 85437,
+  "precio": 27021.4,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.328Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200ce"
+  },
+  "id": "85450",
+  "nombre": "POLY V 1.6 8V 17X60X25",
+  "precio": 18219.92,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-36221",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO",
+    "SANDERO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15TmuoYNNkuLFbXdCh5UbyQChE7MAvaGV",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.369Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200cf"
+  },
+  "id": "85463",
+  "nombre": "DISTRIBUCION",
+  "precio": 25806.03,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-16101",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19",
+    "TWINGO",
+    "KANGOOCLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14sCHjC8L8MaSm0o1McLm_WE0iLnZC3GG",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.386Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d0"
+  },
+  "id": "85464",
+  "nombre": "ALTERNADOR Y A/A 1.4   8X70X15",
+  "precio": 12010.13,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36080",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1nKiiy9jtQipXaQKUZP0CeGQ0EBbEgLVZ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.407Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d1"
+  },
+  "id": "85465",
+  "nombre": "DISTRIBUCION MOTOR 1.4 - 1.6 - 1.1",
+  "precio": 22529.48,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-16000",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "MEGANE",
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14cOd_bUFl_pluAmY8YX-Ps7B-3QqrQ_X",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.451Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d2"
+  },
+  "id": "85466",
+  "nombre": "POLEA AUXILIAR",
+  "precio": 12805.86,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36005",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MEGANE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1e4yDwARq3Ry3LrEre8DCE8oDyZP9TRNp",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.540Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d3"
+  },
+  "id": "85467",
+  "nombre": "DISTRIBUCION MOTOR 1.6 1.4 16V - 1.2",
+  "precio": 22529.48,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-16001",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1O_evAj-9UZbpm1A3sgJI6ZVoPiItzwZ6",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.578Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d4"
+  },
+  "id": "85468",
+  "nombre": "DISTRIBUCION POLEA FIJA (ENGRANAJE) 31MM",
+  "precio": 30973.77,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26125",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1FOEiaUP_SUAx_tdFmN9iGXlSSREdAzM9",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.580Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d5"
+  },
+  "id": "85469",
+  "nombre": "DISTRIBUCION POLEA FIJA (ENGRANAJE) 25MM",
+  "precio": 30973.77,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26123",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1CwKkkNHGhn2gsvFIU1gbvZ0Vlgo_oN80",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.588Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d6"
+  },
+  "id": "85470",
+  "nombre": "POLEA AUXILIAR SOPORTE",
+  "precio": 23887.46,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-36014",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.598Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d7"
+  },
+  "id": "85471",
+  "nombre": "ALTERNADOR Y A/A MOTOR 2.8",
+  "precio": 35674.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36017",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MASTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1UciuzenMw_xp546a7mSYIP_hM4eFmyNQ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.675Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d8"
+  },
+  "id": "85472",
+  "nombre": "POLEA DISTRIBUCION MOTOR 2.2 Y 2.5    8X76/83X30/32",
+  "precio": 27056.61,
+  "rubro": "Nylon",
+  "codigoFabrica": 820004593,
+  "tipoModificacion": "M",
+  "marca": "",
+  "modelos": [
+    "MASTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10VpAI0Mw26b2BeIUxBQsVYw2emJCq1h1",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.777Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200d9"
+  },
+  "id": "85475",
+  "nombre": "DISTRIBUCION 30X61X31",
+  "precio": 24655.64,
+  "rubro": "Acero",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1f8gkGyd4eNSncL4KFR2ucS3Ohh7RGShQ",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.804Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200da"
+  },
+  "id": "85476",
+  "nombre": "ALTERNADOR Y A/A 1.6 16V  10X60X27",
+  "precio": 19025.71,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33100 F-124197",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "QUBO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Bb3RKc9ZN57_pFZYMMwOPwvQVXwq79sE",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.807Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200db"
+  },
+  "id": "85480",
+  "nombre": "ALTERNADOR AIRE 8X70X23",
+  "precio": 12671.93,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.845Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200dc"
+  },
+  "id": "85489",
+  "nombre": "ALTERNADOR RANGER 2,9     17X84X32",
+  "precio": 12191.45,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "MEGANE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.846Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4d8ee3a8fd94a4200de"
+  },
+  "id": "85490-2",
+  "nombre": "ALTERNADOR Y A/A MOTOR 2.0//1,9 DIESEL - 2,0 SPORT",
+  "precio": 18243.97,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-36016 F-122530",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "MEGANE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1rzDUyvbcCD7i9CHvKjEFcFkuza7O1m2z",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.879Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429afd"
+  },
+  "id": "85503",
+  "nombre": "ALTERNADOR Y A/A MOTOR 4.9   17X90X32 CON PESTAÑA",
+  "precio": 16408.06,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X90X32/96",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1P-pjOyskeYzrhGJFLc4v-heIrTBdaj2-",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:44.993Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429afe"
+  },
+  "id": "85504",
+  "nombre": "DISTRIBUCION FIJO 30X73X22",
+  "precio": 27339.09,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1GQ_JbbHNk01kMaoX6iV3VoI9L4zQIUzy",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.033Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429aff"
+  },
+  "id": "85505",
+  "nombre": "ALTERNADOR VARIOS 17X54X26",
+  "precio": 11078.41,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X54X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Pci6PvWqChoJXzPbAYpVu5z66kxnzcZE",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.058Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b00"
+  },
+  "id": "85505/3",
+  "nombre": "ALTERNADOR CHEROKEE   17X50X30",
+  "precio": 18673.12,
+  "rubro": "Acero",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.097Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b01"
+  },
+  "id": "85507",
+  "nombre": "ALTERNADOR AIRE 1.6",
+  "precio": 10375.99,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X56X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1AVjpVqzZgPvCBzpep8Hco6LSoHW4GJFX",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.098Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b02"
+  },
+  "id": "85508",
+  "nombre": "ALTERNADOR Y A/A MOTOR 2.5 17X76X25",
+  "precio": 9390.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X76X25",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRANSIT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ZDopcU1zFHiIM_ZNcRXPs01bsY7LbgSx",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.107Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b03"
+  },
+  "id": "85509",
+  "nombre": "ALTERNADOR Y A/A MOTOR 1.4 17X50X32",
+  "precio": 13581.44,
+  "rubro": "Acero",
+  "codigoFabrica": "17X50X32",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ESCORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1XSZF0lwqhUBcPcayC2deuj5gryH-0m0O",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.204Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b04"
+  },
+  "id": "85510",
+  "nombre": "ALTERNADOR Y A/A MOTOR 1.6 17X55X26",
+  "precio": 7545.31,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33061",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ESCORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10B9sBPlMSNDr5XM8ZBWzPQ5MvPS7k9NL",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.248Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b05"
+  },
+  "id": "85511",
+  "nombre": "ALTERNADOR MOTOR 4.9 20X80X36",
+  "precio": 16590.81,
+  "rubro": "Nylon",
+  "codigoFabrica": "20X80X36",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1D0tffrA0HQ0Abi1IpjkyRP-cIBvKcFM7",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.281Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b06"
+  },
+  "id": "85512",
+  "nombre": "ALTERNADOR Y A/A 1.4 TDCI - 1.4 - 1.6 TDCI  10X60X30/45",
+  "precio": 22140.16,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33044 F-123934",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT",
+    "FIESTA",
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JRRG0td8dpNeLfRlzdqVhejMFEAjYPnB",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.366Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b07"
+  },
+  "id": "85513",
+  "nombre": "ALTERNADOR AIRE 17X55X26",
+  "precio": 10662.86,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X55X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1VNXTHvkNv1BXzVD4FsGi9WuIcugHPHwe",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.376Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b08"
+  },
+  "id": "85514",
+  "nombre": "DISTRIBUCION FIJO MOTOR 1.4TDCI - 1.6TDCI - 1.4 10X60X30",
+  "precio": 21453.49,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33100 F-123906",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT",
+    "FIESTA",
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1aaKAW36dsmrr1tuRAkS1RZSpQiS6ihc4",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.365Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b09"
+  },
+  "id": "85515",
+  "nombre": "ALTERNADOR - AIRE ACCONDICIONADO ( 8X65X26/31,50)",
+  "precio": 26662.69,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-570768,05 51882514",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIAT ( ARGO",
+    " CRONOS",
+    " FIORINO",
+    " GRAND SIENA",
+    " IDEA",
+    " LINEA",
+    " PALIO",
+    " PALIO WEEKEND ADVENTURE",
+    " PUNTO",
+    " SIENA",
+    " STRADA",
+    " STRADA ADVENTURE",
+    " TIPO",
+    " TORO)"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.407Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b0a"
+  },
+  "id": "85516",
+  "nombre": "DISTRIBUCION  2.0 16V    10,20X60X31,50/37,50",
+  "precio": 25864.84,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23230",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "GOL POWER",
+    "BORA TDI 1.9",
+    "GOL",
+    "406",
+    "GOL 1.9D",
+    "BERLINGO",
+    "XSARA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=13T_Sa1tEl8DRXKEZJiz2MU7btWBBpIuU",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.436Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b0b"
+  },
+  "id": "85517",
+  "nombre": "ALTERNADOR CLIO II      17X55X23",
+  "precio": 11225.41,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X55X23",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "CLIO II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.509Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b0c"
+  },
+  "id": "85518",
+  "nombre": "DISTRIBUCION MOTOR 2.3  TAUNUS",
+  "precio": 25988.04,
+  "rubro": "Acero",
+  "codigoFabrica": "F-44573",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TAUNUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Rv7UDWXpjFR-B_KSl27FaU1ZHqNMDIJ9",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.547Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b0d"
+  },
+  "id": "85519",
+  "nombre": "DISTRIBUCION MOTOR 1.6  SIERRA",
+  "precio": 25988.04,
+  "rubro": "Acero",
+  "codigoFabrica": "F-14000",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SIERRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1lnaWPP4yrGQZwEPH_1gS2VaHzXPb82Xm",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.583Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b0e"
+  },
+  "id": "85520",
+  "nombre": "TENSOR POLY V  ALASKAN  10X60X30 DOBLE RODAMIENTO",
+  "precio": 21453.41,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-36087",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "ALASKAN"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18X1-r1nhLEmUk1wLvn92n_Z9yT3xmSvb",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.593Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b0f"
+  },
+  "id": "85525",
+  "nombre": "ALTERNADOR/ A.C MULT      3M5Q6A228AE   6 CANALES",
+  "precio": 16752.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-34014",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS",
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1LXhJ7CRB551G38OJh40EVGcvjmUZtD03",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.594Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b10"
+  },
+  "id": "85530",
+  "nombre": "REPARACION TENSOR ALUMINIO 123787 PICO ROJO",
+  "precio": 22757.62,
+  "rubro": "Acero",
+  "codigoFabrica": "F-123787 REP",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GALAXY",
+    "KA",
+    "KUGGA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Rz6hgwK80l2wceoopPPOwcUlrIOz0uGD",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.644Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b11"
+  },
+  "id": "85531",
+  "nombre": "ALTERNADOR A/A 8X70X25 MWM",
+  "precio": 18179.83,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=16_qR1UNIF9OqXnCOL5mO79QKWoEIodh4",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.689Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b12"
+  },
+  "id": "85532",
+  "nombre": "ALTERNADOR A/A 17X70X28 EMBUTIDA MWM",
+  "precio": 20525.11,
+  "rubro": "Chapa",
+  "codigoFabrica": 94722018,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-X9zsSiyW_M7sQVrzqrzurzgmm_aafTS",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.742Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b13"
+  },
+  "id": "85537",
+  "nombre": "ACCESORIO POLEA",
+  "precio": 13151.51,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ASTRA",
+    "MERIVA",
+    "ZAFIRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12OYjT35R4CPwzg6qHIUfTikhrbFU969W",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b14"
+  },
+  "id": "85562",
+  "nombre": "DISTRIBUCION FIJA MOTOR 1.4 Y 1.6 16V",
+  "precio": 22728.27,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-25150",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLASSIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1UgMjoI0HFtNDvr6cTm0moVfBdZRdRnLC",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.777Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b15"
+  },
+  "id": "85647",
+  "nombre": "POLEA FIJA MOTOR 1.6 - 2.0 16V",
+  "precio": 22728.27,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-25212",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLASSIC",
+    "VECTRA",
+    "ASTRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15jB26v55jHAKdpF_vNHmIHe-L8YYBE88",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.797Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b16"
+  },
+  "id": "85751",
+  "nombre": "DISTRIBUCION FIJO MOTOR 2.0 16V",
+  "precio": 17459.78,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-25213",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VECTRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.839Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b17"
+  },
+  "id": "85752",
+  "nombre": "ACCESORIOS 17X70X25            JOURNEY",
+  "precio": 9538.1,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X70X25",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "JOURNEY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1WbSlBYZkwBzAtkLPoJ7WcyJQ4nQiwlA9",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.878Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b18"
+  },
+  "id": "85753",
+  "nombre": "ACCESORIOS 17X70X25            JOURNEY",
+  "precio": 12002.88,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X70X25",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "JOURNEY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1T8S1R3hT4mqJms9pzX5BFJJmDWtefsZg",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.946Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b19"
+  },
+  "id": "85758",
+  "nombre": "DISTRIBUCION FIJO MOTOR 1.8  17X56X25/14",
+  "precio": 15430.66,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-04754",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "IDEA",
+    "STILO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1TOaBqaPxtbkFdFl_oEX41L2gKiDXFnyq",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:45.997Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b1a"
+  },
+  "id": "85759",
+  "nombre": "ALTERNADOR Y A/A  17X56X25/14",
+  "precio": 17888.37,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-04754",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLASSIC",
+    "ASTRA",
+    "ZAFIRA",
+    "MERIVA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1BNH31bFJCIHxUukvu2VlMRxH7BpQsIeF",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.054Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b1b"
+  },
+  "id": "85760",
+  "nombre": "DISTRIBUCION FIJO MOTOR 1.6-1.8 16V",
+  "precio": 16673.19,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-25152",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLASSIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18bj0oMvgWwu04xaNJ0TpQCE69YI0ZcLz",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.035Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b1c"
+  },
+  "id": "85761",
+  "nombre": "ALTERNADOR Y A/A 8X56X25",
+  "precio": 13320.01,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33031",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "AVEO",
+    "CORSA II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-SFVEtVP_-rN5Nu4xk-Ntcx5P7uRY2Zn",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.055Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b1d"
+  },
+  "id": "85762",
+  "nombre": "POLEA V ALTERNADOR 15X80X19",
+  "precio": 33286.4,
+  "rubro": "Acero",
+  "codigoFabrica": "15X80X19",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLASSIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=189g_lgH8hGBQMR2hrXMDGhRHMGbhGROY",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.076Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b1e"
+  },
+  "id": "85815",
+  "nombre": "POLY V 17X90X25",
+  "precio": 10678.53,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33034 VKM-33028",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1lDPdmOZyoBzILdccEYq-7Wn66totIVoi",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.167Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b1f"
+  },
+  "id": "85816",
+  "nombre": "POLY V    17X90X23  FORD-F100",
+  "precio": 11174.79,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X90X23",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.208Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b20"
+  },
+  "id": "85817",
+  "nombre": "ALTERNADOR     17X90X26",
+  "precio": 10678.49,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X90X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1AorsYzh83vPFVmgy_RHU6fsBR0RjB45g",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.236Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b21"
+  },
+  "id": "85823",
+  "nombre": "ALTERNADOR Y A/A MOTOR 1.3 - 1.6 - 1.3SPI",
+  "precio": 15087.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32005",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SIENA",
+    "PALIO",
+    "MAREA",
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17TS6MJIhcW4J-6yoNgXmPShdEBXHN0ZR",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.295Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b23"
+  },
+  "id": "85830",
+  "nombre": "ALTERNADOR MOTOR 1.6    20X80X27",
+  "precio": 12367.32,
+  "rubro": "Nylon",
+  "codigoFabrica": 631458,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TIPO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1KCN2aYvLziLmACOIvbIgaQaAHCC0Ka4w",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.286Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b24"
+  },
+  "id": "85832",
+  "nombre": 85832,
+  "precio": 15225.81,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1NmV5eZPiNg-tGnHcSDEvQf209MvfgpSo",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.304Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b25"
+  },
+  "id": "85890",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 16337.72,
+  "rubro": "Nylon",
+  "codigoFabrica": 337164,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18j3NeaDb45AhR8Z64jKlMYke97YqWQ4e",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.355Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b26"
+  },
+  "id": "85895",
+  "nombre": 85895,
+  "precio": 18599.88,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1WyTkmNfiYsYgDfPQV1x7HvDOEOsN5i2L",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.395Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b27"
+  },
+  "id": "86131",
+  "nombre": "DISTRIBUCION NAFTA",
+  "precio": 28717.96,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12101",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "REGGATA 85",
+    "UNO",
+    "147"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1CdGwG1aqt1j2FHfIgqTuU48IYYCNLMNA",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.436Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b28"
+  },
+  "id": "86241",
+  "nombre": "DISTRIBUCION DIESEL 1.9",
+  "precio": 30085.45,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-13244",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15F5DVeEO80igZ1ZySjbvG1BNo5oM4lmI",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b29"
+  },
+  "id": "86270",
+  "nombre": "ALTERNADOR AIRE 17X76X23",
+  "precio": 14995.45,
+  "rubro": "Chapa",
+  "codigoFabrica": "F-1004961",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA",
+    "COURIER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1loN8vy1EoMfLo0IQ8wlzwaIlV3TxMcob",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.493Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b2a"
+  },
+  "id": "86271",
+  "nombre": "ALTERNADOR AIRE 17X76X23",
+  "precio": 8098.57,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-35012 F-1004961",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA",
+    "COURIER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17zh_ypXzxY6U2nDQDvThDvTO1KB1x-5Q",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.500Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b2b"
+  },
+  "id": "86320",
+  "nombre": 86320,
+  "precio": 27431.08,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.557Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b2c"
+  },
+  "id": "86346",
+  "nombre": "ALTERNADOR AIRE  17X65X30 ( PARA SOP VKM-34702 )",
+  "precio": 11184.08,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-34702 REP",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "RANGER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12yWOIPxiOqDCvxl5quC0t7lXJB8OJrcu",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.615Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b2d"
+  },
+  "id": "86348",
+  "nombre": "ALTERNADOR AIRE  17X65X30 ( PARA SOP VKM-34702 )",
+  "precio": 9622.08,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-34702 REP",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "RANGER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1h_Zlb0rBQpvQxuAIoxRT1zKniWIoK0vC",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.662Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b2e"
+  },
+  "id": "86349",
+  "nombre": "DISTRIBUCION",
+  "precio": 13826.04,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-26211",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRAFIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b2f"
+  },
+  "id": "86350",
+  "nombre": "DISTRIBUCION",
+  "precio": 21722.7,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26211",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRAFIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=13tAlm7-In1V1uCEoxMtIx8wRzqC1qudv",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.706Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b30"
+  },
+  "id": "86351",
+  "nombre": "DISTRIBUCION",
+  "precio": 13563.97,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-26211",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TRAFIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1TUxFp7dYyLpUabWcenh1od0nnjWtRsRG",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.716Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b31"
+  },
+  "id": "86353",
+  "nombre": "ALTERNADOR 17X65X31",
+  "precio": 18419.39,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14HFIoGDE046Ga7wLLxlYebM51XYnteI7",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.802Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b32"
+  },
+  "id": "86453",
+  "nombre": "DISTRIBUCION",
+  "precio": 28717.96,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-22153",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 1.9"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1UHPBTFRUa_6JrwSw0i9brPQVYVOZFKBb",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.858Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b33"
+  },
+  "id": "86508",
+  "nombre": "DISTRIBUCION",
+  "precio": 54140.85,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-17405",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MAXXION"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1HS3OuZ0iBrfUNZI4t3XgoTNdcqM8nj36",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.870Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b34"
+  },
+  "id": "86550",
+  "nombre": "ALTERNADOR    F-100 17X90X28",
+  "precio": 11362.12,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X90X28",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1AwsvPJmGgBB_aVRUXZ85chzE_JQvKHsa",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.879Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b35"
+  },
+  "id": "86553",
+  "nombre": "BOMBA HIDRAULICA    17X60X18",
+  "precio": 9438.32,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X60X18",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=179u5jm8AN1Uou2cHJP7qM__GnZOGs9jw",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.899Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b36"
+  },
+  "id": "86554",
+  "nombre": "BOMBA HIDRAULICA    17X60X18",
+  "precio": 12831.22,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X60X18",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17sfnwIblB3cOtTI46WSH0CDIjEsRc-n7",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.919Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b37"
+  },
+  "id": "86555",
+  "nombre": "ALTERNADOR AIRE VARIOS",
+  "precio": 9590.55,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1HRyxx8IxSx3ciZLj8jVjGJ2PxxZ5_EHc",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:46.991Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b38"
+  },
+  "id": "86559",
+  "nombre": "ALTERNADOR AIRE VARIOS  17X60X22",
+  "precio": 12105.09,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X60X22",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1jlCKJZsK8z5VIbWLuXGKJtvJYfrjNBcb",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:47.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b39"
+  },
+  "id": "86561",
+  "nombre": "BOMBA HIDRAULICA    17X60X22",
+  "precio": 9438.32,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X60X22",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1SGoqfcKegJhC0qr0j_Qo3pfuVrTigjZc",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:47.136Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b3a"
+  },
+  "id": "86562",
+  "nombre": "ALTERNADOR AIRE  17X60X23",
+  "precio": 13056.58,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X60X23",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11y6h_sFl4jR3FmY6Zce_X-Dm6HkiFlS4",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:47.134Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b3b"
+  },
+  "id": "86564",
+  "nombre": "ALTERNADOR AIRE    10X65X30/45",
+  "precio": 17092.68,
+  "rubro": "Nylon",
+  "codigoFabrica": "10X65X30/14",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "RANGER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1jn71UUBrpUJ-o160F9b9NWu_J4e1ItUu",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:47.153Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b3c"
+  },
+  "id": "86566",
+  "nombre": "ALTERNADOR AIRE  17X90X30  MOT 4.9",
+  "precio": 12022.08,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X90X30",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1WO7es2Nxog4W5HHVylwnnnOISYZnV3kP",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:47.154Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b3d"
+  },
+  "id": "86568 T",
+  "nombre": "ALTERNADOR AIRE CON TAPITA 20X80X23",
+  "precio": 9568.56,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32009",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "PALIO",
+    "SIENA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-12-14T20:52:47.234Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b3e"
+  },
+  "id": "86570",
+  "nombre": "ALTERNADO AIRE   17X70X29   MOT ZETEC",
+  "precio": 10220.94,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X70X29",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ESCORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1FTHpOSiHJBqnw3grvZ9qdTZrUXM3tAhL",
+  "updatedAt": {
+    "$date": "2023-12-14T20:53:54.519Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b3f"
+  },
+  "id": "86571",
+  "nombre": "ALTERNADO AIRE   17X70X29   MOT ZETEC",
+  "precio": 12587.19,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X70X29",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ESCORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1cQDGRg9i6-5TXxkn8ZC3xp8grFz2nDi8",
+  "updatedAt": {
+    "$date": "2023-12-14T20:53:54.420Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b40"
+  },
+  "id": "86600",
+  "nombre": "ALTERNADOR AIRE  17X60X23",
+  "precio": 11130.19,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X60X23",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1NLMv43p4PBHovRYBLed2fue0Qx8EbLst",
+  "updatedAt": {
+    "$date": "2023-12-14T20:53:54.400Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b41"
+  },
+  "id": "86668",
+  "nombre": "ALTERNADOR AIRE  ( DOBLE RUL) 10X100X29",
+  "precio": 40797.16,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32007",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1V3RIrCPMWHeOZ_2_pptGAgL_pr77Ybij",
+  "updatedAt": {
+    "$date": "2023-12-14T20:53:54.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b42"
+  },
+  "id": "86900",
+  "nombre": "DISTRIBUCION",
+  "precio": 19636,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-11000",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ESCORTORION",
+    "SENDA",
+    "PÓLO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1yRHQK-BU3aJ_U2T3R7IS8ObPjC8miKNK",
+  "updatedAt": {
+    "$date": "2023-12-14T20:53:54.439Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b43"
+  },
+  "id": "86912",
+  "nombre": "DISTRIBUCION",
+  "precio": 20829.76,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-11010",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SENDA",
+    "PÓLO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1aIaAI5ynzAJfjSEIIWrGHpf-QAFH20YX",
+  "updatedAt": {
+    "$date": "2023-12-14T20:53:54.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b44"
+  },
+  "id": "86915",
+  "nombre": "DISTRIBUCION 1.6  10X64X29",
+  "precio": 18285.42,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-80000",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "AVEO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1b6P03KIr6LKQ7buTPpoy8iyLKtmuMKhp",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b45"
+  },
+  "id": "87010",
+  "nombre": "POLEA COMPRESOR M. BENZ 1620/22 (564583)",
+  "precio": 30776.82,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-04897",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "1622.162"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=19rG6n2EoLKDPlqoXgl70YnLY_c9eG0kn",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b46"
+  },
+  "id": "87040-N",
+  "nombre": "DISTRIBUCION 25X67X34 NYLON DUCATO 2,8 - 2,5",
+  "precio": 24114.38,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-12380 636403",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17-Pq1n2OyAHaWYh7SvfYuaLUoF8WbrXz",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b47"
+  },
+  "id": "87040",
+  "nombre": "DISTRIBUCION   25X67X34",
+  "precio": 26661.36,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12380 636403",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17-Pq1n2OyAHaWYh7SvfYuaLUoF8WbrXz",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b48"
+  },
+  "id": "87098",
+  "nombre": "DISTRIBUCION  MOT 1.7",
+  "precio": 28717.89,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-22151",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17KuVYenWlXCi9PX95L4MWRcV2F9nq1rW",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b49"
+  },
+  "id": "87196",
+  "nombre": "ALTERNADOR NEON   17X70X19 VARIOS",
+  "precio": 10044.28,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X70X19",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1zr5Ed9CPVB3rmemWza-9mcKLEAm2uJdG",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b4a"
+  },
+  "id": "87197",
+  "nombre": "ALTERNADOR NEON   17X70X19 VARIOS",
+  "precio": 12377.57,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X70X19",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1GcMpkprTVUcS4iek6kjXQ63vLSHiTkbS",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b4b"
+  },
+  "id": "87320",
+  "nombre": "DISTRIBUCION  25X70X28",
+  "precio": 19299.33,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-12012",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIAT 125 "
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1itsIOFeYqH6AWcDibGRTdDZ0cWuQ8C6M",
+  "updatedAt": {
+    "$date": "2023-11-30T17:41:22.251Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b4c"
+  },
+  "id": "87335",
+  "nombre": "DISTRIBUCION 25X60X27",
+  "precio": 19299.33,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-12100",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b4d"
+  },
+  "id": "87530",
+  "nombre": "DISTRIBUCION  25X70X28",
+  "precio": 26102.19,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12012",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SCENIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10EZDzSMVmNSdBI99qIpFU4-Kacuxh0ex",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b4e"
+  },
+  "id": "87581",
+  "nombre": "ALTERNADOR/ A.ACONDICIONADO   8X65X23",
+  "precio": 14970.09,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32031",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GRAND SIENA 1.4 8V",
+    "FIORINO 1.4 8V",
+    "IDEA 1.4 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1nGY7f0MmP5JsiBykKuHsZiBoGiihGENL",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b4f"
+  },
+  "id": "87582",
+  "nombre": "ALTERNADOR 17X65X23",
+  "precio": 7545.6,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32023",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "PALIO",
+    "SIENA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10Z6U-mXX9S2Y9lssWlGm60G18drdNs55",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b50"
+  },
+  "id": "87590",
+  "nombre": "10X60X26",
+  "precio": 15660.37,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-4pbPTlsGixY77s1Y9KiY0dMCiDWN6gF",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b51"
+  },
+  "id": "87592",
+  "nombre": "10X65X26",
+  "precio": 15900.76,
+  "rubro": "Chapa",
+  "codigoFabrica": "F-122332",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11yhUjn1qKxr-nun8K-6bM49Bmgu-8Wpl",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b52"
+  },
+  "id": "87583",
+  "nombre": "ALTERNADOR 17X65X23",
+  "precio": 12831.22,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X65X23",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO",
+    "SIENA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1QwDllQu4J5Ft9r4yFbJL_WSFBZ2UPEBx",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b53"
+  },
+  "id": "87584",
+  "nombre": "ALTERNADOR  17X65X24",
+  "precio": 12587.19,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-34219",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BORA",
+    "VENTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1L7GfCrEWtrDH9kty5XyXykotFgqza0uB",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b54"
+  },
+  "id": "87585",
+  "nombre": "ALTERNADOR AIRE   17X65X22",
+  "precio": 10888.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X65X22",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BORA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1S95qC1cA8xsfAq84wETwCK7HLN476uvp",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b55"
+  },
+  "id": "87593",
+  "nombre": "ALTERNADOR AIRE     10X65X26",
+  "precio": 15195.86,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-33037",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1HScde32Xz_7F7qKK45P_fp65At7YnDqd",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b56"
+  },
+  "id": "87610",
+  "nombre": "ALTERNADOR AIRE 17X65X24",
+  "precio": 12775.87,
+  "rubro": "Chapa",
+  "codigoFabrica": "17X65X24",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BORA",
+    "FOX"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1DTNU4rU4m-P8Peqf8BXLIwiHx616OYqo",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b57"
+  },
+  "id": "87625",
+  "nombre": "ALTERNADOR AIRE  17X65X29  ( 156) 17X65X29",
+  "precio": 12553.89,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-32026 17X65X29",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1qGa9x1AlYm-WPm7U5-0TTqulyHQeuc41",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b58"
+  },
+  "id": "87626",
+  "nombre": "ALTERNADOR AIRE  17X65X29  ( 156) 17X65X29",
+  "precio": 14513.58,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-32026 17X65X29",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1gD6Gu6RsDEBMrfVBBhcVy46hM-Ic8tYp",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b59"
+  },
+  "id": "87655",
+  "nombre": "ALTERNADOR   17X60X29  MOT ZETEC 1.8",
+  "precio": 13853.1,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-04781",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1gJen8YlRcJy__H8zQq0eeN_-tmr2IY8V",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b5a"
+  },
+  "id": "87656",
+  "nombre": "ALTERNADOR   17X60X29  MOT ZETEC 1.8",
+  "precio": 9856.87,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-04781",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1u-4OP5nrPnUzsS7OpPQ4P7O0501uAjUe",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b5b"
+  },
+  "id": "87657",
+  "nombre": "ALTERNADOR   17X60X29  MOT ZETEC 1.8",
+  "precio": 13853.1,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-04781",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1IUaCyvx_wX4RGt_GBLfC4Al3IwrO9LFc",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b5c"
+  },
+  "id": "87700",
+  "nombre": "ALTERNADOR AIRE MOT TDCI",
+  "precio": 10181.07,
+  "rubro": "Nylon",
+  "codigoFabrica": "F-230025",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b5d"
+  },
+  "id": "87749",
+  "nombre": "ALTERNADOR POLEA V ROSCA 8MM",
+  "precio": 19152.66,
+  "rubro": "Chapa",
+  "codigoFabrica": 1270001,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "505"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10kCpkcxCi1i-gSC6lykPF9i5c7pAMCK0",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b5e"
+  },
+  "id": "87750",
+  "nombre": "ALTERNADOR POLEA V ROSCA 10,00MM",
+  "precio": 19152.66,
+  "rubro": "Chapa",
+  "codigoFabrica": 1270002,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "504"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11RKyUUy1E4RHsiqGdAcyQPllJLY5IJ1U",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b5f"
+  },
+  "id": "87765",
+  "nombre": "ALTERNADOR AIRE   17X70X28",
+  "precio": 10514.88,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X70X28",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JADwqS3rNcgfxOacLEtXC-njQDdmlENz",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b60"
+  },
+  "id": "87770",
+  "nombre": "ALTERNADOR AIRE",
+  "precio": 14368.11,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23241",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 1.9"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Pv_KvnWWfPEoZhbutmFvtuJmJ2sPaxXT",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b61"
+  },
+  "id": "87785",
+  "nombre": "ALTERNADOR AIRE  17X76X23",
+  "precio": 15457.67,
+  "rubro": "Chapa",
+  "codigoFabrica": "F-1004961",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "COURIER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11C9LL9GCKRm2ppCKaWOEvz3D794pfivM",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b62"
+  },
+  "id": "87788",
+  "nombre": "ALTERNADOR AIRE  17X76X26",
+  "precio": 8098.38,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-60014",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "LAGUNA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1EG1QZDb90kA97WfqlBmFp-zE8SXdXgpc",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b64"
+  },
+  "id": "87789-8",
+  "nombre": "ALTERNADOR AIRE MOT 1,6 1,8      8X76X26",
+  "precio": 14613.44,
+  "rubro": "Chapa",
+  "codigoFabrica": "8X76X26",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "FOX",
+    "PASSAT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1AC9IJdA-MD3HLyB-2E8X38UEZGZvIwDM",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b67"
+  },
+  "id": "87795",
+  "nombre": "ALTERNADOR AIRE  17X77X26",
+  "precio": 9896.33,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X77X26",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SPRINTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Jkz-WS7kf5tH2nPQ8yA8VvjXDc9Aj9zf",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b68"
+  },
+  "id": "87905",
+  "nombre": "DISTRIBUCION   10X60X30 DOBLE RUL",
+  "precio": 21385.51,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-33100 F-123906",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPERT",
+    "BERLINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1hdBhncLdgmQFEVKfAiFH3xSHGpg8BYiy",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b69"
+  },
+  "id": "87909",
+  "nombre": "DISTRIBUCION FIJAO MIT L200 2,5 DIESEL",
+  "precio": 31525.8,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-85156",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "L200"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ib0ucVmLdDJmbqmiacsifol9XY303v4a",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b6a"
+  },
+  "id": "87910",
+  "nombre": 87910,
+  "precio": 22995.04,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b6b"
+  },
+  "id": "87911",
+  "nombre": "ALTERNADOR AIRE   17X50X32",
+  "precio": 14480.85,
+  "rubro": "Acero",
+  "codigoFabrica": "17X50X32",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1B-ieUISvAsyqummMw92zHCZBhaG9v-b_",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b6c"
+  },
+  "id": "87912",
+  "nombre": "ALTERNADOR AIRE  17X70X25",
+  "precio": 10582.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11B5H5ttyYOLlVIhw2tYIifM7ChNdGKnV",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b6d"
+  },
+  "id": "87918",
+  "nombre": "04C145299B      REPUESTO- POLO MSI - UP 1.0",
+  "precio": 29275.29,
+  "rubro": "Nylon",
+  "codigoFabrica": "04C145299B REPUESTO",
+  "tipoModificacion": "A",
+  "marca": "",
+  "modelos": [
+    "UP",
+    "POLO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1jm6SendSPq58gJZdpZue7SlcJNDwytLa",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b6e"
+  },
+  "id": "88000",
+  "nombre": 88000,
+  "precio": 14355.75,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d4f6ee3a8fd94a429b6f"
+  },
+  "id": "88031",
+  "nombre": "ALTERNADOR AIRE  17X90X29",
+  "precio": 11713.82,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-04766",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1c5lrfquEy087-rlytbghh7ptciZ-eQ2C",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43400b"
+  },
+  "id": "88032",
+  "nombre": "ALTERNADOR AIRE  17X90X29",
+  "precio": 11269.91,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-04766",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "F100",
+    "RANGERFOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=10f9QSRVQ3UqBelerUk6VNQISKPMdwP2v",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43400c"
+  },
+  "id": "88033",
+  "nombre": "ALTERNADOR MULTICANAL",
+  "precio": 13745.02,
+  "rubro": "Nylon",
+  "codigoFabrica": 377145299,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15tp8NgdVHzKu0HgLC2T32QDFCDecX9h-",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43400d"
+  },
+  "id": "88054",
+  "nombre": "DISTRIBUCION  25X60X27",
+  "precio": 21359.88,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-12100",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIAT 128"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1KDLOyMSIBrfX_-JigTJnmWVJxinFZA-J",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43400e"
+  },
+  "id": "88057",
+  "nombre": "DISTRIBUCION  25X60X29 EUROPA",
+  "precio": 21359.88,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-12100 633272",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "128 EUROPA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1UGoWwrXb3LT0ouLTIiITvguUWqoBwdmk",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43400f"
+  },
+  "id": "91010",
+  "nombre": "ALTERNADOR / AIRE   8X70X25    BMW",
+  "precio": 16429.98,
+  "rubro": "Nylon",
+  "codigoFabrica": "8X70X25",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SANTANA",
+    "SAVEIRO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1tEPbA5Ty85Odw3T-E1UXL8knDwp0Riyi",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434010"
+  },
+  "id": "93562",
+  "nombre": "DISTRIBUCION REGATTA  MOT 2.0 AGUJERO 10MM",
+  "precio": 28717.96,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12005",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "REGGATA 100"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1U09fqDosrJXod5d4YbfwNhO3Ok4GVnDO",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434011"
+  },
+  "id": "97792",
+  "nombre": "POLY V   17X76X21",
+  "precio": 11899.99,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X76X21",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PASSAT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-_U8wwiETfhvfvOLO417g-sMEBTk3MH8",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434012"
+  },
+  "id": "97793",
+  "nombre": "ALTERNADOR AIRE  17X76X31 EMBUTIDA",
+  "precio": 13860.92,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM- 34111  302-145299",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "RANGER",
+    "FOCUS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-lEosNlYDUKy6_BMsciJp9Rd6GcDbZiS",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434013"
+  },
+  "id": "97795",
+  "nombre": "ALTERNADOR AIRE  17X76X24  MOT 1.4",
+  "precio": 12986.57,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GOL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=180BUEAbTDeT5E4AlhVnDdNRNnG_ocKsg",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434014"
+  },
+  "id": "97796",
+  "nombre": "ALTERNADOR AIRE  17X76X24  MOT 1.4",
+  "precio": 10866.73,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GOL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1VrEVbt_81eqD-vych-fObzdDdua70K54",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434019"
+  },
+  "id": "97800",
+  "nombre": "DISTRIBUCION  25X60X27",
+  "precio": 25472.11,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12100",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1TpzPyI6HDAWCKDdyv5xNiXAQpHtJG1XN",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43401a"
+  },
+  "id": "97801",
+  "nombre": "VARIOS",
+  "precio": 9635.2,
+  "rubro": "Varios",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43401b"
+  },
+  "id": "97802",
+  "nombre": "ALTERNADOR AIRE MOT 3.0     10X70X32 EMBUTIDA",
+  "precio": 47271.44,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-61025",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "HILUX 3.0"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43401c"
+  },
+  "id": "97810",
+  "nombre": "DISTRIBUCION  25X56X29  SUPER EUROPA",
+  "precio": 25472.11,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12003",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1FLNpXs5z3ToBQw91Y0qHm3EpzxcCczTi",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43401d"
+  },
+  "id": "97820",
+  "nombre": "DISTRIBUCION  25X60X29",
+  "precio": 25472.11,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-12100 633272",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "128 EUROPA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1OX1FFKaw4QBAUJSof9Bgzhp0nULGOMQC",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43401e"
+  },
+  "id": "97825",
+  "nombre": "ALTERNADOR AIRE   17X61X25",
+  "precio": 11619.69,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1HevMyJXHDU37mqWUMeCfulivFlsN1gd_",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43401f"
+  },
+  "id": "97830",
+  "nombre": "ALTERNADOR AIRE  17X63X22  ( PARA SOP 35260 )",
+  "precio": 12448.26,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-35260",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SONIC",
+    "TRACKER",
+    "CRUZE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ZuC1NwWkssY2DqhO_FqufUzE4_8Ugbuf",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434020"
+  },
+  "id": "97842",
+  "nombre": "ALTERNADOR  10X65X26  VARIOS",
+  "precio": 11613.94,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VARIOS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1QsVeq-PHG1Fomm9nPRR3_EK0M3iOtRO8",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434021"
+  },
+  "id": "97850",
+  "nombre": "ALTERNADOR / AIRE ACIONDICIONADO 1.6 EMBUTIDA",
+  "precio": 12472.65,
+  "rubro": "Chapa",
+  "codigoFabrica": "VKM-34034",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KA",
+    "MONDEO",
+    "FIESTA",
+    "ECOSPORT"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1TdlDlvXSl5xLF4ucpgBys4s40Xy6_IkD",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434022"
+  },
+  "id": "85468-2",
+  "nombre": "DISTRIBUCION POLEA FIJA (ENGRANAJE) DOBLE RODAMIENTO",
+  "precio": 32189.67,
+  "rubro": "Acero",
+  "codigoFabrica": "VKM-26125",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1S2sWp-dzW-3QWJ4KL4OoD9UFhKn8a9DM",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434023"
+  },
+  "id": "70000",
+  "nombre": "DISTRIBUCION DIESEL 1.9                    EVA    SIN DTO",
+  "precio": 15.83,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-11014",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CADDY",
+    "PÓLO",
+    "GOLF",
+    "SURAN318"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1SeEHqQiXIZkPms1tMCFICH3EJk6TDiOp",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434024"
+  },
+  "id": "70100",
+  "nombre": "DISTRIBUCION MOT 1.6 Y 1.0                 EVA    SIN DTO",
+  "precio": 14.85,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-11106",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOX",
+    "CROSS FOX",
+    "GOL",
+    "VOYAGE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14NLIragZXETYayU_InHniXR8GaS9D4jV",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434025"
+  },
+  "id": "70200",
+  "nombre": "ALTERNADOR DIESEL 1.9               EVA     SIN DTO",
+  "precio": 44,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "028-260299",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CADDY",
+    "SAVEIRO",
+    "CADDY"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1D2mk7EBnYZ5FS8uGQUOMEKz6HQXT2IOj",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434026"
+  },
+  "id": "70300",
+  "nombre": "ALTERNADOR  MOTOR 1.6 1.8                EVA      SIN DTO",
+  "precio": 2,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "377-260299",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GOL",
+    "GOLF",
+    "SANTANA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434027"
+  },
+  "id": "71000",
+  "nombre": "DISTRIBUCION MOT 1.4            EVA      SIN DTO",
+  "precio": 13.7,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-15121",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "AGILE",
+    "CELTA",
+    "CLASSIC",
+    "CORSA 8V",
+    "PRISMA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1674Wz_BZExv5vKmRtmK1ksT9oxvX_iDz",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434028"
+  },
+  "id": "71500",
+  "nombre": "DISTRIBUCION MOT 1.8                  EVA        SIN DTO",
+  "precio": 11.3,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-15402",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA 8V",
+    "MERIVA",
+    "VECTRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PrT5EFmo8oPGwIWrXsqidmQ1pECEeKVP",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434029"
+  },
+  "id": "71600",
+  "nombre": "DISTRIBUCION MOT 2.0 16V                 EVA      SIN DTO",
+  "precio": 17.79,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-16550",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "DUSTER",
+    "FLUENCE",
+    "SANDERO",
+    "MEGANE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Cxc3WbPdtiMcPzHpPvwztQIpDbb-yKr3",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43402a"
+  },
+  "id": "71700",
+  "nombre": "ALTERNADOR MOY 1.6 16V               EVA       SIN DTO",
+  "precio": 22,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-36020",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO",
+    "LOGAN",
+    "MEGANE",
+    "SANDERO",
+    "SCENIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1fbiw_65BYTmcCvqzvYTWUuXikTlv74bS",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43402b"
+  },
+  "id": "80100",
+  "nombre": "DISTRIBUCION                    EVA       SIN DTO",
+  "precio": 11.4,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-14100",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA",
+    "COURIER",
+    "MONDEO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1GZXvVe7Wf3CWWmoXyPL2aduqpVl0zmYZ",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43402c"
+  },
+  "id": "80200",
+  "nombre": "DISTRIBUCION  DESDE 1998                  EVA      SIN DTO",
+  "precio": 12,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "VKM-14105",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIESTA",
+    "COURIER",
+    "MONDEO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1S301xadLh2S0VvOnKA29BE3bOLvBP100",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43402d"
+  },
+  "id": "91100",
+  "nombre": "ALTERNADOR CON SOP                 EVA       SIN DTO",
+  "precio": 18.4,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 90500229,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ASTRA",
+    "CORSA 8V",
+    "VECTRA",
+    "ZAFIRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=16im4jTxXYppcdbA5MJcYca89Hf-7XEyy",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43402e"
+  },
+  "id": "91120",
+  "nombre": "RUEDA TRASERA            EVA       SIN DTO",
+  "precio": 26.67,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "TGB 12095",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPRESS",
+    "SCENIC",
+    "KANGOO",
+    "21"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1FdI6lLm9qwFbUQ1RDYnN5mGS_FxOyG_7",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43402f"
+  },
+  "id": "91150",
+  "nombre": "RUEDA TRASERA ( ABS) ( 44 DIENTES )                   EVA    SIN DTO",
+  "precio": 28,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "TGB 12095 S49",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SCENIC"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1cX6tMLMw0aKMq-fa0yzGzq4kE6ZYNykq",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434030"
+  },
+  "id": "91200",
+  "nombre": "RUEDA DELANTERA ( ABS )                EVA       SIN DTO",
+  "precio": 13.74,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "XGB 41140",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SANDERO",
+    "LOGAN",
+    "MEGANE",
+    "SYMBOL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1DumatVBH9g5fPDJGoMnKy1SwPJs6UFHh",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434031"
+  },
+  "id": "91300",
+  "nombre": "RUEDA DELANTERA CON MAZA Y ABS            EVA    SIN DTO",
+  "precio": 42,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 447318,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SANTANA",
+    "SAVEIRO",
+    "SENDA",
+    "VENTO",
+    "GOL 1.9D",
+    "GOL 1.9D"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1fmUctHDcA-6pvNBwNzq9mZbe9Gn9h02g",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434032"
+  },
+  "id": "91350",
+  "nombre": "RUEDA TRASERA            EVA       SIN DTO",
+  "precio": 8.4,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 633457,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FUEGO",
+    "SANTANA",
+    "SAVEIRO",
+    "320",
+    "323",
+    "TRANSPORTER",
+    "GOL 1.9D"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1lgmeqhKy2tBEw7PA5vM7KnLnXbRIziJG",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434033"
+  },
+  "id": "91360",
+  "nombre": "RUEDA TRASERA            EVA       SIN DTO",
+  "precio": 20.33,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 801191,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SURAN",
+    "FOX",
+    "PÓLO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18V1S0dxv4Y5BUBqRAjPtPJdYVFwyXBkf",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434034"
+  },
+  "id": "91370",
+  "nombre": "RUEDA TRASERA CON MAZA       EVA     SIN DTO",
+  "precio": 21,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "BAF 4104",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BORA",
+    "NEW BEETLE",
+    "GOLF"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=177m1CV01EM4k11IJOrKtphnKSh51okRF",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434035"
+  },
+  "id": "91400",
+  "nombre": "RUEDA DELANTERA CON ABS             EVA       SIN DTO",
+  "precio": 22.56,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "2HO 407627",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "AMAROK"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Hi6JdcFWjevV-jkUQw0Y9_OB5x1YFl1x",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434036"
+  },
+  "id": "91390",
+  "nombre": "RUEDA TRASERA CON ABS                  EVA      SIN DTO",
+  "precio": 33.85,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": "BAF 0058",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CADDY",
+    "PÓLO",
+    "SAVEIRO",
+    "VOYAGE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Y0YL2Z_N5fr3uAgio3nVi8vgVSvjQTQB",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434037"
+  },
+  "id": "91380",
+  "nombre": "RUEDA DELANTERA                  EVA      SIN DTO",
+  "precio": 10.43,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 801136,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BORA",
+    "GOLF",
+    "NEW BEETLE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1gA6TQEWllmX2Cv8H8445yvEv55sH5mcK",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434038"
+  },
+  "id": "96000",
+  "nombre": "RUEDA DELANTERA                  EVA      SIN DTO",
+  "precio": 7.75,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 633295,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "UNO",
+    "DUNA",
+    "PALIO",
+    "SIENA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1r1BIoA9qdmjRIZnYdGLYy347rMkyEPzT",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434039"
+  },
+  "id": "96200",
+  "nombre": "RUEDA DELANTERA                  EVA      SIN DTO",
+  "precio": 8.65,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 309692,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL",
+    "SENDA",
+    "SENDA",
+    "FOX"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-MEUZk4wY0gsPqzqh1vXfggrjgVUAOgM",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43403a"
+  },
+  "id": "96250",
+  "nombre": "RUEDA DELANTERA                  EVA    SIN DTO",
+  "precio": 8.35,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 311396,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SURAN",
+    "GOL",
+    "VOYAGE",
+    "FOX",
+    "FIESTA",
+    "205"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1QXF8Jkfd7hH6Jyji4X2l6xxKRjflt2hY",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43403b"
+  },
+  "id": "96260",
+  "nombre": "RUEDA TRASERA                       EVA       SIN DTO",
+  "precio": 6.66,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 12025,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIRE 1.3",
+    "DUCATO 2.5",
+    "19",
+    "CLIO",
+    "LOGAN",
+    "124"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kuf-AhMQntwR-nueCpIOKekrniTerUS5",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43403c"
+  },
+  "id": "96270",
+  "nombre": "RUEDA DELANTERA                  EVA      SIN DTO",
+  "precio": 7.98,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 12033,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIRE 1.3",
+    "DUCATO 2.5",
+    "CLIO",
+    "TWINGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1H0giNIhNZlKb5DLUG7KkKVUI-nbjbeLz",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43403d"
+  },
+  "id": "96280",
+  "nombre": "RUEDA DELANTERA                  EVA      SIN DTO",
+  "precio": 8.9,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 12258,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIRE 1.3",
+    "DUCATO 2.5",
+    "CLIO",
+    "EXPRESS",
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-SlQ4rFPvl9zVCeRRsFRSAOpW8bePXmc",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43403e"
+  },
+  "id": "96290",
+  "nombre": "RUEDA DELANTERA                  EVA      SIN DTO",
+  "precio": 15.4,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 10872,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "21",
+    "FUEGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1ClY2Hz080xz4bOyJ--OUOH5omcUjBGQd",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434040"
+  },
+  "id": "96310",
+  "nombre": "RUEDA DELANTERA                  EVA     SIN DTO",
+  "precio": 8.49,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 110487,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "AGILE",
+    "ASTRA",
+    "VECTRA",
+    "PRISMA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=13TwtYlWKhqmQYZs7tlx9bY2rRO19DDuc",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434041"
+  },
+  "id": "96350",
+  "nombre": "RUEDA DELANTERA                  EVA       SIN DTO",
+  "precio": 8.5,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 803775,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA II",
+    "MERIVA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Is65zAe_z-sovTKeU7yrF00RqyDGGDMw",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434042"
+  },
+  "id": "96360",
+  "nombre": "RUEDA TRASERA            EVA     SIN DTO",
+  "precio": 7.98,
+  "rubro": "Rodamientos de Ruedas",
+  "codigoFabrica": 801023,
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "ECOSPORT",
+    "FOCUS",
+    "FIESTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1VI6G611-6oSaf7tmP58k9kGzayvHBycG",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434043"
+  },
+  "id": "99005",
+  "nombre": "POLEA SCANIA 8 VIAS   17X65X29     MULTICANAL",
+  "precio": 22663.56,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=19azeX4nT7VmvwTn5PeJK0IbDlnECoMfw",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434044"
+  },
+  "id": "99010",
+  "nombre": "POLEA ALTERNADOR SCANIA 20X74X32  MULTICANAL",
+  "precio": 38889.37,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=19F6DoF7_QSKq2fuBZ7hTv0aR0VItMhxv",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434045"
+  },
+  "id": "10150",
+  "nombre": "KITS FOSTERS F-02152   MOT 1.7 DISTRIBUCION",
+  "precio": 71473.43,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02152-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA 1.7 DIESEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=19ftEXWaeQXoh93oWX0NzzuQA_LkGgwco",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434046"
+  },
+  "id": "10160",
+  "nombre": "KITS FOSTERS F-02412  MOT 1.3 MPI DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02412-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FIRE 1.3"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1JN2JvZF1NclBiIdyJRzW7OABM2wWnMeG",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434047"
+  },
+  "id": "10170",
+  "nombre": "KITS FOSTERS F-02410 MOT 1.4 1.6 TIPO DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02410-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TIPO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1NgrCj_Tb_742r2KJOkZsnmD27oJJXJnq",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434048"
+  },
+  "id": "10300",
+  "nombre": "KITS FOSTERS F-02168  DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02168-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1RHbQ9dNWiTqc9QwqqqA-vBgfgC9kibe6",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434049"
+  },
+  "id": "10400",
+  "nombre": "KITS FOSTERS  F-02300  MOT 2.3 DISTRIBUCION",
+  "precio": 45929.35,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "TAUNUS 2.3 NAFTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12nENGGbIPStPE2WPptIzqoAD5DtYhQZd",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43404a"
+  },
+  "id": "10410",
+  "nombre": "KITS FOSTERS F-01600  MOT 1.6 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SIERRA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1EJ9J2MlXcMI1_OnzJwJ5XzRAJfp-Z3b4",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43404b"
+  },
+  "id": "10010",
+  "nombre": "KITS FOSTERS F-05012 DISTRIBUCION",
+  "precio": 44930.93,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-05012-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA II",
+    "MERIVA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1t60lAQQZS-A-gmC0LCaIezMf-Dbt2joL",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43404c"
+  },
+  "id": "10015",
+  "nombre": "KITS FOSTERS DISTRIBUCION MOT 1.6-1.4 NAFTA DISTRIBUCION",
+  "precio": 43266.87,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-05121-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA II",
+    "CORSA 8V",
+    "CELTA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43404d"
+  },
+  "id": "10060",
+  "nombre": "KITS FOSTERS DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02386",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.8",
+    "MASTER 2.8"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12q4KUCIT7Mpxm145zAFOqe58O5I_nEwl",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43404e"
+  },
+  "id": "10070",
+  "nombre": "KITS FOSTERS DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02383",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 2.5",
+    "MASTER 2.5"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-EhblGUIOXdq4bA7PyhSmlmEs45Uo6ce",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43404f"
+  },
+  "id": "10250",
+  "nombre": "KITS FOSTERS F-6101  MOTOR 1.8 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6101",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1g3XDvtm4F2Z7-TIY71a9V2dhKCrVAF3T",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434050"
+  },
+  "id": "10260",
+  "nombre": "KITS FOSTERS F-6126 MOT 1.9 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6126",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=15O3481mCA5fB6cBwchk-jauoKEfZctRg",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434051"
+  },
+  "id": "10265",
+  "nombre": "KITS FOSTERS F-6116 MOT 1.9 F8Q 10/96 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6116",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "EXPRESS"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=11vcOwEb2t_RJxP3XLSZXb9HunfjS4HnY",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434052"
+  },
+  "id": "10270",
+  "nombre": "KITS FOSTERS F-6201 MOT 2.0 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6201",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "21",
+    "FUEGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1QLM9ONw4_q-EwN-4nlRTkBPd4mtAUaaO",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434053"
+  },
+  "id": "10280",
+  "nombre": "KITS FOSTERS F-2200 MOT 2.2 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6203",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUNA",
+    "21",
+    "FUEGO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1IMnrobzn71Cl8P_CKzdJyt1sd2O5UbH8",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434054"
+  },
+  "id": "10285",
+  "nombre": "KITS FOSTERS F-6415 MOTOR ENERGY 1.4 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6415",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1dHioIwynCn9Fw9k63X1C4H-WAQa0whkB",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434055"
+  },
+  "id": "10290",
+  "nombre": "KITS FOSTERS F-6003  MOT 1.4 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6003",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO",
+    "KANGOO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1SR0lVumL3D8B3xPNlcOqCb74E393ef4D",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434056"
+  },
+  "id": "10298",
+  "nombre": "KITS FOSTERS F-6124   DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6124",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1xrtbnqxP0u4xkQAn3_OWpHklbaysfly5",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434057"
+  },
+  "id": "10295",
+  "nombre": "KITS FOSTERS F-6114 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-6114",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "19"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=14I-xwJ5B3ZjuvWE9EofGi446-APGzBnO",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434058"
+  },
+  "id": "10060",
+  "nombre": "KITS FOSTERS F-23866 MOT 2.8 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02386-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MASTER II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=12q4KUCIT7Mpxm145zAFOqe58O5I_nEwl",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434059"
+  },
+  "id": "10070",
+  "nombre": "KITS FOSTERS F-23863  MOT 2.5 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02383-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MASTER II"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1-EhblGUIOXdq4bA7PyhSmlmEs45Uo6ce",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43405a"
+  },
+  "id": "10080",
+  "nombre": "KITS FOSTERS F-23863  MOT 2.5 DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-02383-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BOXER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Mb5loVYMtlvRpIUuQaNegFgC56cuh7kr",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43405b"
+  },
+  "id": "10450",
+  "nombre": "KITS FOSTERS F-1000   NAFTA DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-01000-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1V6RWhG7c4QhskrMgsK5rlj0FM6dWPj4j",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43405c"
+  },
+  "id": "10460",
+  "nombre": "KITS FOSTERS F-1010  DIESEL DISTRIBUCION",
+  "precio": 39106.54,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-01010-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=17UF6Oz4Tm6De8u6NL5moAS9a5NfwSqAe",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43405d"
+  },
+  "id": "10220",
+  "nombre": "KITS FOSTERS F-1011  DIESEL DISTRIBUCION",
+  "precio": 53584.31,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-01011-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "GOLF"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1MnIwQZoPZUG30mHKLlb04NYI26tnpK16",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43405e"
+  },
+  "id": "10230",
+  "nombre": "KITS FOSTERS F-1013  MOT 1.9 DISTRIBUCION",
+  "precio": 63236.08,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-01013-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SAVEIRO",
+    "POLO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1j1tQZYmt3zRFRkdTLgmISWK0mMCNmQvq",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43405f"
+  },
+  "id": "10240",
+  "nombre": "KITS FOSTERS F-1106 FOX DISTRIBUCION",
+  "precio": 54915.53,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-01106-A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FOX"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1GO6Eu6kDfY3_AXY8JV1hAB9PXkuidNzV",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434060"
+  },
+  "id": "11000",
+  "nombre": "KITS FOSTERS F-32000 A1  MOT 1.4  1.3 8V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-32000 A1",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SIENA",
+    "PALIO",
+    "UNO",
+    "FIORINO",
+    "STRADA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Fz78njE9cr9dFybqSXjbGspvO4T8-SAT",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434061"
+  },
+  "id": "11100",
+  "nombre": "KITS FOSTERS F-32001 A1 MOT 1.4 1.3  8V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-32001 A1",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SIENA",
+    "PALIO",
+    "UNO",
+    "FIORINO",
+    "STRADA"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1IQxaNv3S35V_fLXxX50QK8J-a-rFx3K7",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434062"
+  },
+  "id": "12000",
+  "nombre": "KITS FOSTERS F-32002 A1 MOT 1.3 16V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-32002 A1",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "PALIO",
+    "SIENA",
+    "FIRE 1.3"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1jNj8woW2sx9L7uL06H3hPwr3r3XsAdkq",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434063"
+  },
+  "id": "11300",
+  "nombre": "KITS FOSTERS F-35002 A  MOT 1.6 8V  16V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-35002 A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1By5aLkHUu6VVB9j2oMFOhChlBVYim4a3",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434064"
+  },
+  "id": "11400",
+  "nombre": "KITS FOSTERS F-35002 A1  MOT 1.6 8V 16V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-35002 A1",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CORSA 8V"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1UBSLgIWz05EMcqlRNBRxGMwtsLy5qWMn",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434065"
+  },
+  "id": "11600",
+  "nombre": "KITS FOSTERS F-36200 A  MOT 1.6 8V 16 V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-36200 A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "KANGOO",
+    "SANDERO",
+    "LOGAN",
+    "SCENIC",
+    "MEGANE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Q3YbeZQw3p_-MYpWm5yRDldo3sb6XsyB",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434066"
+  },
+  "id": "11700",
+  "nombre": "KITS FOSTERS F-36204 A  MOT 1.2  16 V POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-36204 A",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "CLIO"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Q2oQTo10_O9wj1tRZ9oArigx8_HmZ7TD",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434067"
+  },
+  "id": "11800",
+  "nombre": "KITS FOSTERS F-36103 MOT 2.5  DIESEL POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "VKMA-36103",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "MASTER"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1bvcu1x4cO615fwdUHRkV9XeI-RRrB1PA",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434068"
+  },
+  "id": "11900",
+  "nombre": "KITS FOSTERS F-5000 MOT 3.0 POLY V",
+  "precio": 0,
+  "rubro": "Kits Poly V",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "HILUX 3.0"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1qdcAxtwYui27sMtwv9jrpww6yOG3FJDT",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434069"
+  },
+  "id": "10030",
+  "nombre": "KITS FOSTERS DISTRIBUCION 1,9D DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-2168",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 1.9"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43406a"
+  },
+  "id": "10040",
+  "nombre": "KITS FOSTERS DISTRIBUCION 1,9D DISTRIBUCION",
+  "precio": 0,
+  "rubro": "Kits Distribución",
+  "codigoFabrica": "VKMA-2169",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "DUCATO 1.9"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43406b"
+  },
+  "id": "99400",
+  "nombre": "POLEA MARCHA LIBRE  ACERO F-236591     IMPORTADO",
+  "precio": 0,
+  "rubro": "Acero",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "BERLINGO 1.6 HDI",
+    "C3 1.41.6 16V HDI",
+    "C4 1.6 HDI",
+    "C5 1.6 / 2.0 / 2.2 HDI",
+    "206 1.6 HDI",
+    "84",
+    "GOL 2.0 HDI",
+    "308 1.6 HDI",
+    "406 HDI",
+    "407 HDI",
+    "607 HDI",
+    "3008 HDI",
+    "5008 HDI",
+    "PARTNER 1.6 1.9 2.0 HDI",
+    "EXPERT 1.9 2.0 HDI"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=13a5xgBCnKxY_Mw1Ky0ap11-DzoUEk_Wv",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43406c"
+  },
+  "id": "99420",
+  "nombre": "POLEA MARCHA LIBRE ACERO F-230209   IMPORTADO",
+  "precio": 0,
+  "rubro": "Acero",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "328 329"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1VQuKgPune0q-nuROpG2AEP11RKi0WFvY",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43406d"
+  },
+  "id": "99000",
+  "nombre": "ACCESORIOS 20X74X32 SCANIA",
+  "precio": 31224.53,
+  "rubro": "Nylon",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1PfBzptHnwOUtww0j7pSTSpW5RuPUZfuX",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43406e"
+  },
+  "id": "85423",
+  "nombre": "ACCESORIOS 8X60X26 CHAPA EMBUTIDA",
+  "precio": 13602.84,
+  "rubro": "Chapa",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO - GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1N1r7HhGgqVX3j6Xmgp4Buyi_0WMjf1KS",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a43406f"
+  },
+  "id": "85424",
+  "nombre": "ACCESORIOS 10X60X26 CHAPA EMBUTIDA",
+  "precio": 13602.84,
+  "rubro": "CHAPA",
+  "codigoFabrica": "",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "VENTO - GACEL"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1pC8MZs9nlxLJhZl2NvPfAIIX8MVil1Pu",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434070"
+  },
+  "id": "97831",
+  "nombre": "ALTERNADOR AIRE  17X63X29  ( PARA SOPORTE 60016)",
+  "precio": 13067.92,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-60016",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "SONIC",
+    "TRACKER",
+    "CRUZE"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1vahq8COAO_AQ5MOB3z6gPUxbP_zz7Nmr",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434071"
+  },
+  "id": "85319",
+  "nombre": " ALTERNADOR AIRE CITROEN  PEUGEOT 10,20X60X30/40",
+  "precio": 27923.08,
+  "rubro": "Nylon",
+  "codigoFabrica": "VKM-23246  F-122986,05",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "Berlingo / Peugeot 206  207  306  406 Motor 2",
+    "0 HDI Diesel DW10"
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434072"
+  },
+  "id": "84800",
+  "nombre": "ALTERNADOR Y AIRE ECOSPORT ",
+  "precio": 11584.71,
+  "rubro": "Nylon",
+  "codigoFabrica": "17X80X21",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [
+    "FORD ECOSPORT "
+  ],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6525d517ee3a8fd94a434073"
+  },
+  "id": "85477",
+  "nombre": "ACCESORIOS  8X60X27 DOBLE RODAMIENTOS ",
+  "precio": 20375.82,
+  "rubro": "Nylon",
+  "codigoFabrica": "8X60X27",
+  "tipoModificacion": "",
+  "marca": "",
+  "modelos": [],
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1kcEokEEcWR8HRfX52sHqNRrkA6ctQr4N",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652fdf0cf22433a2e7752346"
+  },
+  "id": "84737",
+  "__v": 0,
+  "codigoFabrica": "VKM-35002 90500229",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1i9t5zralTvriynBW6F6FuIl3KZV2KEej",
+  "modelos": [
+    "CORSA 8V",
+    "CELTA",
+    "CLASSIC",
+    "ASTRA"
+  ],
+  "nombre": "ALTERNADOR AIRE 17X70X26",
+  "precio": 11184.08,
+  "rubro": "Chapa",
+  "tipoModificacion": "A",
+  "updatedAt": {
+    "$date": "2023-10-25T15:14:28.339Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ff797f22433a2e7ea4584"
+  },
+  "id": "87789",
+  "__v": 0,
+  "codigoFabrica": "VKM-60014",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1AC9IJdA-MD3HLyB-2E8X38UEZGZvIwDM",
+  "modelos": [
+    "FOX",
+    "PASSAT"
+  ],
+  "nombre": "ALTERNADOR AIRE  MOT 1.6 1.8 17X76X26",
+  "precio": 11184.08,
+  "rubro": "Chapa",
+  "tipoModificacion": "A",
+  "updatedAt": {
+    "$date": "2023-10-25T15:16:24.061Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ff859f22433a2e7edced1"
+  },
+  "id": "85826",
+  "__v": 0,
+  "codigoFabrica": "VKM-32011 F-110790",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1LCg-7Uds8MHLXq04MBYY-RX4MNvWz4iS",
+  "modelos": [
+    "PALIO",
+    "SIENA"
+  ],
+  "nombre": "ALTERNADOR AIRE 20X80X17",
+  "precio": 9568.56,
+  "rubro": "Nylon",
+  "tipoModificacion": "A",
+  "updatedAt": {
+    "$date": "2023-10-25T15:17:26.899Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ff93ef22433a2e7f210c7"
+  },
+  "id": "85490",
+  "__v": 0,
+  "codigoFabrica": "VKM-36016 F-122530",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1rzDUyvbcCD7i9CHvKjEFcFkuza7O1m2z",
+  "modelos": [
+    "CLIO",
+    "MEGANE"
+  ],
+  "nombre": "ALTERNADOR Y A/A MOTOR 2.0 // 1.9 DIESEL - 2.0 SPORT",
+  "precio": 16239.29,
+  "rubro": "Acero",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:17:51.463Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ff9b6f22433a2e7f43aa6"
+  },
+  "id": "84763",
+  "__v": 0,
+  "codigoFabrica": "VKM-36025 F-122676.11",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1azTestjF8WuA1rTxobqFPSU_cD-VeZjy",
+  "modelos": [
+    "TWINGO"
+  ],
+  "nombre": "ALTERNADOR AIRE  8X56X21",
+  "precio": 12433.64,
+  "rubro": "Nylon",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:18:19.501Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffa40f22433a2e7f6e4fc"
+  },
+  "id": "84860",
+  "__v": 0,
+  "codigoFabrica": "12x70x29",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=199Keh-12GleXbuzX54IsynG6w-8fyZTp",
+  "modelos": [
+    "HILUX 2.5",
+    "HILUX 3.0"
+  ],
+  "nombre": "ALTERNADOR AIRE   12X70X29",
+  "precio": 30165.91,
+  "rubro": "Acero",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:18:42.686Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffa52f22433a2e7f739be"
+  },
+  "id": "84862",
+  "__v": 0,
+  "codigoFabrica": "12x80x29",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=18ETbLZIYal1q9GaIaDGMjhPNYBPjFZAN",
+  "modelos": [
+    "HILUX 2.5",
+    "HILUX 3.0"
+  ],
+  "nombre": "ALTERNADOR AIRE   12X80X29",
+  "precio": 30165.75,
+  "rubro": "Acero",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:18:54.060Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffa7bf22433a2e7f7febe"
+  },
+  "id": "84858",
+  "__v": 0,
+  "codigoFabrica": "12x83x20",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1G_1vY0EyOwjF9BiaJWqdxS-Kt1xmg-cA",
+  "modelos": [
+    "HILUX 2.5",
+    "HILUX 3.0"
+  ],
+  "nombre": "TOYOTA ALTERNADOR  V  12X83X28",
+  "precio": 24718.66,
+  "rubro": "Acero",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:19:15.906Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffaa8f22433a2e7f8c96f"
+  },
+  "id": "84859",
+  "__v": 0,
+  "codigoFabrica": "15x50x21",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Dw1Hebwpe_WbvX3dG8KRqgH11b_4pRrB",
+  "modelos": [
+    "HILUX 2.5",
+    "HILUX 3.0"
+  ],
+  "nombre": "TOYOTA ALTERNADOR  15X50X21",
+  "precio": 22257.61,
+  "rubro": "Acero",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:19:30.610Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffb49f22433a2e7fbd07e"
+  },
+  "id": "84612",
+  "__v": 0,
+  "codigoFabrica": "F-236667 VKM-03029",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=13fH3ayj1n4cDaAzC2hZBuSQRpDLrNF_I",
+  "modelos": [
+    "BERLINGO",
+    "C3",
+    "C4",
+    "PARTNER",
+    "206",
+    "GALAXY",
+    "306",
+    "GOL",
+    "406"
+  ],
+  "nombre": "ALTERNADOR AIRE MOTOR 1.9  ( 17X60X26/14)",
+  "precio": 11110.64,
+  "rubro": "Nylon",
+  "tipoModificacion": "A",
+  "updatedAt": {
+    "$date": "2023-10-25T15:19:51.889Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffb8cf22433a2e7fd11e7"
+  },
+  "id": "84766",
+  "__v": 0,
+  "codigoFabrica": "VKM-04781",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1XyueozGVS2xPUfyscPT233Cxbyg2ocB8",
+  "modelos": [
+    "MAXXION"
+  ],
+  "nombre": "ALETNADOR AIRE 17X85X29",
+  "precio": 8302.66,
+  "rubro": "Nylon",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:20:13.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "652ffbacf22433a2e7fdadf2"
+  },
+  "id": "85491",
+  "__v": 0,
+  "codigoFabrica": "17X85X32",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1MkFGTpL74_YMmlvDs34Jq-6Ctb1w2cA5",
+  "modelos": [
+    "MAXXION"
+  ],
+  "nombre": "ALTERNADOR Y A/A  17X85X32",
+  "precio": 8385.69,
+  "rubro": "Nylon",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65311d0ff22433a2e72e3f9b"
+  },
+  "id": "85309",
+  "__v": 0,
+  "codigoFabrica": "VKM-36012 F-121271.1",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1LlsH_pf3QhmE2t_buXWABDBYZMDl-DFS",
+  "modelos": [
+    "19"
+  ],
+  "nombre": "DISTRIBUCION MOTOR DIESEL",
+  "precio": 21937.69,
+  "rubro": "Chapa",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-10-25T15:22:07.302Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65311d91f22433a2e730711a"
+  },
+  "id": "84600",
+  "__v": 0,
+  "codigoFabrica": "VKM-04752",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1KBbB3vOeyF48jf_zAZNUmGxmVD0fIlbd",
+  "modelos": [
+    "MERIVA",
+    "CORSA 8V"
+  ],
+  "nombre": "ALTERNADOR 1.8",
+  "precio": 11184.08,
+  "rubro": "Chapa",
+  "tipoModificacion": "A",
+  "updatedAt": {
+    "$date": "2023-10-26T13:23:08.482Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65318217f22433a2e70292ea"
+  },
+  "id": "10000",
+  "__v": 0,
+  "codigoFabrica": "F-552557",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1Fqukay-tiSMCCOuu5hvXiUD4jxugn5S3",
+  "modelos": [
+    "DAILY 70C17"
+  ],
+  "nombre": "ALTERNADOR AIRE  IVECO DAILY 70c17",
+  "precio": 48308.97,
+  "rubro": "Acero",
+  "tipoModificacion": "A",
+  "updatedAt": {
+    "$date": "2023-10-24T12:47:52.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "653188a5eafbc9cd5ec9dff4"
+  },
+  "id": "85036",
+  "__v": 0,
+  "codigoFabrica": "028-145299",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1_7bBVIYAi0kwKDYr9VDLZF5LCxxhdBjH",
+  "modelos": [
+    "GOLF"
+  ],
+  "nombre": "ALETRNADOR AIRE  DIESEL",
+  "precio": 12147.46,
+  "rubro": "Nylon",
+  "tipoModificacion": "M",
+  "updatedAt": {
+    "$date": "2023-10-25T13:48:07.915Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6552761c6a8d4e99de5d918b"
+  },
+  "id": "97797-10 ACERO",
+  "__v": 0,
+  "codigoFabrica": "VKM-61020/10",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1CLcm5mISbBIztSf63l0413d-LT5R4G-F",
+  "modelos": [
+    "HILUX 3.0"
+  ],
+  "nombre": "ALTERNADOR AIRE MOT 3.0 10X76X32 ACERO",
+  "precio": 69228,
+  "rubro": "ACERO",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-11-13T19:16:44.031Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655276806a8d4e99de5f6c33"
+  },
+  "id": "97797-10 NYLON",
+  "__v": 0,
+  "codigoFabrica": "VKM-61020/10",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1CLcm5mISbBIztSf63l0413d-LT5R4G-F",
+  "modelos": [
+    "HILUX 3.0"
+  ],
+  "nombre": "ALTERNADOR AIRE  MOT 3.0 10X76X32  NYLON",
+  "precio": 61843.5,
+  "rubro": "Nylon",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-11-13T19:18:24.298Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655276e46a8d4e99de61417f"
+  },
+  "id": "97798 ACERO",
+  "__v": 0,
+  "codigoFabrica": "VKM-61020",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1LKPlya-wkpmpJp56GEroboDyASYauikE",
+  "modelos": [
+    "HILUX 3.0"
+  ],
+  "nombre": "ALTERNADOR AIRE 17X76X32 MOT 3.0 ACERO",
+  "precio": 67378.66,
+  "rubro": "Acero",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-11-13T19:20:04.104Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655276fb6a8d4e99de61b8d4"
+  },
+  "id": "97798 NYLON",
+  "__v": 0,
+  "codigoFabrica": "VKM-61020",
+  "linkImagen": "http://drive.google.com/uc?export=view&id=1e-A5Y7eXivW57qhaiOJjCBLes6Ow18wZ",
+  "modelos": [
+    "HILUX 3.0"
+  ],
+  "nombre": "ALTERNADOR AIRE  MOT 3.0 17X76X32  NYLON",
+  "precio": 58023.16,
+  "rubro": "Nylon",
+  "tipoModificacion": "",
+  "updatedAt": {
+    "$date": "2023-11-13T19:20:27.634Z"
+  }
+}
+]

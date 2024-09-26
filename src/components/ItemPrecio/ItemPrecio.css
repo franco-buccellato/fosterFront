@@ -1,0 +1,30 @@
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-span-normal {
+    display: inline-flex;
+    /* text-decoration: line-through; */
+    color: #CD1F26;
+}
+
+.price-span-descuento {
+    display: inline-flex;
+    color: #001da0;
+}
+.price-span-ganancia {
+    display: inline-flex;
+    color: #4567ff;
+}
+
+.el-wrapper:hover .cart .price-container {
+    display: none;
+}
+
+.price-span-final-sin-descuento {
+    margin-top: 10%;
+    color: #CD1F26;
+}
