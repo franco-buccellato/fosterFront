@@ -26,37 +26,30 @@ function Encabezado({cantidadCarrito}) {
 
     const [listaDeProductos, setListaDeProdcuto] = useState();
 
-    useEffect( 
-        () => {
-        axios.get(
-            '/api/productos2/', 
-            {
-                params: {
+    useEffect(() => {
+        const fetchProductos = async () => {
+            try {
+                const response = await fetch('https://tu-backend-en-azure/api/productos2/', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+    
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-            }
-        )
-        .then(
-            res => {
-                // console.log(res.data);
-                // let lista = res.data;
-                // lista.forEach(
-                //     producto => {
-                //         producto.modelos = producto.modelos.toString();
-                //     }
-                // );
-                // console.log('Test for each');
-                // console.log(lista);
-                // setListaDeProdcuto(lista);
-                setListaDeProdcuto(res.data);
-            }
-        )
-        .catch(
-            err => {
+    
+                const data = await response.json();
+                setListaDeProdcuto(data);
+            } catch (err) {
                 console.log(err);
             }
-        )
-        }, []
-    )
+        };
+    
+        fetchProductos();
+    }, []);
+    
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -94,19 +87,28 @@ function Encabezado({cantidadCarrito}) {
             utilidad: ganancia !== '' ? ganancia : usuario.utilidad,
             idUsuario: usuario.idUsuario
         };
-        axios.post('/api/usuario/actualizar', usuarioActualizado)
-            .then(
-                res => {
-                    console.log('Modificación correcta: ' + res);
-                    setUtilidadUsuario(usuarioActualizado.utilidad);
-                }
-            )
-            .catch(
-                err => {
-                    console.log('Error:' + err);
-                    handleShowFallida();
-                }
-            )
+        fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // Asegúrate de establecer el tipo de contenido
+            },
+            body: JSON.stringify(usuarioActualizado), // Convierte el objeto usuarioActualizado a una cadena JSON
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return res.json(); // Devuelve la respuesta como JSON
+        })
+        .then(data => {
+            console.log('Modificación correcta:', data);
+            setUtilidadUsuario(usuarioActualizado.utilidad);
+        })
+        .catch(err => {
+            console.log('Error:', err);
+            handleShowFallida();
+        });
+        
     }
 
     return (

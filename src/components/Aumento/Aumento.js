@@ -131,7 +131,6 @@
 //     } 
 // }
 // export default Aumento;
-
 import './Aumento.css';
 import { useContext, useState, useEffect } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
@@ -148,7 +147,7 @@ const Aumento = () => {
     useEffect(() => {
         const fetchProductos = async () => {
             try {
-                const res = await axios.get('/api/productos2/');
+                const res = await axios.get('https://back-fosters.azurewebsites.net/api/productos2/'); // URL completa de Azure
                 setListaProductos(res.data);
             } catch (err) {
                 console.error(err);
@@ -168,7 +167,9 @@ const Aumento = () => {
                     return { id: unProducto.id.toString(), nuevoPrecio };
                 });
 
-            await Promise.all(nuevosPrecios.map(nuevoAumento => axios.post('/api/productos2/aumento', nuevoAumento)));
+            await Promise.all(nuevosPrecios.map(nuevoAumento => 
+                axios.post('https://back-fosters.azurewebsites.net/api/productos2/aumento', nuevoAumento) // URL completa de Azure
+            ));
 
             handleShowModal(true);
             setSeActualizo(!seActualizo);
@@ -212,7 +213,7 @@ const Aumento = () => {
                     <Modal.Title>{showModal.success ? 'Carga exitosa!' : 'Error'}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    {showModal.success ? 'El aumento se impacto correctamente!' : 'El aumento no pudo impactarse. Intentelo nuevamente!'}
+                    {showModal.success ? 'El aumento se impactó correctamente!' : 'El aumento no pudo impactarse. Intentelo nuevamente!'}
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseModal}>

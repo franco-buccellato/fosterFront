@@ -14,27 +14,22 @@ const ItemDetailContainer = () => {
 
     useEffect(
         () => {
-            axios.get(
-                '/api/productos2/detail', 
-                {
-                    params: {
-                        id: productId
+            fetch(`https://back-fosters.azurewebsites.net/api/productos2/detail?id=${productId}`)
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error('Network response was not ok');
                     }
-                }
-            )
-            .then(
-                res => {
-                    /* console.log(res.data); */
-                    setProducto(res.data);
-                }
-            )
-            .catch(
-                err => {
-                    console.log(err);
-                }
-            )
+                    return res.json();
+                })
+                .then(data => {
+                    setProducto(data);
+                })
+                .catch(err => {
+                    console.error('Error fetching data:', err);
+                });
         }, [productId]
-    )
+    );
+    
 
     return (
         <div className="container-itemDetail">

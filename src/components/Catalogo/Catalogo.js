@@ -1,77 +1,3 @@
-// import './Catalogo.css';
-// import { useContext, useEffect, useState} from 'react';
-// import UsuarioContext from '../Context/UsuarioContext';
-// import Table from 'react-bootstrap/Table';
-// import ProductoItem from './ProductoItem';
-// import axios from 'axios';
-
-// const Catalogo = () => {
-
-//     const {esAdministrador} = useContext(UsuarioContext);
-//     const [listaProductos, setListaProductos] = useState([]);
-//     const [tablaProductos, setTablaProductos] = useState();
-
-//     useEffect( 
-//         () => {
-//         axios.get(
-//             '/api/productos2/', 
-//             {
-//                 params: {
-//                 }
-//             }
-//         )
-//         .then(
-//             res => {
-//                 console.log(res.data);
-//                 setListaProductos(res.data);
-//             }
-//         )
-//         .catch(
-//             err => {
-//                 console.log(err);
-//             }
-//         )
-//         }, [tablaProductos]
-//     )
-
-//     //Armar lista de usuario
-//     const tablaDeProductos = listaProductos.map(
-//         unProducto => {
-//             return (
-//                 <ProductoItem producto={unProducto}/>
-//             )
-//         }
-//     )
-
-//     if(esAdministrador()) {
-//         return (
-//             <div className='container-productos'>
-//                 <div className="container-tabla-productos">
-//                     <h1 className='titulo-tabla-productos'>Listado de Productos</h1>
-//                     <Table striped="columns">
-//                         <thead>
-//                             <tr>
-//                                 <th>Id</th>
-//                                 <th>Nombre</th>
-//                                 <th>Precio</th>
-//                                 <th>Rubro</th>
-//                                 <th>Código Fábrica</th>
-//                                 <th>Tipo Modificación</th>
-//                                 <th>Marca</th>
-//                                 <th>Modelos</th>
-//                             </tr>
-//                         </thead>
-//                         <tbody>
-//                             {tablaDeProductos}
-//                         </tbody>
-//                     </Table>
-//                 </div>
-//             </div>
-//         );
-//     } 
-// }
-// export default Catalogo;
-
 import './Catalogo.css';
 import { useContext, useEffect, useState } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
@@ -86,9 +12,9 @@ const Catalogo = () => {
     useEffect(() => {
         const fetchProductos = async () => {
             try {
-                const res = await axios.get('/api/productos2/');
+                const res = await axios.get('https://back-fosters.azurewebsites.net/api/productos2/'); // URL completa de Azure
                 setListaProductos(res.data);
-                console.log(listaProductos);
+                console.log(res.data); // Cambié listaProductos a res.data para reflejar la respuesta correcta
             } catch (err) {
                 console.error(err);
             }
@@ -106,9 +32,9 @@ const Catalogo = () => {
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Descripcion</th>
+                            <th>Descripción</th>
                             <th>Medida</th>
-                            <th>Código Fabrica</th>
+                            <th>Código Fábrica</th>
                             <th>Marca</th>
                             <th>Precio</th>
                             <th>Modelos</th>

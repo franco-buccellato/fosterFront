@@ -17,29 +17,23 @@ const Usuarios = () => {
     const [listaUsuarios, setListaUsuarios] = useState([]);
     const [tablaUsuarios, setTablaUsuarios] = useState();
 
-    useEffect( 
-        () => {
-        axios.get(
-            '/api/usuario/', 
-            {
-                params: {
-                    proveedor: usuario.nombre
+    useEffect(() => {
+        fetch(`https://back-fosters.azurewebsites.net/api/usuario/?proveedor=${encodeURIComponent(usuario.nombre)}`)
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
                 }
-            }
-        )
-        .then(
-            res => {
-                console.log(res.data);
-                setListaUsuarios(res.data);
-            }
-        )
-        .catch(
-            err => {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                setListaUsuarios(data);
+            })
+            .catch(err => {
                 console.log(err);
-            }
-        )
-        }, [tablaUsuarios, usuario.nombre]
-    )
+            });
+    }, [tablaUsuarios, usuario.nombre]);
+    
 
     /* MODAL Ok*/
     const [showOk, setShowOk] = useState(false);
@@ -73,20 +67,29 @@ const Usuarios = () => {
         }
         console.log(nuevoUsuario);
         
-        axios.post('/api/usuario/nuevo', nuevoUsuario)
-            .then(
-                res => {
-                    //alert(res.data);
-                    handleShowOk();
-                    setTablaUsuarios(1);
-                }
-            )
-            .catch(
-                err => {
-                    console.log('Error:' + err);
-                    handleShowError();
-                }
-            )
+        fetch('https://back-fosters.azurewebsites.net/api/usuario/nuevo', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // Asegúrate de establecer el tipo de contenido
+            },
+            body: JSON.stringify(nuevoUsuario), // Convierte el objeto nuevoUsuario a una cadena JSON
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return res.json(); // Devuelve la respuesta como JSON
+        })
+        .then(data => {
+            //alert(data); // Puedes descomentar esto si necesitas mostrar un alert con la respuesta
+            handleShowOk();
+            setTablaUsuarios(1);
+        })
+        .catch(err => {
+            console.log('Error:', err);
+            handleShowError();
+        });
+        
     }
 
     //Armar lista de usuario

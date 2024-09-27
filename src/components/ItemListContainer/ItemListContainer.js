@@ -16,30 +16,24 @@ const ItemListContainer = () => {
 
     const [hayFiltros, setHayFiltros] = useState(false);
     
-    useEffect( 
-        () => {
-        axios.get(
-            '/api/productos2/', 
-            {
-                params: {
+    useEffect(() => {
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
                 }
-            }
-        )
-        .then(
-            res => {
-                console.log(res.data);
-                setProductos(res.data);
-                setProductosBase(res.data);
-            }
-        )
-        .catch(
-            err => {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                setProductos(data);
+                setProductosBase(data);
+            })
+            .catch(err => {
                 console.log(err);
-            }
-        )
-        }, [id, descripcion, medida, codigoFabrica, marca, modelo]
-    )
-
+            });
+    }, [id, descripcion, medida, codigoFabrica, marca, modelo]);
+    
 
     const aplicarFiltro = () => {
         setHayFiltros(true);
@@ -88,24 +82,21 @@ const ItemListContainer = () => {
         document.getElementById("filtro_marca").placeholder = 'Ej: Peugeot';
         document.getElementById("filtro_modelo").placeholder = 'Ej: 306';
         setHayFiltros(false);
-        axios.get(
-            '/api/productos2/', 
-            {
-                params: {
-                }
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
             }
-        )
-        .then(
-            res => {
-                console.log(res.data);
-                setProductos(res.data);
-            }
-        )
-        .catch(
-            err => {
-                console.log(err);
-            }
-        )
+            return res.json();
+        })
+        .then(data => {
+            console.log(data);
+            setProductos(data);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    
         /* setProductos(filtrarProductosSiHayFiltros(productos, undefined, undefined, undefined, undefined, undefined)); */
     }
 

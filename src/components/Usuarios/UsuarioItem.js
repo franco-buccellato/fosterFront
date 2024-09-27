@@ -48,38 +48,56 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
             utilidad: utilidad !== '' ? utilidad : usuario.utilidad,
             idUsuario: usuario.idUsuario
         };
-        axios.post('/api/usuario/actualizar', usuarioActualizado)
-            .then(
-                res => {
-                    console.log('Modificación correcta: ' + res);
-                    handleShowOkEditar();
-                }
-            )
-            .catch(
-                err => {
-                    console.log('Error:' + err);
-                    handleShowFallida();
-                }
-            )
+        fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(usuarioActualizado),
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log('Modificación correcta:', data);
+            handleShowOkEditar();
+        })
+        .catch(err => {
+            console.log('Error:', err);
+            handleShowFallida();
+        });
+        
     }
 
     //Eliminar usuairo definitivamente
     const elimnarUsuarioDefinitivo = (usuario) => {
         console.log('Eliminar usuario: ' + usuario.nombre);
         handleCloseEliminar();
-        axios.post('/api/usuario/eliminar', usuario)
-            .then(
-                res => {
-                    console.log('Eliminado correctamente: ' + res);
-                    handleShowOkEliminar();
-                }
-            )
-            .catch(
-                err => {
-                    console.log('Error:' + err);
-                    handleShowFallida();
-                }
-            )
+        fetch('https://back-fosters.azurewebsites.net/api/usuario/eliminar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(usuario),
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log('Eliminado correctamente:', data);
+            handleShowOkEliminar();
+        })
+        .catch(err => {
+            console.log('Error:', err);
+            handleShowFallida();
+        });
+        
 
     }
 

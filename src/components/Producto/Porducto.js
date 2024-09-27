@@ -12,27 +12,22 @@ const Producto = () => {
     const {esAdministrador} = useContext(UsuarioContext);
     const [tablaProductos, setTablaProductos] = useState();
 
-    useEffect( 
-        () => {
-        axios.get(
-            '/api/productos2/', 
-            {
-                params: {
+    useEffect(() => {
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
                 }
-            }
-        )
-        .then(
-            res => {
-                console.log(res.data);
-            }
-        )
-        .catch(
-            err => {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch(err => {
                 console.log(err);
-            }
-        )
-        }, [tablaProductos]
-    )
+            });
+    }, [tablaProductos]);
+    
 
     const [id, setId] = useState('');
     const [descripcion, setDescripcion] = useState('');
@@ -55,19 +50,28 @@ const Producto = () => {
         }
         console.log(nuevoProducto);
         
-        axios.post('/api/productos2/nuevo', nuevoProducto)
-            .then(
-                res => {
-                    handleShowOk();
-                    setTablaProductos(1);
-                }
-            )
-            .catch(
-                err => {
-                    console.log('Error:' + err);
-                    handleShowError();
-                }
-            )
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/nuevo', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // Especifica el tipo de contenido
+            },
+            body: JSON.stringify(nuevoProducto), // Convierte el objeto nuevoProducto a JSON
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return res.json();
+        })
+        .then(data => {
+            handleShowOk(); // Muestra el mensaje de éxito
+            setTablaProductos(1); // Actualiza la tabla de productos
+        })
+        .catch(err => {
+            console.log('Error: ' + err);
+            handleShowError(); // Muestra el mensaje de error
+        });
+        
     }
 
         /* MODAL Ok*/

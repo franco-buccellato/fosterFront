@@ -19,28 +19,23 @@ function SectionNovedades() {
         }
     ) */
 
-    useEffect( 
-        () => {
-        axios.get(
-            '/api/productos2/', 
-            {
-                params: {
+    useEffect(() => {
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
                 }
-            }
-        )
-        .then(
-            res => {
-                console.log(res.data);
-                setProductos(res.data);
-            }
-        )
-        .catch(
-            err => {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                setProductos(data);
+            })
+            .catch(err => {
                 console.log(err);
-            }
-        )
-        }, [productos2]
-    )
+            });
+    }, [productos2]);
+    
 
     return (
         <div className="container-section-novedades" id='section-novedades'>
