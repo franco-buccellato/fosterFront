@@ -1,12 +1,10 @@
 import './Login.css';
 import { useContext, useState } from 'react';
-//import { getUsuraioByContrasenia } from '../../listaDeUsuarios';
 import UsuarioContext from '../Context/UsuarioContext';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-
 import axios from 'axios';
 
 const Login = () => {
@@ -21,8 +19,9 @@ const Login = () => {
     const loguearse = () => {
         let usuario = document.getElementById("usuario").value;
         let contrasenia = document.getElementById("contrasenia").value;
+        
         axios.post(
-            '/api/usuario/',
+            'https://back-fosters.azurewebsites.net/api/usuario/',  // Cambiado a la URL completa de Azure
             {nombre: usuario, contrasenia: contrasenia},
             {headers: {'content-type': 'application/json'}}
         ).then(
@@ -60,7 +59,7 @@ const Login = () => {
                         <h4>¡Bienvenido {usuario.nombre}!</h4>
                     </div>
                     <div className='container-filtros-botones-login'>
-                            <Link to = {'/productos'}>
+                            <Link to={'/productos'}>
                                 <Button variant="danger" size="lg">Nuestros Productos</Button>{' '}
                             </Link>
                     </div>
