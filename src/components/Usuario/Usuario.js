@@ -16,7 +16,7 @@ const Usuario = () => {
     useEffect( 
         () => {
         axios.get(
-            '/api/usuario/', 
+            'https://back-fosters.azurewebsites.net/api/usuario/',  // Cambiado a la URL completa de Azure
             {
                 params: {
                     proveedor: usuario.nombre
@@ -51,7 +51,6 @@ const Usuario = () => {
     const [showError, setShowError] = useState(false);
     const handleCloseError = () => setShowError(false);
     const handleShowError = () => setShowError(true);
-/*     const navigate = useNavigate(); */
 
     const [nombre, setNombre] = useState('');
     const [contrasenia, setContrasenia] = useState('');
@@ -69,7 +68,7 @@ const Usuario = () => {
         }
         console.log(nuevoUsuario);
         
-        axios.post('/api/usuario/nuevo', nuevoUsuario)
+        axios.post('https://back-fosters.azurewebsites.net/api/usuario/nuevo', nuevoUsuario)  // Cambiado a la URL completa de Azure
             .then(
                 res => {
                     //alert(res.data);
