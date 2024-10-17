@@ -48,35 +48,49 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
             utilidad: utilidad !== '' ? utilidad : usuario.utilidad,
             idUsuario: usuario.idUsuario
         };
-        fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(usuarioActualizado),
-        })
-        .then(res => {
-            if (!res.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return res.json();
-        })
-        .then(data => {
-            console.log('Modificación correcta:', data);
-            handleShowOkEditar();
-        })
-        .catch(err => {
-            console.log('Error:', err);
-            handleShowFallida();
-        });
         
+        console.log('Datos del usuario actualizados:', usuarioActualizado); // Log para verificar
+        fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(usuarioActualizado),
+})
+.then(res => {
+    console.log('Código de respuesta:', res.status);
+    if (!res.ok) {
+        return res.text().then(text => { 
+            console.log('Respuesta del servidor (error):', text);
+            throw new Error(`Error ${res.status}: ${text || 'desconocido'}`); 
+        });
     }
+    return res.text(); // Cambia esto a text() para manejar texto simple
+})
+.then(data => {
+    console.log('Datos devueltos por el servidor:', data);
+    if (data === "OK") { // Compara con el texto que esperas
+        handleShowOkEditar();
+    } else {
+        console.log('La modificación falló según la respuesta del servidor:', data);
+        handleShowFallida();
+    }
+})
+.catch(err => {
+    console.log('Error en la modificación:', err.message);
+    handleShowFallida(); // Esto se llama solo en caso de un error real
+});
+        
+
+    }
+    
 
     //Eliminar usuairo definitivamente
     const elimnarUsuarioDefinitivo = (usuario) => {
         console.log('Eliminar usuario: ' + usuario.nombre);
         handleCloseEliminar();
-        fetch('https://back-fosters.azurewebsites.net/api/usuario/eliminar', {
+        fetch(
+            'https://back-fosters.azurewebsites.net/api/usuario/eliminar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -87,7 +101,7 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
             if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            return res.json();
+            return res.text(); // Cambia a text() si no siempre regresa JSON
         })
         .then(data => {
             console.log('Eliminado correctamente:', data);
@@ -97,6 +111,7 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
             console.log('Error:', err);
             handleShowFallida();
         });
+
         
 
     }

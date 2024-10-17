@@ -24,30 +24,23 @@ function Encabezado({cantidadCarrito}) {
 
     const {usuario, estaLogueado, esAdministrador, esClienteDirecto} = useContext(UsuarioContext);
 
-    const [listaDeProductos, setListaDeProdcuto] = useState();
+    const [listaDeProductos, setListaDeProducto] = useState();
 
     useEffect(() => {
-        const fetchProductos = async () => {
-            try {
-                const response = await fetch('https://tu-backend-en-azure/api/productos2/', {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
-    
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
                 }
-    
-                const data = await response.json();
-                setListaDeProdcuto(data);
-            } catch (err) {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                setListaDeProducto(data);
+            })
+            .catch(err => {
                 console.log(err);
-            }
-        };
-    
-        fetchProductos();
+            });
     }, []);
     
 
@@ -225,8 +218,9 @@ function Encabezado({cantidadCarrito}) {
                     <ExcelSheet data={listaDeProductos} name="Lista de Precios">
                         
                         <ExcelColumn label="Código Foster's" value="id"/>
-                        <ExcelColumn label="Medida" value="nombre"/>
+                        <ExcelColumn label="Descripción" value="descripcion"/>
                         <ExcelColumn label="Código SKF o INA" value="codigoFabrica"/>
+                        <ExcelColumn label="Medida" value="medida"/>
                         <ExcelColumn label="Marca" value="marca"/>
                         <ExcelColumn label="Precio Bruto" value="precio"/>
 
