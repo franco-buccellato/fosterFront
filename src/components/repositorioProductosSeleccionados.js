@@ -11,7 +11,11 @@ const productosSeleccionados =
         "87582",
         "85510",
         "85100",
-        "85411"
+        "85411",
+        "84604",
+        "84697",
+        "84690",
+        "87582"
     ]
 
 export const getProductosSeleccionados = () => {
