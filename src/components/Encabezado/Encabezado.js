@@ -80,29 +80,41 @@ function Encabezado({cantidadCarrito}) {
             utilidad: ganancia !== '' ? ganancia : usuario.utilidad,
             idUsuario: usuario.idUsuario
         };
+    
         fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json', // Asegúrate de establecer el tipo de contenido
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify(usuarioActualizado), // Convierte el objeto usuarioActualizado a una cadena JSON
+            body: JSON.stringify(usuarioActualizado),
         })
         .then(res => {
             if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            return res.json(); // Devuelve la respuesta como JSON
+            const contentType = res.headers.get("content-type");
+            
+            // Verifica si el contenido es JSON antes de intentar convertirlo
+            if (contentType && contentType.includes("application/json")) {
+                return res.json(); // Procesa como JSON
+            } else {
+                return res.text(); // Procesa como texto si no es JSON
+            }
         })
         .then(data => {
-            console.log('Modificación correcta:', data);
-            setUtilidadUsuario(usuarioActualizado.utilidad);
+            if (typeof data === 'string' && data === 'OK') {
+                console.log('Respuesta de texto:', data); // Respuesta de éxito sin JSON
+            } else {
+                console.log('Modificación correcta:', data);
+                setUtilidadUsuario(usuarioActualizado.utilidad);
+            }
         })
         .catch(err => {
             console.log('Error:', err);
             handleShowFallida();
         });
-        
-    }
+    };
+    
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='fixed-top'>

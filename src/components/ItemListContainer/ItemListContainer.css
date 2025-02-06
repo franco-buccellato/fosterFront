@@ -1,3 +1,8 @@
+.container-buscador {
+    margin-top: -3.5%;
+}
+
+
 .section-item-list-container {
     margin-left: 5%;
     margin-right: 5%;
@@ -75,10 +80,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 6vw;
+    height: 4vw;
     width: 30%;
     /* background-color: #da6266; */
-    margin: 5px 0;
+    /* margin: 5px 0; */
 }
 
 .container-input-filtros label {

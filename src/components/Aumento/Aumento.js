@@ -179,6 +179,31 @@ const Aumento = () => {
         }
     };
 
+    const realizarAumento2 = async () => {
+        try {
+            // Filtrar y mapear los productos para obtener sus nuevos precios
+            const nuevosPrecios = listaProductos
+                .filter(unProducto => !unProducto.nombre.includes('EVA') && unProducto.precio && aumento)
+                .map(unProducto => {
+                    const nuevoPrecio = aumento > 100
+                        ? unProducto.precio + parseInt(aumento)
+                        : (unProducto.precio * ((100 + parseInt(aumento)) / 100)).toFixed(2);
+                    return { id: unProducto.id.toString(), nuevoPrecio };
+                });
+    
+            // Enviar todos los productos con sus nuevos precios en una sola solicitud
+            await axios.post('https://back-fosters.azurewebsites.net/api/productos2/aumento2', { productos: nuevosPrecios });
+    
+            // Mostrar modal de éxito y actualizar el estado
+            handleShowModal(true);
+            setSeActualizo(!seActualizo);
+        } catch (err) {
+            console.error('Error:', err.response?.data || err.message);
+            handleShowModal(false);
+        }
+    };
+    
+
     const handleShowModal = (success) => {
         setShowModal({ show: true, success });
         setAumento('');
@@ -205,7 +230,7 @@ const Aumento = () => {
                             Si el valor es menor a $100 se toma porcentual.
                         </Form.Text>
                     </Form.Group>
-                    <Button variant="outline-success" onClick={realizarAumento}>Aplicar Aumento</Button>
+                    <Button variant="outline-success" onClick={realizarAumento2}>Aplicar Aumento</Button>
                 </Form>
             </div>
             <Modal show={showModal.show} onHide={handleCloseModal}>

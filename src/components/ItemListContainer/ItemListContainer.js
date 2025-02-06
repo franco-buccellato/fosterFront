@@ -176,7 +176,7 @@ const ItemListContainer = () => {
     }
 
     return (
-        <div className="container" onKeyDown={() => handleKeyPress()}>
+        <div className="container-buscador" onKeyDown={() => handleKeyPress()}>
             <div className='container-titulo'>
                 <h4>Nuestros Productos</h4>
             </div>

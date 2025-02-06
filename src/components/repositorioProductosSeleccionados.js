@@ -12,10 +12,10 @@ const productosSeleccionados =
         "85510",
         "85100",
         "85411",
-        "84604",
-        "84697",
-        "84690",
-        "87582"
+        "84604 FTS IMP",
+        "84697 FTS IMP",
+        "84690 FTS IMP",
+        "87582 FTS IMP"
     ]
 
 export const getProductosSeleccionados = () => {
