@@ -16,14 +16,17 @@ const ItemCart = ({id, descripcion, precioDefinitivo, linkImagen, nuevaCantidad}
 
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
     let imagen = '';
+
     try {
         imagen = cargarImagen(`./${id}.jpg`);
     } catch (error) {
         imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
     }
+    console.log('La iamgen es:');
+    console.log(imagen);
 
     if(productosSeleccionados.includes(id) && estaLogueado()) {
-        total = precioDefinitivo.toFixed(2) * nuevaCantidad;
+        total = precioDefinitivo * nuevaCantidad;
         return (
             <div className="shopping-cart-list-container">
                 <div className="product-cart-list">
@@ -34,8 +37,8 @@ const ItemCart = ({id, descripcion, precioDefinitivo, linkImagen, nuevaCantidad}
                         <div className="product-title-cart-list">{id}</div>
                         <p className="product-description-cart-list">{descripcion}</p>
                     </div>
-                    <div className="product-price-cart-list">{ '$' + (precioDefinitivo).toFixed(2)}</div>
-                    <div className="product-price-cart-list">{ '$' + (precioDefinitivo).toFixed(2)}</div>
+                    <div className="product-price-cart-list">{ '$' + (precioDefinitivo)}</div>
+                    <div className="product-price-cart-list">{ '$' + (precioDefinitivo)}</div>
                     <div className="product-quantity-cart-list">
                         <span>{nuevaCantidad}</span>
                     </div>
@@ -47,7 +50,7 @@ const ItemCart = ({id, descripcion, precioDefinitivo, linkImagen, nuevaCantidad}
             </div>
         );
     } else {
-        total = (precioDefinitivo * descuentoFinal).toFixed(2) * nuevaCantidad;
+        total = (precioDefinitivo)  * nuevaCantidad;
         return (
             <div className="shopping-cart-list-container">
                 <div className="product-cart-list">
@@ -59,8 +62,8 @@ const ItemCart = ({id, descripcion, precioDefinitivo, linkImagen, nuevaCantidad}
                         <p className="product-description-cart-list">{descripcion}</p>
                     </div>
     
-                    <div className="product-price-cart-list">{ estaLogueado() ? '$' + (precioDefinitivo).toFixed(2): 'Consultanos!'}</div>
-                    <div className="product-price-cart-list">{ estaLogueado() ? '$' + (precioDefinitivo * ((100 - usuario.descuento)/100)).toFixed(2): 'Consultanos!'}</div>
+                    <div className="product-price-cart-list">{ estaLogueado() ? '$' + (precioDefinitivo): 'Consultanos!'}</div>
+                    <div className="product-price-cart-list">{ estaLogueado() ? '$' + (precioDefinitivo) : 'Consultanos!'}</div>
                     <div className="product-quantity-cart-list">
                         <span>{nuevaCantidad}</span>
                     </div>

@@ -8,7 +8,8 @@ import UsuarioContext from '../Context/UsuarioContext';
 
 const ItemDetail = ({id, descripcion, medida, codigoFabrica, marca, precio, linkImagen,modelos, stock}) => {
 
-    const { esClienteDirecto} = useContext(UsuarioContext);
+    const {usuario, esClienteDirecto} = useContext(UsuarioContext);
+    let descuentoFinal = usuario !== undefined ? usuario.descuento : 1;
 
     const {addItem} = useContext(CartContext);
 
@@ -16,7 +17,7 @@ const ItemDetail = ({id, descripcion, medida, codigoFabrica, marca, precio, link
 
     const handleOnAdd = (nuevaCantidad) => {
         setCantidad(parseInt(nuevaCantidad));
-        const precioDefinitivo = precio;
+        const precioDefinitivo = (precio * descuentoFinal).toFixed(2);
         const objProd = {
             id,
             descripcion,

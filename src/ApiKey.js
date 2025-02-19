@@ -1,6 +1,6 @@
 //archivo ApiKey.js
 export default { 
-	USER_ID: 'zreXOwc2F3UxgJN7x', 
-	TEMPLATE_ID: 'template_d78bqiw',
-	SERVICE_ID: 'foster_mails'
+	USER_ID: 'Eqd24BnMSZ5dCHS4w', 
+	TEMPLATE_ID: 'template_qzj69v5',
+	SERVICE_ID: 'service_ejy8w0l'
 }
