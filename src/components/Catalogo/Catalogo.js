@@ -38,6 +38,7 @@ const Catalogo = () => {
                             <th>Marca</th>
                             <th>Precio</th>
                             <th>Modelos</th>
+                            <th>Categoria</th>
                         </tr>
                     </thead>
                     <tbody>

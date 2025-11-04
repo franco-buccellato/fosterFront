@@ -12,7 +12,6 @@ import imagenCarrousel5 from '../../imagenes/7.png';
 const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
 let imagen = '';
 try {
-    //imagen = cargarImagen(`./${id}.jpg`);
     imagen = cargarImagen(`./VKMC-03256A.jpg`);
 } catch (error) {
     imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);

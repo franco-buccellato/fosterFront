@@ -33,7 +33,7 @@ const ItemListCart = () => {
                 <div className="column-labels-cart-list">
                     <label className="product-image-cart-list">Imagen</label>
                     <label className="product-details-cart-list">Código y Descripción del Producto</label>
-                    <label className="product-price-cart-list">Precio Bruto</label>
+                    <label className="product-price-cart-list">Precio Lista</label>
                     <label className="product-price-cart-list">Precio Unitario</label>
                     <label className="product-quantity-cart-list">Cantidad</label>
                     <label className="product-removal-cart-list">Eliminar</label>

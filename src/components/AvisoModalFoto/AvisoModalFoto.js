@@ -19,6 +19,7 @@ const AvisoModalFoto = () => {
         imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
     }
 
+
     return (
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -35,7 +36,7 @@ const AvisoModalFoto = () => {
                     </Card>
                 </Modal.Body>
                 <Modal.Footer>
-                <Link to = {'/productos'}>
+                <Link to = {'/productos/tensoresFosters'}>
                     <Button variant="secondary" onClick={handleClose}>
                         Ver
                     </Button>

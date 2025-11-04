@@ -10,11 +10,14 @@ const ItemPrecio = ({ precioProducto, codigoProducto }) => {
     const esProductoSeleccionado = productosSeleccionados.includes(codigoProducto);
     const utilidad = usuario?.utilidad ?? 0;
 
-    const precioFinalSinDescuento = precioProducto.toFixed(2);
-    const precioBruto = precioProducto.toFixed(2);
-    const precioConDescuento = (precioProducto * descuentoFinal).toFixed(2);
-    const precioFinalConUtilidad = (precioProducto * (1 + utilidad / 100)).toFixed(2);
-    const precioFinalDescuentoUtilidad = ((precioProducto * descuentoFinal) * (1 + utilidad / 100)).toFixed(2);
+    const precio = Number(precioProducto) || 0;
+
+    const precioFinalSinDescuento = precio.toFixed(2);
+    const precioBruto = precio.toFixed(2);
+    const precioConDescuento = (precio * descuentoFinal).toFixed(2);
+    const precioFinalConUtilidad = (precio * (1 + utilidad / 100)).toFixed(2);
+    const precioFinalDescuentoUtilidad = ((precio * descuentoFinal) * (1 + utilidad / 100)).toFixed(2);
+    
 
     const renderPrice = (normalPrice, discountPrice, finalPrice) => (
         <div className='price-container'>
@@ -30,14 +33,14 @@ const ItemPrecio = ({ precioProducto, codigoProducto }) => {
         }
 
         if (usuario.descuento === 1) {
-            return renderPrice(`Precio Bruto: $${precioBruto}`, null, `Precio Final: $${precioFinalDescuentoUtilidad}`);
+            return renderPrice(`Precio Lista: $${precioBruto}`, null, `Precio Final: $${precioFinalDescuentoUtilidad}`);
         }
 
         if (esProductoSeleccionado) {
             return renderPrice(`Precio Final sin descuento: $${precioFinalSinDescuento}`, null, `Precio Final: $${precioFinalConUtilidad}`);
         }
 
-        return renderPrice(`Precio Bruto: $${precioBruto}`, `Precio c/Descuento: $${precioConDescuento}`, `Precio Final: $${precioFinalDescuentoUtilidad}`);
+        return renderPrice(`Precio Lista: $${precioBruto}`, `Precio c/Descuento: $${precioConDescuento}`, `Precio Final: $${precioFinalDescuentoUtilidad}`);
     } 
 
     if (estaLogueado()) {

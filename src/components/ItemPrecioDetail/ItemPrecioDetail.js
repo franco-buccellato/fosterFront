@@ -25,7 +25,7 @@ const ItemPrecioDetail = ({precioProducto,codigoProducto}) => {
             <div className='price-container-detail'>
                 <span className="price-span-descuento">
                     {
-                        'Precio Bruto: $' + (precioProducto).toFixed(2)
+                        'Precio Lista: $' + (precioProducto).toFixed(2)
                     }
                 </span>
                 <div className='container-ganancia'>
@@ -42,7 +42,7 @@ const ItemPrecioDetail = ({precioProducto,codigoProducto}) => {
             <div className='price-container-detail'>
                 <span className="price-span-normal">
                     {
-                        'Precio Bruto: $' + (precioProducto).toFixed(2)
+                        'Precio Lista: $' + (precioProducto).toFixed(2)
                     }
                 </span>
                 <span className="price-span-descuento">

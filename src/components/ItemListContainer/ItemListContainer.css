@@ -82,8 +82,15 @@
     align-items: center;
     height: 4vw;
     width: 30%;
-    /* background-color: #da6266; */
-    /* margin: 5px 0; */
+}
+
+.container-input-filtro-modelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+    width: 60%;
 }
 
 .container-input-filtros label {
@@ -96,7 +103,24 @@
     color: #fff;
 }
 
+.container-input-filtro-modelo label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
 .container-input-filtros input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.container-input-filtro-modelo input {
     display: flex;
     justify-content: center;
     align-items: center;

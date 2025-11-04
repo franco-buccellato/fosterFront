@@ -29,7 +29,7 @@ const Login = () => {
                 if(res.data) {
                     console.log(res.data);
                     loguearUsuario(res.data);
-                    navigate("/productos");
+                    navigate("/productos/tensoresFosters");
                 } else {
                     handleShow();
                 }

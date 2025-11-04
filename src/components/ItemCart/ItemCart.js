@@ -13,14 +13,17 @@ const ItemCart = ({id, descripcion, precioDefinitivo, linkImagen, nuevaCantidad}
     const {estaLogueado} = useContext(UsuarioContext);
 
     let productosSeleccionados = getProductosSeleccionados();
-
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
     let imagen = '';
-
+    
     try {
         imagen = cargarImagen(`./${id}.jpg`);
-    } catch (error) {
-        imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+    } catch (errorJpg) {
+        try {
+            imagen = cargarImagen(`./${id}.png`);
+        } catch (errorPng) {
+            imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+        }
     }
     console.log('La iamgen es:');
     console.log(imagen);

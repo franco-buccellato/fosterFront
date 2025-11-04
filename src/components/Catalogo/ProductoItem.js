@@ -13,7 +13,8 @@ const ProductoItem = ({ producto }) => {
         codigoFabrica: producto.codigoFabrica,
         marca: producto.marca,
         precio: producto.precio,
-        modelos: producto.modelos
+        modelos: producto.modelos,
+        categoria: producto.categoria
     });
 
     const [modalState, setModalState] = useState({
@@ -66,6 +67,7 @@ const ProductoItem = ({ producto }) => {
             <td>{producto.marca}</td>
             <td>{producto.precio}</td>
             <td>{producto.modelos}</td>
+            <td>{producto.categoria}</td>
             <td><ion-icon name="create-outline" onClick={() => handleModalToggle('showEditar', true)}></ion-icon></td>
             <td><ion-icon name="trash-outline" onClick={() => handleModalToggle('showEliminar', true)}></ion-icon></td>
 

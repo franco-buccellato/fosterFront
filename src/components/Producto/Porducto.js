@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import uniqid from 'uniqid';
-import axios from 'axios';
+
 
 const Producto = () => {
 
@@ -36,6 +36,8 @@ const Producto = () => {
     const [codigoFabrica, setCodigoFabrica] = useState('');
     const [marca, setMarca] = useState('');
     const [modelos, setModelos] = useState('');
+    const [categoria, setCategoria] = useState('');
+
 
     const agregarProducto = () => {
         let nuevoProducto = {
@@ -46,6 +48,7 @@ const Producto = () => {
             codigoFabrica: codigoFabrica,
             marca: marca,
             modelos: modelos,
+            categoria: categoria,
             _id: uniqid()
         }
         console.log(nuevoProducto);
@@ -53,25 +56,31 @@ const Producto = () => {
         fetch('https://back-fosters.azurewebsites.net/api/productos2/nuevo', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json', // Especifica el tipo de contenido
+              'Content-Type': 'application/json',
             },
-            body: JSON.stringify(nuevoProducto), // Convierte el objeto nuevoProducto a JSON
-        })
-        .then(res => {
+            body: JSON.stringify(nuevoProducto),
+          })
+          .then(async (res) => {
             if (!res.ok) {
-                throw new Error('Network response was not ok');
+              const errorText = await res.text();
+              throw new Error(`Error ${res.status}: ${errorText}`);
             }
-            return res.json();
-        })
-        .then(data => {
-            handleShowOk(); // Muestra el mensaje de éxito
-            setTablaProductos(1); // Actualiza la tabla de productos
-        })
-        .catch(err => {
-            console.log('Error: ' + err);
-            handleShowError(); // Muestra el mensaje de error
-        });
-        
+            
+            let data;
+            try {
+              data = await res.json();
+            } catch {
+              data = null; // Si no es JSON, evitamos romper la promesa
+            }
+          
+            handleShowOk();
+            setTablaProductos(Date.now());
+            return data;
+          })
+          .catch((err) => {
+            console.error('Error en fetch:', err);
+            handleShowError();
+          });
     }
 
         /* MODAL Ok*/
@@ -84,7 +93,8 @@ const Producto = () => {
             setMedida('');
             setCodigoFabrica('');
             setMarca('');
-            setModelos('')
+            setModelos('');
+            setCategoria('')
         };
         /* MODAL Error*/
         const [showError, setShowError] = useState(false);
@@ -123,6 +133,18 @@ const Producto = () => {
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label for='modelos'>Modelos:</Form.Label>
                             <Form.Control type="text" placeholder="Modelos" id="modelos" value={modelos} onChange={(e) => {setModelos(e.target.value)}}/>
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formCategoria">
+                            <Form.Label htmlFor="categoria">Categoría:</Form.Label>
+                            <Form.Select id="categoria" value={categoria} onChange={(e) => setCategoria(e.target.value)}>
+                                <option value="">Selecciona una categoría</option>
+                                <option value="tensoresFosters">Tensores Foster's</option>
+                                <option value="tensoresDistribucion">Tensores distribución</option>
+                                <option value="tensoresImportados">Tensores poly v importados</option>
+                                <option value="kitDistribucion">Kit distribución SKF</option>
+                                <option value="rodamientos">Rodamientos rueda importados</option>
+                                {/* Agrega más opciones según tus categorías */}
+                            </Form.Select>
                         </Form.Group>
                         <Button variant="outline-success" onClick={() => agregarProducto()}>Agregar Producto</Button>
                     </Form>

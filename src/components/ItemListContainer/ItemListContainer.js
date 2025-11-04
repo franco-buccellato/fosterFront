@@ -5,101 +5,189 @@ import { useParams } from 'react-router-dom';
 import SectionNovedades from '../SectionNovedades/SectionNovedades';
 import Background from '../Background/Background';
 
-import axios from 'axios';
-
 const ItemListContainer = () => {
 
+    const { categoria } = useParams();
     const [productos, setProductos] = useState([]);
     const [productosBase, setProductosBase] = useState([]);
-
-    const {id, descripcion, medida, codigoFabrica, marca, modelo} = useParams();
-
     const [hayFiltros, setHayFiltros] = useState(false);
+    const [titulo, setTitulo] = useState("");
+  
+    const TITULOS = {
+      rodamientos: "Rodamientos rueda importados",
+      tensoresfosters: "Tensores poly v Fosters",
+      tensoresdistribucion: "Tensores distribución",
+      tensoresimportados: "Tensores poly v importados",
+      kitdistribucion: "Kit distribución SKF",
+    };
+
+    const PLACEHOLDERS = {
+        tensoresfosters: {
+          codigo_producto: '84690',
+          descripcion: 'AIRE-ALTERNADOR',
+          medida: '17X60X26',
+          codigo_fabrica: 'VKM-33101',
+          marca: 'CITROEN-CHEVROLET-FIAT-FORD-RENAULT',
+          modelo: 'VARIOS',
+        },
+        tensoresdistribucion: {
+          codigo_producto: '85518',
+          descripcion: 'Distribución',
+          medida: '47x38/30',
+          marca: 'FORD',
+          modelo: 'RANGER-FALCON-SIERRA-TAUNUS',
+        },
+        tensoresimportados: {
+          codigo_producto: '84690 FTS IMP',
+          descripcion: 'AIRE-ALTERNADOR',
+          medida: '17X60X26',
+          codigo_fabrica: 'VKM-33101',
+          marca: 'CITROEN-CHEVROLET-FIAT-FORD-RENAULT',
+          modelo: 'VARIOS',
+        },
+        kitdistribucion: {
+            codigo_fabrica: 'VKMA-02206-A1',
+          descripcion: 'Kit distribucion',
+          marca: 'FIAT',
+          modelo: '1.4 8V - 1.3 8V / FIRE - STRADA - SIENA - PALIO - IDEA - PUNTO - GIULIETA - MITO',
+        },
+        rodamientos: {
+          codigo_producto: '96270',
+          descripcion: 'Rueda delantera EVA',
+          medida: '35x65x25',
+          codigo_fabrica: '12033',
+          marca: 'Renault',
+          modelo: '11-9-CLIO MIO - TWINGO',
+        },
+        default: {
+          codigo_producto: '',
+          descripcion: '',
+          medida: '',
+          codigo_fabrica: '',
+          marca: '',
+          modelo: '',
+        }
+      };      
     
+    // Fetch productos
     useEffect(() => {
-        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return res.json();
-            })
-            .then(data => {
-                console.log(data);
-                setProductos(data);
-                setProductosBase(data);
-            })
-            .catch(err => {
-                console.log(err);
-            });
-    }, [id, descripcion, medida, codigoFabrica, marca, modelo]);
-    
+        limpiarFiltro();
+        fetch("https://back-fosters.azurewebsites.net/api/productos2/")
+        .then((res) => {
+            if (!res.ok) throw new Error("Network response was not ok");
+            return res.json();
+        })
+        .then((data) => {
+            let filtrados = data;
+
+            if (categoria) {
+            filtrados = data.filter(
+                (p) => p.categoria?.toLowerCase() === categoria.toLowerCase()
+            );
+            }
+
+            setProductos(filtrados);
+            setProductosBase(filtrados);
+        })
+        .catch((err) => {
+            console.error(err);
+        });
+    }, [categoria]);
+
+    // Manejo del título según la categoría
+    useEffect(() => {
+        if (categoria) {
+        setTitulo(TITULOS[categoria.toLowerCase()] || "Productos");
+        } else {
+        setTitulo("Productos");
+        }
+    }, [categoria]);
 
     const aplicarFiltro = () => {
         setHayFiltros(true);
-        let id = document.getElementById("filtro_codigo_producto").value;
-        let descripcion = document.getElementById("filtro_descripcion").value;
-        let medida = document.getElementById("filtro_medida").value;
-        let codigoFabrica = document.getElementById("filtro_codigo_fabrica").value;
-        let marca = document.getElementById("filtro_marca").value;
-        let modelo = document.getElementById("filtro_modelo").value;
+    
+        const getValue = (id) => {
+            const el = document.getElementById(id);
+            return el ? el.value.trim() : undefined;
+        };
+    
+        const setPlaceholder = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.placeholder = text;
+        };
+    
+        let id = getValue("filtro_codigo_producto");
+        let descripcion = getValue("filtro_descripcion");
+        let medida = getValue("filtro_medida");
+        let codigoFabrica = getValue("filtro_codigo_fabrica");
+        let marca = getValue("filtro_marca");
+        let modelo = getValue("filtro_modelo");
+    
         id = id === '' ? undefined : id;
         descripcion = descripcion === '' ? undefined : descripcion;
         medida = medida === '' ? undefined : medida;
         codigoFabrica = codigoFabrica === '' ? undefined : codigoFabrica;
         marca = marca === '' ? undefined : marca;
         modelo = modelo === '' ? undefined : modelo;
-        setProductos(filtrarProductosSiHayFiltros(id, descripcion, medida, marca, modelo, codigoFabrica));
-        let productoFiltrado = filtrarProductosSiHayFiltros(id, descripcion, medida, marca, modelo, codigoFabrica);
+    
+        const productoFiltrado = filtrarProductosSiHayFiltros(id, descripcion, medida, marca, modelo, codigoFabrica);
+        setProductos(productoFiltrado);
+    
         if(productoFiltrado.length === 1) {
-            document.getElementById("filtro_codigo_producto").placeholder = productoFiltrado[0].id;
-            document.getElementById("filtro_descripcion").placeholder = productoFiltrado[0].descripcion;
-            document.getElementById("filtro_medida").placeholder = productoFiltrado[0].medida;
-            document.getElementById("filtro_codigo_fabrica").placeholder = productoFiltrado[0].codigoFabrica;
-            document.getElementById("filtro_marca").placeholder = productoFiltrado[0].marca;
-            document.getElementById("filtro_modelo").placeholder = productoFiltrado[0].modelos.toString();
+            setPlaceholder("filtro_codigo_producto", productoFiltrado[0].id);
+            setPlaceholder("filtro_descripcion", productoFiltrado[0].descripcion);
+            setPlaceholder("filtro_medida", productoFiltrado[0].medida);
+            setPlaceholder("filtro_codigo_fabrica", productoFiltrado[0].codigoFabrica);
+            setPlaceholder("filtro_marca", productoFiltrado[0].marca);
+            setPlaceholder("filtro_modelo", productoFiltrado[0].modelos?.toString() || '');
         } else {
-            document.getElementById("filtro_codigo_producto").placeholder = '';
-            document.getElementById("filtro_descripcion").placeholder = '';
-            document.getElementById("filtro_medida").placeholder = '';
-            document.getElementById("filtro_codigo_fabrica").placeholder = '';
-            document.getElementById("filtro_marca").placeholder = '';
-            document.getElementById("filtro_modelo").placeholder = '';
+            setPlaceholder("filtro_codigo_producto", '');
+            setPlaceholder("filtro_descripcion", '');
+            setPlaceholder("filtro_medida", '');
+            setPlaceholder("filtro_codigo_fabrica", '');
+            setPlaceholder("filtro_marca", '');
+            setPlaceholder("filtro_modelo", '');
         }
     }
-
-    const limpiarFiltro = () => {
-        document.getElementById("filtro_codigo_producto").value = '';
-        document.getElementById("filtro_descripcion").value = '';
-        document.getElementById("filtro_medida").value = '';
-        document.getElementById("filtro_codigo_fabrica").value = '';
-        document.getElementById("filtro_marca").value = '';
-        document.getElementById("filtro_modelo").value = '';
-        document.getElementById("filtro_codigo_producto").placeholder = 'Ej: 84690';
-        document.getElementById("filtro_descripcion").placeholder = 'Ej: ALTERNADOR';
-        document.getElementById("filtro_medida").placeholder = 'Ej: 17x60x26';
-        document.getElementById("filtro_codigo_fabrica").placeholder = 'Ej: VKM-36018';
-        document.getElementById("filtro_marca").placeholder = 'Ej: Peugeot';
-        document.getElementById("filtro_modelo").placeholder = 'Ej: 306';
-        setHayFiltros(false);
-        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
-        .then(res => {
-            if (!res.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return res.json();
-        })
-        .then(data => {
-            console.log(data);
-            setProductos(data);
-        })
-        .catch(err => {
-            console.log(err);
-        });
     
-        /* setProductos(filtrarProductosSiHayFiltros(productos, undefined, undefined, undefined, undefined, undefined)); */
-    }
-
+    const limpiarFiltro = () => {
+        const setInput = (id, placeholder) => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.value = '';
+            if (placeholder !== undefined) el.placeholder = placeholder;
+          }
+        };
+      
+        const ph = PLACEHOLDERS[categoria?.toLowerCase()] || PLACEHOLDERS.default;
+      
+        setInput("filtro_codigo_producto", ph.codigo_producto);
+        setInput("filtro_descripcion", ph.descripcion);
+        setInput("filtro_medida", ph.medida);
+        setInput("filtro_codigo_fabrica", ph.codigo_fabrica);
+        setInput("filtro_marca", ph.marca);
+        setInput("filtro_modelo", ph.modelo);
+      
+        if (document.getElementById("filtro_codigo_producto_fabrica") && ph.codigo_producto_fabrica) {
+          setInput("filtro_codigo_producto_fabrica", ph.codigo_producto_fabrica);
+        }
+      
+        setHayFiltros(false);
+      
+        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+          .then(res => {
+            if (!res.ok) throw new Error('Network response was not ok');
+            return res.json();
+          })
+          .then(data => {
+            let filtrados = categoria
+              ? data.filter(p => p.categoria?.toLowerCase() === categoria.toLowerCase())
+              : data;
+            setProductos(filtrados);
+          })
+          .catch(err => console.log(err));
+      };
+      
     const filtrarProductosSiHayFiltros = (
             id,
             descripcion,
@@ -178,37 +266,130 @@ const ItemListContainer = () => {
     return (
         <div className="container-buscador" onKeyDown={() => handleKeyPress()}>
             <div className='container-titulo'>
-                <h4>Nuestros Productos</h4>
+                <h4>{titulo}</h4>
             </div>
             <div className='container-filtros-productos'>
-                <div className='container-input-filtros'>
-                    <label>Código Foster's:</label>
-                    <input type="search" id="filtro_codigo_producto" placeholder='Ej: 84690'></input>
-                </div>
-                <div className='container-input-filtros'>
-                    <label>Descripcion:</label>
-                    <input type="search" id="filtro_descripcion" placeholder='Ej: Alternador'></input>
-                </div>
-                <div className='container-input-filtros'>
-                    <label>Por Medida:</label>
-                    <input type="search" id="filtro_medida" placeholder='Ej: 17x60x26'></input>
-                </div>
-                <div className='container-input-filtros'>
-                    <label>Código SKF o INA:</label>
-                    <input type="search" id="filtro_codigo_fabrica" placeholder='Ej: VKM-36018'></input>
-                </div>
-                <div className='container-input-filtros'>
-                    <label>Marca:</label>
-                    <input type="search" id="filtro_marca" placeholder='Ej: Peugeot'></input>
-                </div>
-                <div className='container-input-filtros'>
-                    <label>Modelo:</label>
-                    <input type="search" id="filtro_modelo" placeholder='Ej: 306'></input>
-                </div>
+                {
+                    categoria?.toLowerCase() === "kitdistribucion" && (
+                    <>
+                        {/* Filtros especiales para Kit Distribución */}
+                        <div className='container-input-filtros'>
+                            <label>Código SKF o INA:</label>
+                            <input type="search" id="filtro_codigo_fabrica" placeholder=''></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Descripcion:</label>
+                            <input type="search" id="filtro_descripcion"></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Marca:</label>
+                            <input type="search" id="filtro_marca"></input>
+                        </div>
+                        <div className='container-input-filtro-modelo'>
+                            <label>Modelo:</label>
+                            <input type="search" id="filtro_modelo"></input>
+                        </div>
+                    </>
+                    )
+                }
+                {
+                    categoria?.toLowerCase() === "rodamientos" && (
+                    <>
+                        {/* Filtros especiales para rodamientos */}
+                        <div className='container-input-filtros'>
+                            <label>Código Foster's:</label>
+                            <input type="search" id="filtro_codigo_producto" placeholder=''></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Descripcion:</label>
+                            <input type="search" id="filtro_descripcion" placeholder=''></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Por Medida:</label>
+                            <input type="search" id="filtro_medida" placeholder=''></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Código SKF o INA:</label>
+                            <input type="search" id="filtro_codigo_fabrica" placeholder=''></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Marca:</label>
+                            <input type="search" id="filtro_marca" placeholder=''></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Modelo:</label>
+                            <input type="search" id="filtro_modelo" placeholder=''></input>
+                        </div>
+                    </>
+                    )
+                }
+                                {
+                    categoria?.toLowerCase() === "tensoresimportados" && (
+                    <>
+                        {/* Filtros especiales para rodamientos */}
+                        <div className='container-input-filtros'>
+                            <label>Código Foster's:</label>
+                            <input type="search" id="filtro_codigo_producto" placeholder='Ej: 84604 FTS IMP'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Descripcion:</label>
+                            <input type="search" id="filtro_descripcion" placeholder='Ej: tensor'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Por Medida:</label>
+                            <input type="search" id="filtro_medida" placeholder='Ej: 17x60x26'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Código SKF o INA:</label>
+                            <input type="search" id="filtro_codigo_fabrica" placeholder='Ej: 96270'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Marca:</label>
+                            <input type="search" id="filtro_marca" placeholder='Ej: Peugeot'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Modelo:</label>
+                            <input type="search" id="filtro_modelo" placeholder='Ej: 306'></input>
+                        </div>
+                    </>
+                    )
+                }
+                {
+                    categoria?.toLowerCase() !== "kitdistribucion" && 
+                    categoria?.toLowerCase() !== "rodamientos"  && 
+                    categoria?.toLowerCase() !== "tensoresimportados"&& (
+                    <>
+                        {/* Filtros para todos los demás */}
+                        <div className='container-input-filtros'>
+                            <label>Código Foster's:</label>
+                            <input type="search" id="filtro_codigo_producto" placeholder='Ej: 86131'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Descripcion:</label>
+                            <input type="search" id="filtro_descripcion" placeholder='Ej: Alternador'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Por Medida:</label>
+                            <input type="search" id="filtro_medida" placeholder='Ej: 17x60x26'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Código Original:</label>
+                            <input type="search" id="filtro_codigo_fabrica" placeholder='Ej: VKM-36018'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Marca:</label>
+                            <input type="search" id="filtro_marca" placeholder='Ej: Peugeot'></input>
+                        </div>
+                        <div className='container-input-filtros'>
+                            <label>Modelo:</label>
+                            <input type="search" id="filtro_modelo" placeholder='Ej: 306'></input>
+                        </div>
+                    </>
+                )}
             </div>
             <div className='container-filtros-botones'>
                 <div id='container-input-submit-aplicar' className='container-input-submit'onClick={() => aplicarFiltro()}>
-                    <div id="aplicar_filtro">Buscar</div>
+                    <div id="aplicar_filtro">Filtrar</div>
                 </div>
                 <div className='container-input-submit'onClick={() => limpiarFiltro()}>
                     <div id="limpiar_filtro">Limpiar</div>

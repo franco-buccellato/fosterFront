@@ -30,12 +30,16 @@ const ItemDetail = ({id, descripcion, medida, codigoFabrica, marca, precio, link
     }
 
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
-
     let imagen = '';
+    
     try {
         imagen = cargarImagen(`./${id}.jpg`);
-    } catch (error) {
-        imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+    } catch (errorJpg) {
+        try {
+            imagen = cargarImagen(`./${id}.png`);
+        } catch (errorPng) {
+            imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+        }
     }
 
     return (

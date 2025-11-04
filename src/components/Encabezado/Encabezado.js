@@ -133,7 +133,25 @@ function Encabezado({cantidadCarrito}) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <LinkContainer to = '/'><Nav.Link>Inicio</Nav.Link></LinkContainer>
-                        <LinkContainer to = '/productos'><Nav.Link>Productos</Nav.Link></LinkContainer>
+                        {/*<LinkContainer to = '/productos'><Nav.Link>Productos</Nav.Link></LinkContainer>*/}
+                        <NavDropdown title="Categorias" id="basic-nav-dropdown">
+                                <LinkContainer to='/productos/tensoresFosters'>
+                                    <NavDropdown.Item>Tensores poly v Foster's</NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to='/productos/tensoresDistribucion'>
+                                    <NavDropdown.Item>Tensores distribucción</NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to='/productos/tensoresImportados'>
+                                    <NavDropdown.Item>Tensores poly v importados</NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to='/productos/kitDistribucion'>
+                                    <NavDropdown.Item>Kit distribución SKF</NavDropdown.Item>
+                                </LinkContainer>
+                                <LinkContainer to='/productos/rodamientos'>
+                                    <NavDropdown.Item>Rodamientos rueda importados</NavDropdown.Item>
+                                </LinkContainer>
+                            </NavDropdown>
+                        {/* <LinkContainer to = '/ingresos'><Nav.Link>Últimos Ingresos</Nav.Link></LinkContainer> */}
                         {
                             (esAdministrador()) &&
                             
@@ -181,7 +199,7 @@ function Encabezado({cantidadCarrito}) {
                         {
                             (estaLogueado() && esClienteDirecto())
                             && 
-                            <Nav.Link><Button variant="warning" onClick={handleShowListaDePrecios}>Descargar Precios</Button></Nav.Link>
+                            <Nav.Link><Button variant="warning" onClick={handleShowListaDePrecios}>Descargar Catálogo</Button></Nav.Link>
                         }
                     </Nav>
                 </Navbar.Collapse>
@@ -217,7 +235,7 @@ function Encabezado({cantidadCarrito}) {
             </Modal>
             <Modal show={showListaDePrecios} onHide={handleCloseListaDePrecios}>
                 <Modal.Header closeButton>
-                <Modal.Title>¿Desea descarga la lista de precios?</Modal.Title>
+                <Modal.Title>¿Desea descarga el catàlogo?</Modal.Title>
                 </Modal.Header>
                 <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseListaDePrecios}>
@@ -234,7 +252,9 @@ function Encabezado({cantidadCarrito}) {
                         <ExcelColumn label="Código SKF o INA" value="codigoFabrica"/>
                         <ExcelColumn label="Medida" value="medida"/>
                         <ExcelColumn label="Marca" value="marca"/>
-                        <ExcelColumn label="Precio Bruto" value="precio"/>
+                        <ExcelColumn label="Categoria" value="categoria"/>
+                        <ExcelColumn label="Modelos" value={(col) => col.modelos?.join(", ") || ""}/>
+                        <ExcelColumn label="Precio lista" value="precio"/>
 
                         {/* <ExcelColumn label="Código SKF o INA" value="codigoFabrica"/>
                         <ExcelColumn label="ID" value="id"/>

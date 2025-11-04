@@ -59,7 +59,7 @@ export const CartContextProvider = ({children, onAdd}) => {
         cart.forEach(
             unItem => {
                 //suma += (unItem.nuevaCantidad * parseInt(unItem.precioDefinitivo.replace('.','')))
-                suma += (unItem.nuevaCantidad * (unItem.precioDefinitivo * descuentoFinal).toFixed(2))
+                suma += (unItem.nuevaCantidad * (unItem.precioDefinitivo))
             }
         )
         return suma.toFixed(2);
