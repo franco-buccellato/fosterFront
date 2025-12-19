@@ -46,6 +46,7 @@ const Usuario = () => {
         setContrasenia('');
         setDescuento('');
         setUtilidad('');
+        setDescripcionCliente('');
     };
     /* MODAL Error*/
     const [showError, setShowError] = useState(false);
@@ -56,16 +57,20 @@ const Usuario = () => {
     const [contrasenia, setContrasenia] = useState('');
     const [descuento, setDescuento] = useState('');
     const [utilidad, setUtilidad] = useState(0);
+    const [descripcionCliente, setDescripcionCliente] = useState('');
+
 
     const agregarUsuario = () => {
         let nuevoUsuario = {
             nombre: nombre,
             contrasenia: contrasenia,
+            descripcionCliente: descripcionCliente,
             descuento: descuento !== '' ? descuento : usuario.descuento,
             utilidad: utilidad,
             proveedor: usuario.nombre,
             idUsuario: uniqid()
-        }
+        };
+        
         console.log(nuevoUsuario);
         
         axios.post('https://back-fosters.azurewebsites.net/api/usuario/nuevo', nuevoUsuario)  // Cambiado a la URL completa de Azure
@@ -101,6 +106,16 @@ const Usuario = () => {
                             <Form.Label for='descuento'>Descuento:</Form.Label>
                             <Form.Control type="number" placeholder="%" id="descuento" value={descuento} onChange={(e) => {setDescuento(e.target.value)}}/>
                         </Form.Group> 
+                        <Form.Group className="mb-3">
+                            <Form.Label>Descripción del cliente:</Form.Label>
+                            <Form.Control
+                                as="textarea"
+                                rows={3}
+                                value={descripcionCliente}
+                                onChange={(e) => setDescripcionCliente(e.target.value)}
+                            />
+                        </Form.Group>
+
                         <Button variant="outline-success" onClick={() => agregarUsuario()}>Agregar Usuario</Button>
                     </Form>
                 </div>

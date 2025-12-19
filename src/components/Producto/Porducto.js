@@ -143,6 +143,7 @@ const Producto = () => {
                                 <option value="tensoresImportados">Tensores poly v importados</option>
                                 <option value="kitDistribucion">Kit distribución SKF</option>
                                 <option value="rodamientos">Rodamientos rueda importados</option>
+                                <option value="rodamientos">Todas las categorias</option>
                                 {/* Agrega más opciones según tus categorías */}
                             </Form.Select>
                         </Form.Group>

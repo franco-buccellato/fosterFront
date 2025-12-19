@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import SectionNovedades from '../SectionNovedades/SectionNovedades';
 import Background from '../Background/Background';
+import marcasModelos from './marcasmodelos.json';
 
 const ItemListContainer = () => {
 
@@ -12,6 +13,11 @@ const ItemListContainer = () => {
     const [productosBase, setProductosBase] = useState([]);
     const [hayFiltros, setHayFiltros] = useState(false);
     const [titulo, setTitulo] = useState("");
+
+    const [marcas, setMarcas] = useState([]);
+    const [modelos, setModelos] = useState([]);
+
+    const [filtrosAplicados, setFiltrosAplicados] = useState([]);
   
     const TITULOS = {
       rodamientos: "Rodamientos rueda importados",
@@ -19,6 +25,7 @@ const ItemListContainer = () => {
       tensoresdistribucion: "Tensores distribución",
       tensoresimportados: "Tensores poly v importados",
       kitdistribucion: "Kit distribución SKF",
+      todascategorias: "Todas las categorias",
     };
 
     const PLACEHOLDERS = {
@@ -80,11 +87,12 @@ const ItemListContainer = () => {
         .then((data) => {
             let filtrados = data;
 
-            if (categoria) {
-            filtrados = data.filter(
-                (p) => p.categoria?.toLowerCase() === categoria.toLowerCase()
-            );
-            }
+            if (categoria && categoria.toLowerCase() !== "todascategorias") {
+                filtrados = data.filter(
+                  (p) => p.categoria?.toLowerCase() === categoria.toLowerCase()
+                );
+              }
+              
 
             setProductos(filtrados);
             setProductosBase(filtrados);
@@ -93,6 +101,22 @@ const ItemListContainer = () => {
             console.error(err);
         });
     }, [categoria]);
+
+    // Cargar marcas al iniciar
+    useEffect(() => {
+        setMarcas(Object.keys(marcasModelos)); 
+    }, []);
+
+    // Actualizar modelos cuando cambia la marca
+    useEffect(() => {
+        const marcaSeleccionada = document.getElementById("filtro_marca")?.value;
+        if (marcaSeleccionada && marcasModelos[marcaSeleccionada]) {
+            setModelos(marcasModelos[marcaSeleccionada]);
+        } else {
+            setModelos([]);
+        }
+    }, [productos]); // o [categoria] si querés más control
+
 
     // Manejo del título según la categoría
     useEffect(() => {
@@ -132,6 +156,19 @@ const ItemListContainer = () => {
     
         const productoFiltrado = filtrarProductosSiHayFiltros(id, descripcion, medida, marca, modelo, codigoFabrica);
         setProductos(productoFiltrado);
+
+        // Construir descripción de filtros aplicados
+        let filtros = [];
+
+        if (id) filtros.push(`Código: ${id}`);
+        if (descripcion) filtros.push(`Descripción: ${descripcion}`);
+        if (medida) filtros.push(`Medida: ${medida}`);
+        if (codigoFabrica) filtros.push(`Código fábrica: ${codigoFabrica}`);
+        if (marca) filtros.push(`Marca: ${marca}`);
+        if (modelo) filtros.push(`Modelo: ${modelo}`);
+
+        setFiltrosAplicados(filtros);
+
     
         if(productoFiltrado.length === 1) {
             setPlaceholder("filtro_codigo_producto", productoFiltrado[0].id);
@@ -151,6 +188,7 @@ const ItemListContainer = () => {
     }
     
     const limpiarFiltro = () => {
+        setFiltrosAplicados([]);
         const setInput = (id, placeholder) => {
           const el = document.getElementById(id);
           if (el) {
@@ -180,9 +218,10 @@ const ItemListContainer = () => {
             return res.json();
           })
           .then(data => {
-            let filtrados = categoria
+            let filtrados =
+            categoria && categoria.toLowerCase() !== "todascategorias"
               ? data.filter(p => p.categoria?.toLowerCase() === categoria.toLowerCase())
-              : data;
+              : data;          
             setProductos(filtrados);
           })
           .catch(err => console.log(err));
@@ -283,12 +322,30 @@ const ItemListContainer = () => {
                         </div>
                         <div className='container-input-filtros'>
                             <label>Marca:</label>
-                            <input type="search" id="filtro_marca"></input>
+                            <select 
+                                id="filtro_marca"
+                                onChange={(e) => {
+                                    const marca = e.target.value;
+                                    setModelos(marcasModelos[marca] || []);
+                                    document.getElementById("filtro_modelo").value = "";
+                                }}
+                            >
+                                <option value="">Seleccione marca</option>
+                                {marcas.map((m) => (
+                                    <option key={m} value={m}>{m}</option>
+                                ))}
+                            </select>
                         </div>
-                        <div className='container-input-filtro-modelo'>
-                            <label>Modelo:</label>
-                            <input type="search" id="filtro_modelo"></input>
+                        <div className='container-input-filtros'>
+                        <label>Modelo:</label>
+                            <select id="filtro_modelo">
+                                <option value="">Seleccione modelo</option>
+                                {modelos.map((mod) => (
+                                    <option key={mod} value={mod}>{mod}</option>
+                                ))}
+                            </select>
                         </div>
+                        
                     </>
                     )
                 }
@@ -314,11 +371,28 @@ const ItemListContainer = () => {
                         </div>
                         <div className='container-input-filtros'>
                             <label>Marca:</label>
-                            <input type="search" id="filtro_marca" placeholder=''></input>
+                            <select 
+                                id="filtro_marca"
+                                onChange={(e) => {
+                                    const marca = e.target.value;
+                                    setModelos(marcasModelos[marca] || []);
+                                    document.getElementById("filtro_modelo").value = "";
+                                }}
+                            >
+                                <option value="">Seleccione marca</option>
+                                {marcas.map((m) => (
+                                    <option key={m} value={m}>{m}</option>
+                                ))}
+                            </select>
                         </div>
                         <div className='container-input-filtros'>
-                            <label>Modelo:</label>
-                            <input type="search" id="filtro_modelo" placeholder=''></input>
+                        <label>Modelo:</label>
+                            <select id="filtro_modelo">
+                                <option value="">Seleccione modelo</option>
+                                {modelos.map((mod) => (
+                                    <option key={mod} value={mod}>{mod}</option>
+                                ))}
+                            </select>
                         </div>
                     </>
                     )
@@ -345,11 +419,28 @@ const ItemListContainer = () => {
                         </div>
                         <div className='container-input-filtros'>
                             <label>Marca:</label>
-                            <input type="search" id="filtro_marca" placeholder='Ej: Peugeot'></input>
+                            <select 
+                                id="filtro_marca"
+                                onChange={(e) => {
+                                    const marca = e.target.value;
+                                    setModelos(marcasModelos[marca] || []);
+                                    document.getElementById("filtro_modelo").value = "";
+                                }}
+                            >
+                                <option value="">Seleccione marca</option>
+                                {marcas.map((m) => (
+                                    <option key={m} value={m}>{m}</option>
+                                ))}
+                            </select>
                         </div>
                         <div className='container-input-filtros'>
-                            <label>Modelo:</label>
-                            <input type="search" id="filtro_modelo" placeholder='Ej: 306'></input>
+                        <label>Modelo:</label>
+                            <select id="filtro_modelo">
+                                <option value="">Seleccione modelo</option>
+                                {modelos.map((mod) => (
+                                    <option key={mod} value={mod}>{mod}</option>
+                                ))}
+                            </select>
                         </div>
                     </>
                     )
@@ -378,11 +469,28 @@ const ItemListContainer = () => {
                         </div>
                         <div className='container-input-filtros'>
                             <label>Marca:</label>
-                            <input type="search" id="filtro_marca" placeholder='Ej: Peugeot'></input>
+                            <select 
+                                id="filtro_marca"
+                                onChange={(e) => {
+                                    const marca = e.target.value;
+                                    setModelos(marcasModelos[marca] || []);
+                                    document.getElementById("filtro_modelo").value = "";
+                                }}
+                            >
+                                <option value="">Seleccione marca</option>
+                                {marcas.map((m) => (
+                                    <option key={m} value={m}>{m}</option>
+                                ))}
+                            </select>
                         </div>
                         <div className='container-input-filtros'>
-                            <label>Modelo:</label>
-                            <input type="search" id="filtro_modelo" placeholder='Ej: 306'></input>
+                        <label>Modelo:</label>
+                            <select id="filtro_modelo">
+                                <option value="">Seleccione modelo</option>
+                                {modelos.map((mod) => (
+                                    <option key={mod} value={mod}>{mod}</option>
+                                ))}
+                            </select>
                         </div>
                     </>
                 )}
@@ -392,7 +500,17 @@ const ItemListContainer = () => {
                     <div id="aplicar_filtro">Filtrar</div>
                 </div>
                 <div className='container-input-submit'onClick={() => limpiarFiltro()}>
-                    <div id="limpiar_filtro">Limpiar</div>
+
+                <div id="limpiar_filtro" className="btn-limpiar-badges">
+                <span>Limpiar filtros:</span>
+                <div className="badges">
+                    {filtrosAplicados.map((filtro, i) => (
+                    <span key={i} className="badge">{filtro}</span>
+                    ))}
+                </div>
+                </div>
+
+
                 </div>
             </div>
             {

@@ -17,6 +17,11 @@ const Usuarios = () => {
     const [listaUsuarios, setListaUsuarios] = useState([]);
     const [tablaUsuarios, setTablaUsuarios] = useState();
 
+    const refrescarUsuarios = () => {
+        setTablaUsuarios(prev => prev + 1);
+    };
+    
+
     useEffect(() => {
         fetch(`https://back-fosters.azurewebsites.net/api/usuario/?proveedor=${encodeURIComponent(usuario.nombre)}`)
             .then(res => {
@@ -44,6 +49,7 @@ const Usuarios = () => {
         setContrasenia('');
         setDescuento('');
         setUtilidad('');
+        setDescripcionCliente('');
     };
     /* MODAL Error*/
     const [showError, setShowError] = useState(false);
@@ -55,11 +61,14 @@ const Usuarios = () => {
     const [contrasenia, setContrasenia] = useState('');
     const [descuento, setDescuento] = useState('');
     const [utilidad, setUtilidad] = useState(0);
+    const [descripcionCliente, setDescripcionCliente] = useState('');
+
 
     const agregarUsuario = () => {
         let nuevoUsuario = {
             nombre: nombre,
             contrasenia: contrasenia,
+            descripcionCliente: descripcionCliente,
             descuento: descuento !== '' ? descuento : usuario.descuento,
             utilidad: utilidad,
             proveedor: usuario.nombre,
@@ -93,13 +102,14 @@ const Usuarios = () => {
     }
 
     //Armar lista de usuario
-    const tablaDeUsuario = listaUsuarios.map(
-        unUsuario => {
-            return (
-                <UsuarioItem usuario={unUsuario} esAdministrador={esAdministrador}/>
-            )
-        }
-    )
+    const tablaDeUsuario = listaUsuarios.map(unUsuario => (
+        <UsuarioItem
+            key={unUsuario.idUsuario}
+            usuario={unUsuario}
+            esAdministrador={esAdministrador}
+            onUsuarioActualizado={refrescarUsuarios}
+        />
+    ));
 
     if(esAdministrador()) {
         return (
@@ -115,6 +125,7 @@ const Usuarios = () => {
                                 <th>Utilidad</th>
                                 <th>Editar</th>
                                 <th>Eliminar</th>
+                                <th>Descripción</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -159,6 +170,17 @@ const Usuarios = () => {
                             <Form.Label>Contraseña:</Form.Label>
                             <Form.Control type="text" placeholder="Contraseña" id="contrasenia" value={contrasenia} onChange={(e) => {setContrasenia(e.target.value)}}/>
                         </Form.Group>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Descripción del cliente:</Form.Label>
+                            <Form.Control
+                                as="textarea"
+                                rows={3}
+                                value={descripcionCliente}
+                                onChange={(e) => setDescripcionCliente(e.target.value)}
+                            />
+                        </Form.Group>
+
+
                         {/* <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label for='utilidad'>Utilidad:</Form.Label>
                             <Form.Control type="number" placeholder="%" id="utilidad" value={utilidad} onChange={(e) => {setUtilidad(e.target.value)}}/>
@@ -176,6 +198,7 @@ const Usuarios = () => {
                                     <th>Utilidad</th>
                                     <th>Editar</th>
                                     <th>Eliminar</th>
+                                    <th>Descripción</th>
                                 </tr>
                             </thead>
                             <tbody>

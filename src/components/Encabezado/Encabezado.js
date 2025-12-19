@@ -14,6 +14,8 @@ import UsuarioContext from '../Context/UsuarioContext';
 import logoFosters from '../../imagenes/LOGO-FOSTERS.png';
 import logoSKF from '../../imagenes/SKF-LOGO.png';
 import ExportExcel from 'react-export-excel';
+import marcasModelos from "../ItemListContainer/marcasmodelos.json";
+
 import axios from 'axios';
 
 function Encabezado({cantidadCarrito}) {
@@ -64,6 +66,24 @@ function Encabezado({cantidadCarrito}) {
     };
 
     const [utilidadUsuario, setUtilidadUsuario] = useState();
+
+    //Filtro para descargar caatálogo
+    const marcas = Object.keys(marcasModelos).sort();
+    const [selectedMarca, setSelectedMarca] = useState("");
+    const dataFiltrada = selectedMarca
+    ? listaDeProductos.filter(p => {
+        const marcasProducto = p.marca?.toUpperCase() || "";
+
+        // Separadores comunes: -, /, |, , , espacio, punto y coma
+        const partes = marcasProducto
+            .split(/[-\/|,;]+/)
+            .map(m => m.trim());
+
+        return partes.includes(selectedMarca);
+    })
+    : listaDeProductos;
+
+
 
     useEffect( 
         () => {
@@ -150,6 +170,9 @@ function Encabezado({cantidadCarrito}) {
                                 <LinkContainer to='/productos/rodamientos'>
                                     <NavDropdown.Item>Rodamientos rueda importados</NavDropdown.Item>
                                 </LinkContainer>
+                                <LinkContainer to='/productos/todascategorias'>
+                                    <NavDropdown.Item>Todas las categorias</NavDropdown.Item>
+                                </LinkContainer>
                             </NavDropdown>
                         {/* <LinkContainer to = '/ingresos'><Nav.Link>Últimos Ingresos</Nav.Link></LinkContainer> */}
                         {
@@ -234,41 +257,54 @@ function Encabezado({cantidadCarrito}) {
                 </Modal.Footer>
             </Modal>
             <Modal show={showListaDePrecios} onHide={handleCloseListaDePrecios}>
-                <Modal.Header closeButton>
-                <Modal.Title>¿Desea descarga el catàlogo?</Modal.Title>
-                </Modal.Header>
-                <Modal.Footer>
+            <Modal.Header closeButton>
+                <Modal.Title>¿Desea descargar el catálogo?</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <label>Filtrar por marca (opcional):</label>
+                <select 
+                    className="form-select mt-2"
+                    value={selectedMarca}
+                    onChange={(e) => setSelectedMarca(e.target.value)}
+                >
+                    <option value="">Todas</option>
+                    {marcas.map(m => (
+                        <option key={m} value={m}>{m}</option>
+                    ))}
+                </select>
+            </Modal.Body>
+            <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseListaDePrecios}>
                     No
                 </Button>
                 <ExcelFile 
-                    element={<Button variant="primary" onClick={handleCloseListaDePrecios}>Si</Button>} 
-                    fileName="Lista de Precios Foster's"
+                    element={
+                        <Button variant="primary" onClick={handleCloseListaDePrecios}>
+                            Sí
+                        </Button>
+                    }
+                    fileName={
+                        `Lista de Precios Foster's${selectedMarca ? " - " + selectedMarca : ""}`
+                    }
                 >
-                    <ExcelSheet data={listaDeProductos} name="Lista de Precios">
-                        
+                    <ExcelSheet data={dataFiltrada} name="Lista de Precios">
+
                         <ExcelColumn label="Código Foster's" value="id"/>
                         <ExcelColumn label="Descripción" value="descripcion"/>
                         <ExcelColumn label="Código SKF o INA" value="codigoFabrica"/>
                         <ExcelColumn label="Medida" value="medida"/>
                         <ExcelColumn label="Marca" value="marca"/>
                         <ExcelColumn label="Categoria" value="categoria"/>
-                        <ExcelColumn label="Modelos" value={(col) => col.modelos?.join(", ") || ""}/>
+                        <ExcelColumn 
+                            label="Modelos" 
+                            value={(col) => col.modelos?.join(", ") || ""}
+                        />
                         <ExcelColumn label="Precio lista" value="precio"/>
-
-                        {/* <ExcelColumn label="Código SKF o INA" value="codigoFabrica"/>
-                        <ExcelColumn label="ID" value="id"/>
-                        <ExcelColumn label="Link Imagen" value="linkImagen"/>
-                        <ExcelColumn label="Marca" value="marca"/>
-                        <ExcelColumn label="Modelos" value="modelos"/>
-                        <ExcelColumn label="Nombre" value="nombre"/>
-                        <ExcelColumn label="Precio" value="precio"/>
-                        <ExcelColumn label="Rubro" value="rubro"/> */}
-                        {/* <ExcelColumn label="Tipo Modificacion" value="tipoModificacion"/> */}
                     </ExcelSheet>
                 </ExcelFile>
-                </Modal.Footer>
-            </Modal>
+            </Modal.Footer>
+        </Modal>
+
             <Modal show={showFallida} onHide={handleCloseFallida}>
                     <Modal.Header closeButton>
                     <Modal.Title>Operación fallida!</Modal.Title>

@@ -5,12 +5,21 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 
-const UsuarioItem = ({usuario, esAdministrador}) => {
+const UsuarioItem = ({ usuario, esAdministrador, onUsuarioActualizado }) => {
+
 
     /* MODAL Editar*/
     const [showEditar, setShowEditar] = useState(false);
     const handleCloseEditar = () => setShowEditar(false);
-    const handleShowEditar = () => setShowEditar(true);
+    const handleShowEditar = () => {
+        setNombre(usuario.nombre);
+        setContrasenia(usuario.contrasenia);
+        setDescuento(usuario.descuento);
+        setUtilidad(usuario.utilidad);
+        setDescripcionCliente(usuario.descripcionCliente || '');
+        setShowEditar(true);
+    };
+    
     /* MODAL Ok Editar*/
     const [showOkEditar, setShowOkEditar] = useState(false);
     const handleCloseOkEditar = () => setShowOkEditar(false);
@@ -42,12 +51,15 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
         console.log('Modificar usuario: ' + usuario.nombre);
         handleCloseEditar();
         const usuarioActualizado = {
-            nombre: nombre !== '' ? nombre : usuario.nombre,
-            contrasenia: contrasenia !== '' ? contrasenia : usuario.contrasenia,
-            descuento: descuento !== '' ? descuento : usuario.descuento,
-            utilidad: utilidad !== '' ? utilidad : usuario.utilidad,
+            nombre,
+            contrasenia,
+            descripcionCliente,
+            descuento,
+            utilidad,
             idUsuario: usuario.idUsuario
         };
+        
+        
         
         console.log('Datos del usuario actualizados:', usuarioActualizado); // Log para verificar
         fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
@@ -68,14 +80,14 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
     return res.text(); // Cambia esto a text() para manejar texto simple
 })
 .then(data => {
-    console.log('Datos devueltos por el servidor:', data);
-    if (data === "OK") { // Compara con el texto que esperas
+    if (data === "OK") {
         handleShowOkEditar();
+        onUsuarioActualizado(); // 🔥 ACÁ se refresca la tabla
     } else {
-        console.log('La modificación falló según la respuesta del servidor:', data);
         handleShowFallida();
     }
 })
+
 .catch(err => {
     console.log('Error en la modificación:', err.message);
     handleShowFallida(); // Esto se llama solo en caso de un error real
@@ -103,10 +115,10 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
             }
             return res.text(); // Cambia a text() si no siempre regresa JSON
         })
-        .then(data => {
-            console.log('Eliminado correctamente:', data);
+        .then(() => {
             handleShowOkEliminar();
-        })
+            onUsuarioActualizado(); // 🔥 refresca la tabla
+        })           
         .catch(err => {
             console.log('Error:', err);
             handleShowFallida();
@@ -120,6 +132,8 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
     const [contrasenia, setContrasenia] = useState('');
     const [descuento, setDescuento] = useState('');
     const [utilidad, setUtilidad] = useState('');
+    const [descripcionCliente, setDescripcionCliente] = useState('');
+
 
     return (
         <tr>
@@ -129,6 +143,7 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
             <td>{usuario.utilidad}</td>
             <td><ion-icon name="create-outline" onClick={() => editarUsuario(usuario)}></ion-icon></td>
             <td><ion-icon name="trash-outline" onClick={() => eliminarUsuario(usuario)}></ion-icon></td>
+            <td>{usuario.descripcionCliente}</td>
             {/* Modales */}
             <Modal show={showEditar} onHide={handleCloseEditar}>
                 <Modal.Header closeButton>
@@ -144,6 +159,16 @@ const UsuarioItem = ({usuario, esAdministrador}) => {
                             <Form.Label>Modificar Contraseña:</Form.Label>
                             <Form.Control type="text" placeholder={usuario.contrasenia}  id="contrasenia" value={contrasenia} onChange={(e) => {setContrasenia(e.target.value)}}/>
                         </Form.Group>
+                        <Form.Group className="mb-3" controlId="formDescripcionCliente">
+                            <Form.Label>Modificar descripción del cliente:</Form.Label>
+                            <Form.Control
+                                as="textarea"
+                                rows={3}
+                                value={descripcionCliente}
+                                onChange={(e) => setDescripcionCliente(e.target.value)}
+                            />
+                        </Form.Group>
+
                         {
                             esAdministrador() ? 
                             <Form.Group className="mb-3" controlId="formBasicDescuento">
