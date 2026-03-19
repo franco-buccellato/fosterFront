@@ -2,105 +2,105 @@ import './Login.css';
 import { useContext, useState } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
 import { Link, useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
+import { Button, Modal, Form, Card } from 'react-bootstrap';
 import axios from 'axios';
 
 const Login = () => {
-
-    /* MODAL */
     const [show, setShow] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const { usuario, loguearUsuario, estaLogueado, desloguearUsuario } = useContext(UsuarioContext);
+    const navigate = useNavigate();
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const {usuario, loguearUsuario, estaLogueado, desloguearUsuario} = useContext(UsuarioContext);
-    const navigate = useNavigate();
     const loguearse = () => {
-        let usuario = document.getElementById("usuario").value;
-        let contrasenia = document.getElementById("contrasenia").value;
+        setLoading(true);
+        let userVal = document.getElementById("usuario").value;
+        let passVal = document.getElementById("contrasenia").value;
         
-        axios.post(
-            'https://back-fosters.azurewebsites.net/api/usuario/',  // Cambiado a la URL completa de Azure
-            {nombre: usuario, contrasenia: contrasenia},
-            {headers: {'content-type': 'application/json'}}
-        ).then(
-            res => {
-                if(res.data) {
-                    console.log(res.data);
-                    loguearUsuario(res.data);
-                    navigate("/productos/tensoresFosters");
-                } else {
-                    handleShow();
-                }
-            }
-        )
-        .catch(
-            err => {
+        axios.post('https://back-fosters.azurewebsites.net/api/usuario/', 
+            { nombre: userVal, contrasenia: passVal },
+            { headers: { 'content-type': 'application/json' } }
+        ).then(res => {
+            if (res.data) {
+                loguearUsuario(res.data);
+                navigate("/productos", { state: { showModal: true } });
+            } else {
                 handleShow();
             }
-        )
+        }).catch(() => handleShow())
+          .finally(() => setLoading(false));
+    };
 
-    }
-
-    const handleKeyPress = (evento) => {
-        let e = evento || window.event;
-        if(e.keyCode === 13){
-            loguearse();
-        }
-    }
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') loguearse();
+    };
 
     return (
-        <div>
-            {
-                estaLogueado() ?
-                <div className="container-login">
-                    <div className='container-titulo'>
-                        <h4>¡Bienvenido {usuario.nombre}!</h4>
+        <div className="login-page-wrapper">
+            <Card className="login-card">
+                <Card.Body>
+                    <div className="login-brand">
+                        {/* Aquí podrías poner una versión pequeña de tu logo */}
+                        <h3>Foster's</h3>
+                        <p>Panel de Clientes</p>
                     </div>
-                    <div className='container-filtros-botones-login'>
-                            <Link to={'/productos'}>
-                                <Button variant="danger" size="lg">Nuestros Productos</Button>{' '}
-                            </Link>
-                    </div>
-                    <div className='container-filtros-botones'>
-                        <Button variant="outline-danger" onClick={() => desloguearUsuario()}>Cerrar Sesión</Button>
-                    </div>
-                </div> 
-                :
-                <div className="container-login" onKeyDown={() => handleKeyPress()}>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Usuario:</Form.Label>
-                            <Form.Control type="email" placeholder="Ingrese su usuario" id="usuario"/>
-                            <Form.Text className="text-muted">
-                            Usuario asignado por Foster's.
-                            </Form.Text>
-                        </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Contraseña:</Form.Label>
-                            <Form.Control type="password" placeholder="Contraseña" id="contrasenia"/>
-                            <Form.Text className="text-muted">
-                                Contraseña asignada por Foster's.
-                            </Form.Text>
-                        </Form.Group>
-                        <Button variant="outline-success" onClick={() => loguearse()}>Iniciar Sesión</Button>
-                    </Form>
-                </div>
-            }
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                <Modal.Title>Error</Modal.Title>
+                    {estaLogueado() ? (
+                        <div className="logged-in-container">
+                            <h4 className="welcome-text">¡Bienvenido, <span>{usuario.nombre}</span>!</h4>
+                            <div className="d-grid gap-3">
+                                <Link to='/productos' className="btn btn-danger btn-lg">
+                                    Explorar Catálogo
+                                </Link>
+                                <Button variant="outline-secondary" onClick={desloguearUsuario}>
+                                    Cerrar Sesión
+                                </Button>
+                            </div>
+                        </div>
+                    ) : (
+                        <Form onKeyDown={handleKeyPress}>
+                            <Form.Group className="mb-4">
+                                <Form.Label>Usuario</Form.Label>
+                                <Form.Control size="lg" type="text" placeholder="Tu usuario" id="usuario" autoFocus />
+                                <Form.Text className="text-muted">Asignado por la administración.</Form.Text>
+                            </Form.Group>
+
+                            <Form.Group className="mb-4">
+                                <Form.Label>Contraseña</Form.Label>
+                                <Form.Control size="lg" type="password" placeholder="••••••••" id="contrasenia" />
+                            </Form.Group>
+
+                            <div className="d-grid">
+                                <Button 
+                                    className="btn-login-submit" 
+                                    variant="primary" 
+                                    onClick={loguearse}
+                                    disabled={loading}
+                                >
+                                    {loading ? 'Verificando...' : 'Iniciar Sesión'}
+                                </Button>
+                            </div>
+                        </Form>
+                    )}
+                </Card.Body>
+            </Card>
+
+            <Modal show={show} onHide={handleClose} centered>
+                <Modal.Header closeButton className="bg-danger text-white">
+                    <Modal.Title>Error de Acceso</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>El usuario y/o la contraseña son incorrectas.<br></br>Intentelo nuevamente!</Modal.Body>
+                <Modal.Body className="text-center py-4">
+                    <h5>Credenciales Incorrectas</h5>
+                    <p>El usuario y/o la contraseña no coinciden con nuestros registros.</p>
+                </Modal.Body>
                 <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
+                    <Button variant="danger" onClick={handleClose}>Reintentar</Button>
                 </Modal.Footer>
             </Modal>
         </div>
     );
-}
+};
+
 export default Login;

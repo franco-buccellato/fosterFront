@@ -1,22 +1,37 @@
-.container-section-novedades {
+.novedades-section {
+    padding: 60px 20px;
+    background-color: #f4f7f6; /* Gris muy claro y moderno */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: #B9B9B9;
-    border-radius: 50px;
-}
-
-.container-novedades-title {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 
-.container-novedades-title h4 {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
+.novedades-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.novedades-header h4 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-line {
+    width: 60px;
+    height: 4px;
+    background-color: #CD1F26; /* Rojo de tu marca */
+    margin: 0 auto;
+}
+
+.novedades-grid {
+    display: grid;
+    /* Ajuste automático de columnas según el ancho */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
 }

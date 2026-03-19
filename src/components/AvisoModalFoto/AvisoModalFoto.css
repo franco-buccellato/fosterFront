@@ -1,0 +1,84 @@
+/* Contenedor principal del Modal */
+.custom-promo-modal .modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Título */
+.modal-promo-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #222;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Imagen y Badge */
+.promo-image-wrapper {
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.promo-img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.promo-image-wrapper:hover .promo-img {
+    transform: scale(1.05);
+}
+
+.promo-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #CD1F26;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Información del producto */
+.promo-info h3 {
+    font-weight: 700;
+    color: #003399; /* Azul institucional */
+    margin-bottom: 5px;
+}
+
+.promo-info p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Botón de acción tipo "Pill" */
+.btn-promo-action {
+    background-color: #CD1F26 !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 12px 0 !important;
+    width: 100%;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    transition: all 0.3s ease !important;
+}
+
+.btn-promo-action:hover {
+    background-color: #b01a20 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(205, 31, 38, 0.3);
+}
+
+/* Ajuste del botón cerrar */
+.btn-close:focus {
+    box-shadow: none;
+}

@@ -1,82 +1,48 @@
+import React, { useContext } from 'react'; // Importación faltante
 import './ItemCart.css';
-import { useContext } from 'react';
-import CartContext from '../Context/CartContext';
-import UsuarioContext from '../Context/UsuarioContext';
-import { getProductosSeleccionados } from '../repositorioProductosSeleccionados';
+import CartContext from '../Context/CartContext'; // Importación faltante
+import UsuarioContext from '../Context/UsuarioContext'; // Importación faltante
 
 const ItemCart = ({id, descripcion, precioDefinitivo, linkImagen, nuevaCantidad}) => {
-
-    const {usuario} = useContext(UsuarioContext);
-    let descuentoFinal = usuario !== undefined ? ((100 - usuario.descuento)/100) : 1;
-    let total;
     const {removeItem} = useContext(CartContext);
     const {estaLogueado} = useContext(UsuarioContext);
 
-    let productosSeleccionados = getProductosSeleccionados();
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
     let imagen = '';
-    
-    try {
-        imagen = cargarImagen(`./${id}.jpg`);
-    } catch (errorJpg) {
-        try {
-            imagen = cargarImagen(`./${id}.png`);
-        } catch (errorPng) {
-            imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+    try { 
+        imagen = cargarImagen(`./${id}.jpg`); 
+    } catch (e) { 
+        try { 
+            imagen = cargarImagen(`./${id}.png`); 
+        } catch (e2) { 
+            imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`); 
         }
     }
-    console.log('La iamgen es:');
-    console.log(imagen);
 
-    if(productosSeleccionados.includes(id) && estaLogueado()) {
-        total = precioDefinitivo * nuevaCantidad;
-        return (
-            <div className="shopping-cart-list-container">
-                <div className="product-cart-list">
-                    <div className="product-image-cart-list">
-                        <img className="img-cart-list" src={imagen} alt={id}></img>
-                    </div>
-                    <div className="product-details-cart-list">
-                        <div className="product-title-cart-list">{id}</div>
-                        <p className="product-description-cart-list">{descripcion}</p>
-                    </div>
-                    <div className="product-price-cart-list">{ '$' + (precioDefinitivo)}</div>
-                    <div className="product-price-cart-list">{ '$' + (precioDefinitivo)}</div>
-                    <div className="product-quantity-cart-list">
-                        <span>{nuevaCantidad}</span>
-                    </div>
-                    <div className="product-removal-cart-list">
-                        <div className='remove-product-cart-list' onClick={() => removeItem(id)}>Eliminar</div>
-                    </div>
-                    <div id='precioParaCalcularGanancia' className="product-line-price-cart-list">{estaLogueado() ? '$' + total.toFixed(2) : 'Consultanos!'}</div>
-                </div>
+    const totalFila = (precioDefinitivo * nuevaCantidad).toFixed(2);
+
+    return (
+        <div className="item-cart-row">
+            <div className="cart-cell img-cell">
+                <img src={imagen} alt={id} />
             </div>
-        );
-    } else {
-        total = (precioDefinitivo)  * nuevaCantidad;
-        return (
-            <div className="shopping-cart-list-container">
-                <div className="product-cart-list">
-                    <div className="product-image-cart-list">
-                        <img className="img-cart-list" src={linkImagen} alt={id}></img>
-                    </div>
-                    <div className="product-details-cart-list">
-                        <div className="product-title-cart-list">{id}</div>
-                        <p className="product-description-cart-list">{descripcion}</p>
-                    </div>
-    
-                    <div className="product-price-cart-list">{ estaLogueado() ? '$' + (precioDefinitivo): 'Consultanos!'}</div>
-                    <div className="product-price-cart-list">{ estaLogueado() ? '$' + (precioDefinitivo) : 'Consultanos!'}</div>
-                    <div className="product-quantity-cart-list">
-                        <span>{nuevaCantidad}</span>
-                    </div>
-                    <div className="product-removal-cart-list">
-                        <div className='remove-product-cart-list' onClick={() => removeItem(id)}>Eliminar</div>
-                    </div>
-                    <div id='precioParaCalcularGanancia' className="product-line-price-cart-list">{estaLogueado() ? '$' + total.toFixed(2) : 'Consultanos!'}</div>
-                </div>
+            <div className="cart-cell details-cell">
+                <span className="item-id">{id}</span>
+                <p>{descripcion}</p>
             </div>
-        );
-    }
+            <div className="cart-cell">${precioDefinitivo}</div>
+            <div className="cart-cell">${precioDefinitivo}</div>
+            <div className="cart-cell"><strong>{nuevaCantidad}</strong></div>
+            <div className="cart-cell total-cell">
+                {estaLogueado() ? `$${totalFila}` : '---'}
+            </div>
+            <div className="cart-cell">
+                <button className="btn-delete-item" onClick={() => removeItem(id)}>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    );
 }
-export default ItemCart;
+
+export default ItemCart; // Exportación faltante que causaba el ERROR en ItemListCart

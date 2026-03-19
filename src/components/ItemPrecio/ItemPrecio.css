@@ -1,30 +1,50 @@
 .price-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 2px;
 }
 
-.price-span-normal {
-    display: inline-flex;
-    /* text-decoration: line-through; */
-    color: #CD1F26;
+/* El precio tachado de lista */
+.price-old {
+    font-size: 12px;
+    color: #a0a0a0;
+    text-decoration: line-through;
+    font-weight: 400;
 }
 
-.price-span-descuento {
-    display: inline-flex;
+/* El precio con el descuento aplicado (intermedio) */
+.price-discount {
+    font-size: 13px;
+    color: #001da0;
+    font-weight: 600;
+}
+
+/* El precio que el cliente realmente paga */
+.price-main {
+    font-size: 20px;
+    color: #222;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Variación cuando aparece sobre la imagen (Hover) */
+.on-hover .price-main {
+    color: #001da0;
+    font-size: 24px;
+}
+
+.price-consultar {
+    font-weight: 700;
+    color: #001da0;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #001da0;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+/* Estilo para cuando se muestra abajo en el cuadro gris */
+.price-wrapper-down .price-main {
     color: #001da0;
 }
-.price-span-ganancia {
-    display: inline-flex;
-    color: #4567ff;
-}
 
-.el-wrapper:hover .cart .price-container {
-    display: none;
-}
-
-.price-span-final-sin-descuento {
-    margin-top: 10%;
-    color: #CD1F26;
-}

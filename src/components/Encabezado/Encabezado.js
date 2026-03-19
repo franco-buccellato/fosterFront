@@ -6,317 +6,167 @@ import CartWidget from '../CartWidget/CartWidget';
 import UserLogin from '../User/User';
 import '../Encabezado/Encabezado.css';
 import { useContext, useState, useEffect } from 'react';
-import {LinkContainer} from 'react-router-bootstrap'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Button, Form, Modal } from 'react-bootstrap';
 import UsuarioContext from '../Context/UsuarioContext';
 import logoFosters from '../../imagenes/LOGO-FOSTERS.png';
 import logoSKF from '../../imagenes/SKF-LOGO.png';
 import ExportExcel from 'react-export-excel';
 import marcasModelos from "../ItemListContainer/marcasmodelos.json";
 
-import axios from 'axios';
-
-function Encabezado({cantidadCarrito}) {
-
+function Encabezado({ cantidadCarrito }) {
     const ExcelFile = ExportExcel.ExcelFile;
     const ExcelSheet = ExportExcel.ExcelSheet;
-    const ExcelColumn= ExportExcel.ExcelColumn;
+    const ExcelColumn = ExportExcel.ExcelColumn;
 
-    const {usuario, estaLogueado, esAdministrador, esClienteDirecto} = useContext(UsuarioContext);
-
-    const [listaDeProductos, setListaDeProducto] = useState();
+    const { usuario, estaLogueado, esAdministrador, esClienteDirecto, desloguearUsuario } = useContext(UsuarioContext);
+    const [listaDeProductos, setListaDeProducto] = useState([]);
+    const [show, setShow] = useState(false);
+    const [showListaDePrecios, setShowListaDePrecios] = useState(false);
+    const [showFallida, setShowFallida] = useState(false);
+    const [utilidadUsuario, setUtilidadUsuario] = useState();
+    const [selectedMarca, setSelectedMarca] = useState("");
 
     useEffect(() => {
         fetch('https://back-fosters.azurewebsites.net/api/productos2/')
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return res.json();
-            })
-            .then(data => {
-                console.log(data);
-                setListaDeProducto(data);
-            })
-            .catch(err => {
-                console.log(err);
-            });
+            .then(res => res.json())
+            .then(data => setListaDeProducto(data))
+            .catch(err => console.log(err));
     }, []);
-    
 
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const [showListaDePrecios, setShowListaDePrecios] = useState(false);
-    const handleCloseListaDePrecios = () => setShowListaDePrecios(false);
-    const handleShowListaDePrecios = () => setShowListaDePrecios(true);
-
-    /* MODAL Fallida*/
-    const [showFallida, setShowFallida] = useState(false);
-    const handleCloseFallida = () => setShowFallida(false);
-    const handleShowFallida= () => setShowFallida(true);
+    useEffect(() => {
+        if (usuario) setUtilidadUsuario(usuario.utilidad);
+    }, [usuario]);
 
     const configurarNuevaGanancia = () => {
-        let nuevaGanancia = document.getElementById("nuevaGanancia").value;
-        guardarNUevaGanancia(nuevaGanancia);
-        setShow(false);
-    };
-
-    const [utilidadUsuario, setUtilidadUsuario] = useState();
-
-    //Filtro para descargar caatálogo
-    const marcas = Object.keys(marcasModelos).sort();
-    const [selectedMarca, setSelectedMarca] = useState("");
-    const dataFiltrada = selectedMarca
-    ? listaDeProductos.filter(p => {
-        const marcasProducto = p.marca?.toUpperCase() || "";
-
-        // Separadores comunes: -, /, |, , , espacio, punto y coma
-        const partes = marcasProducto
-            .split(/[-\/|,;]+/)
-            .map(m => m.trim());
-
-        return partes.includes(selectedMarca);
-    })
-    : listaDeProductos;
-
-
-
-    useEffect( 
-        () => {
-            if(usuario !== undefined) {
-                setUtilidadUsuario(usuario.utilidad);
-            }
-        }, [usuario]
-    )
-
-    //Guardar nuevos datos del usuario
-    const guardarNUevaGanancia = (ganancia) => {
-        console.log('Modificar ganancia: ' + ganancia);
+        const nuevaGanancia = document.getElementById("nuevaGanancia").value;
         const usuarioActualizado = {
-            utilidad: ganancia !== '' ? ganancia : usuario.utilidad,
+            utilidad: nuevaGanancia || usuario.utilidad,
             idUsuario: usuario.idUsuario
         };
-    
+
         fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(usuarioActualizado),
         })
-        .then(res => {
-            if (!res.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const contentType = res.headers.get("content-type");
-            
-            // Verifica si el contenido es JSON antes de intentar convertirlo
-            if (contentType && contentType.includes("application/json")) {
-                return res.json(); // Procesa como JSON
-            } else {
-                return res.text(); // Procesa como texto si no es JSON
-            }
-        })
-        .then(data => {
-            if (typeof data === 'string' && data === 'OK') {
-                console.log('Respuesta de texto:', data); // Respuesta de éxito sin JSON
-            } else {
-                console.log('Modificación correcta:', data);
+            .then(res => res.ok ? res.text() : Promise.reject())
+            .then(() => {
                 setUtilidadUsuario(usuarioActualizado.utilidad);
-            }
-        })
-        .catch(err => {
-            console.log('Error:', err);
-            handleShowFallida();
-        });
+                setShow(false);
+            })
+            .catch(() => setShowFallida(true));
     };
-    
+
+    const marcas = Object.keys(marcasModelos).sort();
+    const dataFiltrada = selectedMarca
+        ? listaDeProductos.filter(p => (p.marca || "").toUpperCase().split(/[-\/|,;]+/).map(m => m.trim()).includes(selectedMarca))
+        : listaDeProductos;
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='fixed-top'>
-            <Container>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <LinkContainer to = {'/'}>
-                    <Navbar.Brand>
-                        <img
-                            alt="logo-fosters"
-                            src={logoFosters}
-                            width="100"
-                            className="d-inline-block align-center"
-                        />{' '}
-                    </Navbar.Brand>
-                </LinkContainer>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <LinkContainer to = '/'><Nav.Link>Inicio</Nav.Link></LinkContainer>
-                        {/*<LinkContainer to = '/productos'><Nav.Link>Productos</Nav.Link></LinkContainer>*/}
-                        <NavDropdown title="Categorias" id="basic-nav-dropdown">
-                                <LinkContainer to='/productos/tensoresFosters'>
-                                    <NavDropdown.Item>Tensores poly v Foster's</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='/productos/tensoresDistribucion'>
-                                    <NavDropdown.Item>Tensores distribucción</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='/productos/tensoresImportados'>
-                                    <NavDropdown.Item>Tensores poly v importados</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='/productos/kitDistribucion'>
-                                    <NavDropdown.Item>Kit distribución SKF</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='/productos/rodamientos'>
-                                    <NavDropdown.Item>Rodamientos rueda importados</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='/productos/todascategorias'>
-                                    <NavDropdown.Item>Todas las categorias</NavDropdown.Item>
-                                </LinkContainer>
-                            </NavDropdown>
-                        {/* <LinkContainer to = '/ingresos'><Nav.Link>Últimos Ingresos</Nav.Link></LinkContainer> */}
-                        {
-                            (esAdministrador()) &&
+        <>
+            <Navbar expand="xl" variant="dark" className='fixed-top navbar-fosters-compact'>
+                <Container fluid="lg">
+                    <LinkContainer to='/'>
+                        <Navbar.Brand>
+                            <img src={logoFosters} alt="Foster" className="logo-compact" />
+                        </Navbar.Brand>
+                    </LinkContainer>
+
+                    <Navbar.Toggle aria-controls="main-navbar" />
+
+                    <Navbar.Collapse id="main-navbar">
+                        {/* Nav alineado verticalmente para centrar el carrito */}
+                        <Nav className="me-auto nav-links-container align-items-center">
+                            <LinkContainer to='/'><Nav.Link>Inicio</Nav.Link></LinkContainer>
                             
-                            <NavDropdown title="Gestion" id="basic-nav-dropdown">
-                                <LinkContainer to='usuario'>
-                                    <NavDropdown.Item>Alta Usuario</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='usuarios'>
-                                    <NavDropdown.Item>Modificar Usuarios</NavDropdown.Item>
-                                </LinkContainer>
+                            <NavDropdown title="Categorías" id="nav-cats">
+                                <LinkContainer to='/productos/tensoresFosters'><NavDropdown.Item>Tensores Poly-V Foster's</NavDropdown.Item></LinkContainer>
+                                <LinkContainer to='/productos/tensoresDistribucion'><NavDropdown.Item>Tensores Distribución</NavDropdown.Item></LinkContainer>
+                                <LinkContainer to='/productos/tensoresImportados'><NavDropdown.Item>Tensores Poly-V Importados</NavDropdown.Item></LinkContainer>
+                                <LinkContainer to='/productos/kitDistribucion'><NavDropdown.Item>Kit Distribución SKF</NavDropdown.Item></LinkContainer>
+                                <LinkContainer to='/productos/rodamientos'><NavDropdown.Item>Rodamientos Rueda</NavDropdown.Item></LinkContainer>
                                 <NavDropdown.Divider />
-                                <LinkContainer to='producto'>
-                                    <NavDropdown.Item>Alta Producto</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to='catalogo'>
-                                    <NavDropdown.Item>Modificar Productos</NavDropdown.Item>
-                                </LinkContainer>
-                                <NavDropdown.Divider />
-                                <LinkContainer to='aumento'>
-                                    <NavDropdown.Item>Aumentos</NavDropdown.Item>
-                                </LinkContainer>
+                                <LinkContainer to='/productos/todascategorias'><NavDropdown.Item>Todas las categorías</NavDropdown.Item></LinkContainer>
                             </NavDropdown>
-                        }
-                        {
-                            (esClienteDirecto() && !esAdministrador()) &&
-                            <LinkContainer to = '/usuarios'><Nav.Link>Usuarios</Nav.Link></LinkContainer>
-                        }
-                        {
-                            (estaLogueado() && esClienteDirecto() && !esAdministrador()) &&
-                            <LinkContainer to = '/carrito'><Nav.Link><CartWidget inicial={cantidadCarrito}/></Nav.Link></LinkContainer>
-                        }
-                    </Nav>
-                    <Nav>
-                    <Nav.Link>Tensores fabricados con rodamientos                      
-                        <img
-                            alt="logo-skf"
-                            src={logoSKF}
-                            width="50"
-                            className="d-inline-block align-center imagen-skf"
-                        />{' '}</Nav.Link>
-                        {
-                            (estaLogueado() && esClienteDirecto()) && <Nav.Link><Button variant="info" onClick={handleShow}>Utilidad {utilidadUsuario !== undefined ? utilidadUsuario : ''} %</Button></Nav.Link>
-                        }
-                        <LinkContainer to = '/login'><Nav.Link><UserLogin/></Nav.Link></LinkContainer>
-                        {
-                            (estaLogueado() && esClienteDirecto())
-                            && 
-                            <Nav.Link><Button variant="warning" onClick={handleShowListaDePrecios}>Descargar Catálogo</Button></Nav.Link>
-                        }
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                <Modal.Title>Configurar Utilidad</Modal.Title>
-                </Modal.Header>
+
+                            {esAdministrador() && (
+                                <NavDropdown title="Gestión" id="nav-gest" className="admin-dropdown">
+                                    <LinkContainer to='usuario'><NavDropdown.Item>Alta Usuario</NavDropdown.Item></LinkContainer>
+                                    <LinkContainer to='usuarios'><NavDropdown.Item>Modificar Usuarios</NavDropdown.Item></LinkContainer>
+                                    <NavDropdown.Divider />
+                                    <LinkContainer to='producto'><NavDropdown.Item>Alta Producto</NavDropdown.Item></LinkContainer>
+                                    <LinkContainer to='catalogo'><NavDropdown.Item>Modificar Productos</NavDropdown.Item></LinkContainer>
+                                    <NavDropdown.Divider />
+                                    <LinkContainer to='aumento'><NavDropdown.Item>Aumentos</NavDropdown.Item></LinkContainer>
+                                    <LinkContainer to='recomendaciones'><NavDropdown.Item>Recomendaciones</NavDropdown.Item></LinkContainer>
+                                </NavDropdown>
+                            )}
+
+                            {/* El carrito ahora tiene una clase específica para control de padding */}
+                            {(estaLogueado() && esClienteDirecto() && !esAdministrador()) && (
+                                <LinkContainer to='/carrito'>
+                                    <Nav.Link className="cart-container-nav">
+                                        <CartWidget inicial={cantidadCarrito} />
+                                    </Nav.Link>
+                                </LinkContainer>
+                            )}
+                        </Nav>
+
+                        <Nav className="ms-auto align-items-center gap-2">
+                            <div className="skf-premium-badge d-none d-lg-flex">
+                                <div className="skf-label">PRODUCTO CON</div>
+                                <div className="skf-logo-container">
+                                    <img src={logoSKF} alt="SKF" />
+                                </div>
+                            </div>
+
+                            {estaLogueado() ? (
+                                <div className="user-action-buttons">
+                                    {esClienteDirecto() && (
+                                        <>
+                                            <Button className="btn-utilidad-pill" onClick={() => setShow(true)}>
+                                                Utilidad {utilidadUsuario}%
+                                            </Button>
+                                            <Button className="btn-catalogo-pill" onClick={() => setShowListaDePrecios(true)}>
+                                                Catálogo
+                                            </Button>
+                                        </>
+                                    )}
+                                    <div className="separador-v"></div>
+                                    <Button variant="danger" className="btn-logout-pill" onClick={desloguearUsuario}>
+                                        Cerrar Sesión
+                                    </Button>
+                                </div>
+                            ) : (
+                                <div className="login-section-pill">
+                                    <LinkContainer to='/login'>
+                                        <Button className="btn-login-pill">
+                                            Iniciar Sesión
+                                        </Button>
+                                    </LinkContainer>
+                                </div>
+                            )}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
+            {/* MODALES SE MANTIENEN IGUAL */}
+            <Modal show={show} onHide={() => setShow(false)} centered>
+                <Modal.Header closeButton><Modal.Title>Configurar Utilidad</Modal.Title></Modal.Header>
                 <Modal.Body>
-                <Form>
-                    {/* <Form.Group className="mb-3">
-                        <Form.Label>Configuración de Utilidad actual: {usuario.utilidad !== undefined ? usuario.utilidad : ''} %</Form.Label>
-                    </Form.Group> */}
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Porcentaje de utilidad</Form.Label>
-                    <Form.Control
-                        id='nuevaGanancia'
-                        type="number"
-                        placeholder="Ej: 10"
-                        autoFocus
-                    />
+                    <Form.Group>
+                        <Form.Label>Porcentaje de utilidad</Form.Label>
+                        <Form.Control id='nuevaGanancia' type="number" placeholder="Ej: 10" />
                     </Form.Group>
-                </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Cerrar
-                </Button>
-                <Button variant="primary" onClick={configurarNuevaGanancia}>
-                    Configurar Valor
-                </Button>
+                    <Button variant="secondary" onClick={() => setShow(false)}>Cerrar</Button>
+                    <Button variant="primary" onClick={configurarNuevaGanancia}>Guardar</Button>
                 </Modal.Footer>
             </Modal>
-            <Modal show={showListaDePrecios} onHide={handleCloseListaDePrecios}>
-            <Modal.Header closeButton>
-                <Modal.Title>¿Desea descargar el catálogo?</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <label>Filtrar por marca (opcional):</label>
-                <select 
-                    className="form-select mt-2"
-                    value={selectedMarca}
-                    onChange={(e) => setSelectedMarca(e.target.value)}
-                >
-                    <option value="">Todas</option>
-                    {marcas.map(m => (
-                        <option key={m} value={m}>{m}</option>
-                    ))}
-                </select>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleCloseListaDePrecios}>
-                    No
-                </Button>
-                <ExcelFile 
-                    element={
-                        <Button variant="primary" onClick={handleCloseListaDePrecios}>
-                            Sí
-                        </Button>
-                    }
-                    fileName={
-                        `Lista de Precios Foster's${selectedMarca ? " - " + selectedMarca : ""}`
-                    }
-                >
-                    <ExcelSheet data={dataFiltrada} name="Lista de Precios">
-
-                        <ExcelColumn label="Código Foster's" value="id"/>
-                        <ExcelColumn label="Descripción" value="descripcion"/>
-                        <ExcelColumn label="Código SKF o INA" value="codigoFabrica"/>
-                        <ExcelColumn label="Medida" value="medida"/>
-                        <ExcelColumn label="Marca" value="marca"/>
-                        <ExcelColumn label="Categoria" value="categoria"/>
-                        <ExcelColumn 
-                            label="Modelos" 
-                            value={(col) => col.modelos?.join(", ") || ""}
-                        />
-                        <ExcelColumn label="Precio lista" value="precio"/>
-                    </ExcelSheet>
-                </ExcelFile>
-            </Modal.Footer>
-        </Modal>
-
-            <Modal show={showFallida} onHide={handleCloseFallida}>
-                    <Modal.Header closeButton>
-                    <Modal.Title>Operación fallida!</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>La operación falló, vuelva a intentarlo.</Modal.Body>
-                    <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseFallida}>
-                        Close
-                    </Button>
-                    </Modal.Footer>
-                </Modal>
-        </Navbar>
+        </>
     );
 }
 

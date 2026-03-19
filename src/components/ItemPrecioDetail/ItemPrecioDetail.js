@@ -3,69 +3,46 @@ import { useContext } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
 import { getProductosSeleccionados } from '../repositorioProductosSeleccionados';
 
-const ItemPrecioDetail = ({precioProducto,codigoProducto}) => {
-    
+const ItemPrecioDetail = ({precioProducto, codigoProducto}) => {
     const {usuario, esClienteDirecto} = useContext(UsuarioContext);
-    let descuentoFinal = usuario !== undefined ? usuario.descuento : 1;
+    const descuentoFinal = usuario?.descuento ?? 1;
+    const utilidad = usuario?.utilidad ?? 0;
+    const productosSeleccionados = getProductosSeleccionados();
+    const esSeleccionado = productosSeleccionados.includes(codigoProducto);
 
-    let productosSeleccionados = getProductosSeleccionados();
-
-    if(productosSeleccionados.includes(codigoProducto)) {
-        return(
+    if (esSeleccionado) {
+        return (
             <div className='price-container-detail'>
-                <span className="price-span-final-sin-el-descuento">
-                    {
-                        'Precio Final sin Descuento: $' + (precioProducto).toFixed(2)
-                    }
-                </span>
+                <span className="price-label">Precio Final sin Descuento</span>
+                <span className="price-value-red">${precioProducto.toFixed(2)}</span>
             </div>
-        )
-    } else if(esClienteDirecto() && usuario.descuento === 0) {
-        return(
-            <div className='price-container-detail'>
-                <span className="price-span-descuento">
-                    {
-                        'Precio Lista: $' + (precioProducto).toFixed(2)
-                    }
-                </span>
-                <div className='container-ganancia'>
-                    <span className="price-span-ganancia">
-                        {
-                            'Precio Final: $' + (((precioProducto * descuentoFinal)*usuario.utilidad/100)).toFixed(2)
-                        }
-                    </span>
-                </div>
-            </div>
-        )
-    } else if(esClienteDirecto()) {
-        return(
-            <div className='price-container-detail'>
-                <span className="price-span-normal">
-                    {
-                        'Precio Lista: $' + (precioProducto).toFixed(2)
-                    }
-                </span>
-                <span className="price-span-descuento">
-                    {
-                        'Precio c/Descuento: $' + (precioProducto * descuentoFinal).toFixed(2)
-                    }
-                </span>
-                <div className='container-ganancia'>
-                    <span className="price-span-ganancia">
-                        {
-                            'Precio Final: $' + ((precioProducto * descuentoFinal) + ((precioProducto * descuentoFinal)*usuario.utilidad/100)).toFixed(2)
-                        }
-                    </span>
-                </div>
-            </div>
-        )
-    } else {
-        return(
-            <div className='price-container-detail'>
-                <span className="price">Consultanos!</span>
-            </div>
-        )
+        );
     }
+
+    if (esClienteDirecto()) {
+        const pLista = precioProducto.toFixed(2);
+        const pConDesc = (precioProducto * descuentoFinal).toFixed(2);
+        const pFinal = ((precioProducto * descuentoFinal) * (1 + utilidad / 100)).toFixed(2);
+
+        return (
+            <div className='price-container-detail'>
+                <div className="price-row">
+                    <span className="price-old">Lista: ${pLista}</span>
+                    {descuentoFinal < 1 && <span className="price-promo">c/Desc: ${pConDesc}</span>}
+                </div>
+                <div className='price-final-box'>
+                    <span className="final-label">Precio Final</span>
+                    <span className="final-value">${pFinal}</span>
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className='price-container-detail'>
+            <span className="price-consult">Consultar Precio</span>
+        </div>
+    );
 }
 
 export default ItemPrecioDetail;

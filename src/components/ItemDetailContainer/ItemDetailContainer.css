@@ -1,8 +1,17 @@
-.container-navigation {
-    height: 135px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.73) 52.48%);
+.container-itemDetail {
+    min-height: calc(100vh - 135px);
+    margin-top: 135px;
+    padding: 20px;
+    background-color: #f0f2f5; /* Gris azulado muy claro */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrado para pantallas grandes */
 }
 
-.leftbar {
-    display: none;
+@media (max-width: 800px) {
+    .container-itemDetail {
+        margin-top: 100px;
+        padding: 10px;
+        align-items: flex-start;
+    }
 }

@@ -1,156 +1,74 @@
-@keyframes move {
-    100% {
-        transform: translate3d(0, 0, 1px) rotate(360deg);
-    }
-}
-
-.background {
+/* Contenedor Base */
+.background-industrial-v2 {
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background: var(--gris-1);
+    z-index: -10; /* Siempre detrás del contenido */
+    background-color: #f8f9fa; /* Gris muy suave para que el contenido respire */
     overflow: hidden;
-    z-index: -10;
 }
 
-.background span {
-    width: 14vmin;
-    height: 14vmin;
-    border-radius: 14vmin;
-    backface-visibility: hidden;
+/* Estilo de las "Piezas Mecánicas" (antiguas burbujas) */
+.background-industrial-v2 span {
     position: absolute;
-    animation: move;
-    animation-duration: 35;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    display: block;
+    pointer-events: none;
+    
+    /* CAMBIO DE FORMA: Pequeñas líneas o rectángulos sutiles */
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 51, 153, 0.03), transparent); /* Azul SKF muy tenue */
+    
+    /* ANIMACIÓN: Movimiento rítmico, lento y constante */
+    animation: moveIndustrial 60s linear infinite; /* Movimiento extremadamente lento */
+    
+    /* RESET DE ESTILOS ANTERIORES */
+    border-radius: 0;
+    box-shadow: none;
 }
 
+/* Definición de la Animación: Movimiento Diagonal Constante */
+@keyframes moveIndustrial {
+    0% {
+        transform: translateY(120vh) translateX(-20vw) rotate(45deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8; /* Aparecen suavemente */
+    }
+    90% {
+        opacity: 0.8; /* Se mantienen visibles */
+    }
+    100% {
+        transform: translateY(-20vh) translateX(120vw) rotate(45deg);
+        opacity: 0; /* Desaparecen al final */
+    }
+}
 
-.background span:nth-child(0) {
-    color: #8b8b8b;
-    top: 87%;
-    left: 30%;
-    animation-duration: 35s;
-    animation-delay: -124s;
-    transform-origin: 16vw -15vh;
-    box-shadow: 28vmin 0 4.296710153176225vmin currentColor;
-}
-.background span:nth-child(1) {
-    color: #CD1F26;
-    top: 51%;
-    left: 46%;
-    animation-duration: 79s;
-    animation-delay: -27s;
-    transform-origin: -19vw 6vh;
-    box-shadow: -28vmin 0 3.994864699700841vmin currentColor;
-}
-.background span:nth-child(2) {
-    color: #CD1F26;
-    top: 25%;
-    left: 66%;
-    animation-duration: 142s;
-    animation-delay: -9s;
-    transform-origin: -11vw 6vh;
-    box-shadow: 28vmin 0 4.458697815482176vmin currentColor;
-}
-.background span:nth-child(3) {
-    color: #8b8b8b;
-    top: 9%;
-    left: 8%;
-    animation-duration: 93s;
-    animation-delay: -49s;
-    transform-origin: 17vw -20vh;
-    box-shadow: 28vmin 0 4.078975481483456vmin currentColor;
-}
-.background span:nth-child(4) {
-    color: #cd1f2549;
-    top: 32%;
-    left: 67%;
-    animation-duration: 78s;
-    animation-delay: -143s;
-    transform-origin: 24vw 5vh;
-    box-shadow: 28vmin 0 4.062137119459622vmin currentColor;
-}
-.background span:nth-child(5) {
-    color: #cd1f2549;
-    top: 47%;
-    left: 62%;
-    animation-duration: 145s;
-    animation-delay: -34s;
-    transform-origin: 2vw -15vh;
-    box-shadow: 28vmin 0 3.8500856097198657vmin currentColor;
-}
-.background span:nth-child(6) {
-    color: #4c82f0;
-    top: 18%;
-    left: 35%;
-    animation-duration: 50s;
-    animation-delay: -59s;
-    transform-origin: -16vw 17vh;
-    box-shadow: -28vmin 0 3.701809738010023vmin currentColor;
-}
-.background span:nth-child(7) {
-    color: #8b8b8b;
-    top: 92%;
-    left: 95%;
-    animation-duration: 42s;
-    animation-delay: -99s;
-    transform-origin: -16vw -5vh;
-    box-shadow: -28vmin 0 3.8137997510307975vmin currentColor;
-}
-.background span:nth-child(8) {
-    color: #4c82f0;
-    top: 27%;
-    left: 59%;
-    animation-duration: 105s;
-    animation-delay: -72s;
-    transform-origin: 3vw -18vh;
-    box-shadow: 28vmin 0 4.013016471404977vmin currentColor;
-}
-.background span:nth-child(9) {
-    color: #4c82f0;
-    top: 67%;
-    left: 68%;
-    animation-duration: 49s;
-    animation-delay: -113s;
-    transform-origin: 24vw 16vh;
-    box-shadow: -28vmin 0 4.3443046728126085vmin currentColor;
-}
-.background span:nth-child(10) {
-    color: #4c82f0;
-    top: 43%;
-    left: 80%;
-    animation-duration: 147s;
-    animation-delay: -130s;
-    transform-origin: -15vw 11vh;
-    box-shadow: 28vmin 0 3.8533173509642964vmin currentColor;
-}
-.background span:nth-child(11) {
-    color: #8b8b8b;
-    top: 17%;
-    left: 43%;
-    animation-duration: 113s;
-    animation-delay: -70s;
-    transform-origin: -2vw -6vh;
-    box-shadow: -28vmin 0 4.082801997790696vmin currentColor;
-}
-.background span:nth-child(12) {
-    color: #8b8b8b;
-    top: 52%;
-    left: 98%;
-    animation-duration: 23s;
-    animation-delay: -125s;
-    transform-origin: -23vw -18vh;
-    box-shadow: -28vmin 0 4.042614655227822vmin currentColor;
-}
-.background span:nth-child(13) {
-    color: #8b8b8b;
-    top: 52%;
-    left: 45%;
-    animation-duration: 122s;
-    animation-delay: -126s;
-    transform-origin: 19vw -5vh;
-    box-shadow: -28vmin 0 3.5448466190111816vmin currentColor;
-}
+/* Distribución Rítmica y Sincronizada (Manual para cada span) */
+/* Usamos opacidades bajas y retrasos rítmicos para simular una "cadena" */
+
+.background-industrial-v2 span:nth-child(1)  { left: 5%;  animation-delay: 0s;   height: 60px; }
+.background-industrial-v2 span:nth-child(2)  { left: 15%; animation-delay: 5s;   height: 40px; }
+.background-industrial-v2 span:nth-child(3)  { left: 25%; animation-delay: 10s;  height: 80px; }
+.background-industrial-v2 span:nth-child(4)  { left: 35%; animation-delay: 15s;  height: 50px; }
+.background-industrial-v2 span:nth-child(5)  { left: 45%; animation-delay: 20s;  height: 70px; }
+.background-industrial-v2 span:nth-child(6)  { left: 55%; animation-delay: 25s;  height: 45px; }
+.background-industrial-v2 span:nth-child(7)  { left: 65%; animation-delay: 30s;  height: 90px; }
+.background-industrial-v2 span:nth-child(8)  { left: 75%; animation-delay: 35s;  height: 55px; }
+.background-industrial-v2 span:nth-child(9)  { left: 85%; animation-delay: 40s;  height: 65px; }
+.background-industrial-v2 span:nth-child(10) { left: 95%; animation-delay: 45s;  height: 75px; }
+
+/* Segunda tanda para dar densidad sin perder el ritmo */
+.background-industrial-v2 span:nth-child(11) { left: 10%; animation-delay: 2s;   height: 50px; background-color: rgba(205, 31, 38, 0.02); } /* Pincelada de Rojo Foster's */
+.background-industrial-v2 span:nth-child(12) { left: 20%; animation-delay: 7s;   height: 70px; }
+.background-industrial-v2 span:nth-child(13) { left: 30%; animation-delay: 12s;  height: 40px; }
+.background-industrial-v2 span:nth-child(14) { left: 40%; animation-delay: 17s;  height: 60px; }
+.background-industrial-v2 span:nth-child(15) { left: 50%; animation-delay: 22s;  height: 85px; background-color: rgba(205, 31, 38, 0.02); }
+.background-industrial-v2 span:nth-child(16) { left: 60%; animation-delay: 27s;  height: 45px; }
+.background-industrial-v2 span:nth-child(17) { left: 70%; animation-delay: 32s;  height: 75px; }
+.background-industrial-v2 span:nth-child(18) { left: 80%; animation-delay: 37s;  height: 50px; background-color: rgba(205, 31, 38, 0.02); }
+.background-industrial-v2 span:nth-child(19) { left: 90%; animation-delay: 42s;  height: 90px; }
+.background-industrial-v2 span:nth-child(20) { left: 99%; animation-delay: 47s;  height: 55px; }

@@ -18,6 +18,7 @@ import Aumento from './components/Aumento/Aumento';
 import Encabezado from './components/Encabezado/Encabezado';
 import Aviso from './components/Aviso/Aviso'; 
 import BotonWhatsApp from './components/BotonWhatsApp/BotonWhatsApp';
+import Recomendaciones from './components/Recomendaciones/Recomendaciones';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
             <Route exact path = '/catalogo' element = {<div className='section-usuarios' id='section-productos'><Catalogo/></div>}/>
             <Route exact path = '/producto' element = {<div className='section-usuarios' id='section-productos'><Producto/></div>}/>
             <Route exact path = '/aumento' element = {<div className='section-usuarios' id='section-productos'><Aumento/></div>}/>
+            <Route exact path = '/recomendaciones' element = {<div className='section-usuarios' id='section-productos'><Recomendaciones/></div>}/>
             <Route exact path = '/carrito' element = {<CartListContainer/>}/>
             <Route exact path = '/login' element = {<Login/>}/>
             <Route exact path = '/detail/:productId' element = {<ItemDetailContainer/>}/>

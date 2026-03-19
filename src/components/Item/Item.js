@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import ItemPrecio from '../ItemPrecio/ItemPrecio';
 
 const Item = ({id, descripcion, marca, modelos, precio, codigoFabrica}) => {
-
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
     let imagen = '';
     
@@ -18,50 +17,42 @@ const Item = ({id, descripcion, marca, modelos, precio, codigoFabrica}) => {
     }
 
     return (
-        <Link to ={`/detail/${id}`}>
-            <div className="container-item">
-                <div className="container page-wrapper">
-                    <div className="page-inner">
-                        <div className="row">
-                            <div className="el-wrapper">
-                                <div className="box-up">
-                                    <img className="img" src={imagen} alt={codigoFabrica}></img>
-                                    <div className="img-info">
-                                        <div className="info-inner">
-                                            <span className="p-name">{id}</span>
-                                            <span className="p-company">Marca: {marca}</span>
-                                            <span className="p-company">Modelos: {
-                                                modelos.map(
-                                                    unModelo => {return <span>{unModelo} </span>}
-                                                )
-                                            }</span>
-                                        </div>
-                                        <div className="a-size">
-                                            {descripcion}<ItemPrecio precioProducto={precio} codigoProducto={id}></ItemPrecio>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="box-down">
-                                    <div className="h-bg">
-                                        <div className="h-bg-inner"></div>
-                                    </div>
-                                    <div className="cart" href="#">
-                                        <ItemPrecio precioProducto={precio} codigoProducto={id}></ItemPrecio>
-                                        {
-                                            codigoFabrica !== ''
-                                            ?
-                                            <span className="add-to-cart">
-                                                <span className="txt">Código SKF o INA:</span>
-                                                <span className="txt">{codigoFabrica}</span>
-                                            </span>
-                                            :
-                                            <span className="add-to-cart">
-                                            <span className="txt">Sin código SKF o INA</span>
-                                        </span>
-                                        }
-                                    </div>
-                                </div>
-                            </div>
+        <Link to={`/detail/${id}`} className="item-link">
+            <div className="el-wrapper">
+                <div className="box-up">
+                    <img className="img" src={imagen} alt={codigoFabrica} />
+                    <div className="img-info">
+                        <div className="info-inner">
+                            <span className="p-id">{id}</span>
+                            <span className="p-brand">MARCA: {marca}</span>
+                            <span className="p-models">
+                                <strong>MODELOS:</strong> {modelos.join(' - ')}
+                            </span>
+                        </div>
+                        <div className="a-size">
+                            <p className="desc-text">{descripcion}</p>
+                            <ItemPrecio precioProducto={precio} codigoProducto={id} mode="hover" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="box-down">
+                    <div className="h-bg">
+                        <div className="h-bg-inner"></div>
+                    </div>
+                    <div className="cart-content">
+                        <div className="price-wrapper-down">
+                            <ItemPrecio precioProducto={precio} codigoProducto={id} />
+                        </div>
+                        <div className="add-to-cart">
+                            {codigoFabrica ? (
+                                <>
+                                    <span className="txt-label">CÓDIGO EQUIVALENTE:</span>
+                                    <span className="txt-code">{codigoFabrica}</span>
+                                </>
+                            ) : (
+                                <span className="txt-code">Sin código equivalente</span>
+                            )}
                         </div>
                     </div>
                 </div>

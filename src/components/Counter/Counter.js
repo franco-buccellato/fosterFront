@@ -1,56 +1,48 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react';
 import './Counter.css';
 import NumericInput from 'react-numeric-input';
-
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-const Counter = ({inicial, maximoStock, onAdd}) => {
-    console.log(inicial);
-    console.log(maximoStock);
-
+const Counter = ({ inicial, maximoStock, onAdd }) => {
     const [count, setCount] = useState(inicial);
 
-    useEffect(() => {
-        console.log('Se modifico el count.')
-    },
-    [count] //Escucha evento de montaje
-    )
-
     const addCart = () => {
+        // Obtenemos el valor actual del input directamente para asegurar precisión
         let cantidadNueva = parseInt(document.getElementById('contador').value);
-        /* setCount(cantidadNueva); */
-        onAdd(cantidadNueva);
-        setCount(inicial);
+        if (cantidadNueva > 0) {
+            onAdd(cantidadNueva);
+            setCount(inicial); // Reseteamos al valor inicial tras agregar
+        }
     }
-    
-    return(
-        <div className='container-counter'>
-            <NumericInput 
-                id='contador'
-                className="form-control" 
-                value={ 1 } 
-                min={ 0 } 
-                max={ 100 } 
-                step={ 1 } 
-                precision={ 0 } 
-                size={ 5 } 
-            />
+
+    return (
+        <div className='wrapper-counter-modern'>
+            <div className='input-numeric-container'>
+                <NumericInput 
+                    id='contador'
+                    className="form-control custom-numeric" 
+                    value={ count } 
+                    onChange={ value => setCount(value) }
+                    min={ 1 } 
+                    max={ maximoStock || 100 } 
+                    step={ 1 } 
+                    precision={ 0 } 
+                    mobile // Mejora la UX en celulares
+                />
+            </div>
+            
             <OverlayTrigger
-                placement='right'
-                overlay={
-                    <Tooltip>
-                        <strong>Agegar al carrito</strong>
-                    </Tooltip>
-                }
+                placement='top'
+                overlay={<Tooltip>Agregar al carrito</Tooltip>}
             >
-                <div className='button-counter' onClick={addCart}>
+                <button className='btn-add-cart-modern' onClick={addCart}>
                     <ion-icon name="bag-add-outline"></ion-icon>
-                </div>
+                    <span>Agregar</span>
+                </button>
             </OverlayTrigger>
         </div>
-    )
-
+    );
 }
 
 export default Counter;

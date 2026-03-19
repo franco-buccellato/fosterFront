@@ -1,44 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 
-
-
-:root {
-    --clr: #e9e9e9;
+.wrapper-counter-modern {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: flex-start;
+    background: transparent; /* Eliminamos el fondo azul aquí */
 }
 
-.container-counter {
+/* Contenedor del Input Numérico */
+.input-numeric-container {
+    flex: 0 0 120px;
+}
+
+/* Estilizamos el componente NumericInput de terceros */
+.custom-numeric.form-control {
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    height: 45px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    color: #333 !important;
+    box-shadow: none !important;
+}
+
+/* Botón "Agregar" estilo Pill */
+.btn-add-cart-modern {
     display: flex;
-    padding: 1.5em 3.1em;
-    justify-content: center;
     align-items: center;
-    border: none;
-    border-radius: 7px;
+    justify-content: center;
+    gap: 10px;
+    background-color: #CD1F26; /* Rojo Foster */
     color: #fff;
-    background-color: #3479d2;
-    box-shadow: 2px 2px 25px -7px --clr;
+    border: none;
+    border-radius: 50px;
+    padding: 0 25px;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
     cursor: pointer;
-    width: 70%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(205, 31, 38, 0.2);
 }
 
-.container-counter div {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+.btn-add-cart-modern:hover {
+    background-color: #b01a20;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(205, 31, 38, 0.3);
 }
 
-.container-counter h4 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-add-cart-modern ion-icon {
+    font-size: 1.4rem;
 }
 
-.cantidad-stock {
-    display: block;
-    font-size: 10px;
-    color: #e9e9e9;
+/* Ajustes para los botones internos de NumericInput si es necesario */
+.custom-numeric + b i {
+    background: #f8f9fa !important;
+    border-color: #e0e0e0 !important;
+}
+
+@media (max-width: 500px) {
+    .wrapper-counter-modern {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-numeric-container {
+        flex: 1;
+    }
 }

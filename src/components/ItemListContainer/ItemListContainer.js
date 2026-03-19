@@ -1,10 +1,11 @@
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import SectionNovedades from '../SectionNovedades/SectionNovedades';
 import Background from '../Background/Background';
 import marcasModelos from './marcasmodelos.json';
+import { useParams, useLocation } from 'react-router-dom';
+import Recomendacion from '../Recomendacion/Recomendacion';
 
 const ItemListContainer = () => {
 
@@ -18,6 +19,10 @@ const ItemListContainer = () => {
     const [modelos, setModelos] = useState([]);
 
     const [filtrosAplicados, setFiltrosAplicados] = useState([]);
+
+    //Modal de recomendacion
+    const location = useLocation();
+    const [showModal, setShowModal] = useState(false);
   
     const TITULOS = {
       rodamientos: "Rodamientos rueda importados",
@@ -74,8 +79,19 @@ const ItemListContainer = () => {
           marca: '',
           modelo: '',
         }
-      };      
-    
+      };     
+      
+    //UseEffect de recomendacion
+    useEffect(() => {
+        console.log("Location state:", location.state);
+      
+        if (location.state?.showModal) {
+          console.log("Mostrando modal");
+          setShowModal(true);
+        }
+      }, [location.state]);
+
+
     // Fetch productos
     useEffect(() => {
         limpiarFiltro();
@@ -304,10 +320,18 @@ const ItemListContainer = () => {
 
     return (
         <div className="container-buscador" onKeyDown={() => handleKeyPress()}>
-            <div className='container-titulo'>
+    
+                {showModal && (
+                <Recomendacion
+                    show={showModal}
+                    onClose={() => setShowModal(false)}
+                />
+            )}
+    
+            <div className='container-filtros-productos'>
+            <div className='filtros-header'>
                 <h4>{titulo}</h4>
             </div>
-            <div className='container-filtros-productos'>
                 {
                     categoria?.toLowerCase() === "kitdistribucion" && (
                     <>

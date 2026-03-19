@@ -1,0 +1,109 @@
+/* Fondo del modal */
+.modal-interes .modal-content {
+    border-radius: 16px;
+    border: none;
+    overflow: hidden;
+  }
+  
+  /* Header más limpio */
+  .modal-interes .modal-header {
+    border-bottom: none;
+    font-weight: 600;
+  }
+  
+  /* Body centrado */
+  .modal-interes .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor del slide */
+  .slide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Caja de imagen */
+  .image-wrapper {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Imagen */
+  .carousel-img {
+    max-height: 45vh;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zoom suave */
+  .carousel-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Descripción */
+  .slide-description h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Flechas más modernas */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
+  /* Íconos blancos */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+  
+  /* Footer */
+  .modal-interes .modal-footer {
+    border-top: none;
+    justify-content: center;
+  }
+  
+  /* Botón más moderno */
+  .modal-interes .btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 500;
+  }
+
+  .modal-interes .modal-header {
+    position: relative;
+    justify-content: center;
+  }
+  
+  .modal-interes .modal-title {
+    text-align: center;
+  }
+  
+  .modal-interes .btn-close {
+    position: absolute;
+    right: 15px;
+  }

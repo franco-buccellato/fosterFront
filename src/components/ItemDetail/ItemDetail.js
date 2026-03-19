@@ -6,102 +6,88 @@ import CartContext from '../Context/CartContext';
 import ItemPrecioDetail from '../ItemPrecioDetail/ItemPrecioDetail';
 import UsuarioContext from '../Context/UsuarioContext';
 
-const ItemDetail = ({id, descripcion, medida, codigoFabrica, marca, precio, linkImagen,modelos, stock}) => {
-
+const ItemDetail = ({id, descripcion, medida, codigoFabrica, marca, precio, linkImagen, modelos, stock}) => {
     const {usuario, esClienteDirecto} = useContext(UsuarioContext);
-    let descuentoFinal = usuario !== undefined ? usuario.descuento : 1;
-
+    let descuentoFinal = usuario?.descuento ?? 1;
     const {addItem} = useContext(CartContext);
-
     const [cantidad, setCantidad] = useState(0);
 
     const handleOnAdd = (nuevaCantidad) => {
         setCantidad(parseInt(nuevaCantidad));
         const precioDefinitivo = (precio * descuentoFinal).toFixed(2);
-        const objProd = {
-            id,
-            descripcion,
-            codigoFabrica,
-            precioDefinitivo,
-            nuevaCantidad,
-            linkImagen
-        }
-        addItem(objProd);
+        addItem({ id, descripcion, codigoFabrica, precioDefinitivo, nuevaCantidad, linkImagen });
     }
 
+    // Lógica de carga de imagen optimizada
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
     let imagen = '';
-    
-    try {
-        imagen = cargarImagen(`./${id}.jpg`);
-    } catch (errorJpg) {
-        try {
-            imagen = cargarImagen(`./${id}.png`);
-        } catch (errorPng) {
-            imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+    try { 
+        imagen = cargarImagen(`./${id}.jpg`); 
+    } catch (e) { 
+        try { 
+            imagen = cargarImagen(`./${id}.png`); 
+        } catch (e2) { 
+            imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`); 
         }
     }
 
     return (
-        <div className="container-item-detail">
-            <div className="product">
-                <div className="product__photo">
-                    <div className="photo-container">
-                        <div className="photo-main">
-                            <img src={imagen} alt="Imagen principal"></img>
+        <div className="product-card">
+            <div className="product-visual">
+                <img src={imagen} alt={descripcion} className="main-img" />
+            </div>
+
+            <div className="product-details">
+                <header className="detail-header">
+                    <span className="badge-id">{id}</span>
+                    <h1 className="product-title">{descripcion}</h1>
+                    <p className="brand-text">{marca}</p>
+                </header>
+
+                <div className="specs-grid">
+                    <div className="spec-item">
+                        <label>Medida</label>
+                        <span className="spec-value">{medida}</span>
+                    </div>
+                    {codigoFabrica && (
+                        <div className="spec-item">
+                            <label>Equivalencia</label>
+                            <span className="spec-value">{codigoFabrica}</span>
                         </div>
+                    )}
+                </div>
+
+                <div className="price-section-box">
+                    <label className="section-label">Cotización</label>
+                    <ItemPrecioDetail precioProducto={precio} codigoProducto={id} />
+                </div>
+
+                <div className="models-section">
+                    <label className="section-label">Modelos Compatibles</label>
+                    <div className="models-chips">
+                        {modelos && modelos.map((m, i) => (
+                            <span key={i} className="model-chip">{m}</span>
+                        ))}
                     </div>
                 </div>
-                <div className="product__info">
-                    <div className="title">
-                        <h1>{id}</h1>
-                    </div>
-                    <div className="title">
-                        <span className='span-subtitulo'><u>Descripción:</u></span>
-                        <span className='span-contenido'>{descripcion}</span>
-                    </div>
-                    <div className="title">
-                        <span className='span-subtitulo'><u>Medida:</u></span>
-                        <span className='span-contenido'>{medida}</span>
-                    </div>
-                    <div className="title">
-                        <span className='span-subtitulo'><u>Marca:</u></span>
-                        <span className='span-contenido'>{marca}</span>
-                    </div>
-                    <div className="price">
-                        <u>Precio:</u> <ItemPrecioDetail precioProducto={precio} codigoProducto={id}></ItemPrecioDetail>
-                    </div>
-                    <div className="title">
-                        <span className='span-subtitulo'><u>Modelos:</u></span>
-                        <div className="variant">
-                            <ul className='variant-list'>
-                                {
-                                    modelos.map(
-                                        (unModelo, index)=> {return <li key={index}>{unModelo}</li>}
-                                    )
-                                }
-                            </ul>
+
+                <div className="detail-actions">
+                    {esClienteDirecto() && cantidad === 0 && (
+                        <div className="counter-wrapper-clean">
+                            <Counter inicial={1} maximoStock={stock} onAdd={handleOnAdd}/>
                         </div>
-                    </div>
-                    {
-                        codigoFabrica !== '' 
-                        && 
-                        <div className="title">
-                            <span className='span-subtitulo'><u>Código SKF o INA:</u></span>
-                            <span className='span-contenido'>{codigoFabrica}</span>
-                        </div>
-                    }
+                    )}
                     
-                    <br></br>
-                    {   
-                        esClienteDirecto() &&           
-                        <Counter inicial={1} maximoStock={stock} onAdd={handleOnAdd}/>
-                    }
-                    {(cantidad > 0) && <Link className='boton-carrito' to ={`/carrito`}>Ir al Carrito</Link>}
-                    {(cantidad > 0) && <Link className='boton-carrito' to ={`/productos`}>Seguir comprando</Link>}
+                    {cantidad > 0 && (
+                        <div className="post-add-group">
+                            <Link className='btn-finish-pill' to="/carrito">Finalizar Compra</Link>
+                            <Link className='btn-continue-link' to="/productos">Seguir Comprando</Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
     );
 }
+
 export default ItemDetail;
