@@ -4,35 +4,41 @@
     gap: 2px;
 }
 
-/* El precio tachado de lista */
+/* 🔥 Precio tachado más sutil */
 .price-old {
-    font-size: 12px;
-    color: #a0a0a0;
+    font-size: 11px;              /* antes 12 */
+    color: #010101;               /* gris más suave */
     text-decoration: line-through;
+    text-decoration-thickness: 0.8px; /* línea más fina */
+    text-decoration-color: #010101;   /* color más liviano */
     font-weight: 400;
+    opacity: 0.75;                /* menos protagonismo */
+    letter-spacing: 0.3px;        /* más fino visualmente */
 }
 
-/* El precio con el descuento aplicado (intermedio) */
+/* Precio intermedio */
 .price-discount {
     font-size: 13px;
     color: #001da0;
     font-weight: 600;
 }
 
-/* El precio que el cliente realmente paga */
+/* 🔥 Precio final (ligeramente balanceado) */
 .price-main {
-    font-size: 20px;
+    font-size: 19px;              /* antes 20 → mejor proporción */
     color: #222;
     font-weight: 800;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
 }
 
-/* Variación cuando aparece sobre la imagen (Hover) */
+/* Hover */
 .on-hover .price-main {
     color: #001da0;
-    font-size: 24px;
+    font-size: 22px;              /* antes 24 → menos salto visual */
 }
 
+/* Consultar */
 .price-consultar {
     font-weight: 700;
     color: #001da0;
@@ -43,8 +49,7 @@
     border-radius: 4px;
 }
 
-/* Estilo para cuando se muestra abajo en el cuadro gris */
+/* Abajo en la card */
 .price-wrapper-down .price-main {
     color: #001da0;
 }
-
