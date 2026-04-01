@@ -166,6 +166,67 @@ function Encabezado({ cantidadCarrito }) {
                     <Button variant="primary" onClick={configurarNuevaGanancia}>Guardar</Button>
                 </Modal.Footer>
             </Modal>
+
+            <Modal 
+                show={showListaDePrecios} 
+                onHide={() => setShowListaDePrecios(false)} 
+                centered 
+                size="lg"
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title>Catálogo de Productos</Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Filtrar por marca</Form.Label>
+                        <Form.Select 
+                            value={selectedMarca} 
+                            onChange={(e) => setSelectedMarca(e.target.value)}
+                        >
+                            <option value="">Todas</option>
+                            {marcas.map((marca, i) => (
+                                <option key={i} value={marca}>{marca}</option>
+                            ))}
+                        </Form.Select>
+                    </Form.Group>
+
+                    <div style={{ maxHeight: "400px", overflowY: "auto" }}>
+                        {dataFiltrada.map((prod, i) => (
+                            <div key={i} style={{ padding: "8px 0", borderBottom: "1px solid #eee" }}>
+                                <strong>{prod.codigoFabrica || prod.id}</strong> - {prod.descripcion}
+                            </div>
+                        ))}
+                    </div>
+                </Modal.Body>
+
+                <Modal.Footer className="d-flex justify-content-between">
+                    
+                    {/* Botón descargar */}
+                    <ExcelFile 
+                        element={<Button variant="success">Descargar Excel</Button>}
+                        filename="catalogo_productos"
+                    >
+                        <ExcelSheet data={dataFiltrada} name="Productos">
+                            <ExcelColumn label="Código" value="id"/>
+                            <ExcelColumn label="Descripción" value="descripcion"/>
+                            <ExcelColumn label="Marca" value="marca"/>
+                            <ExcelColumn label="Medida" value="medida"/>
+                            <ExcelColumn label="Código Fabrica" value="codigoFabrica"/>
+                            <ExcelColumn label="Precio" value="precio"/>
+                        </ExcelSheet>
+                    </ExcelFile>
+
+                    {/* Botón cerrar */}
+                    <Button 
+                        variant="secondary" 
+                        onClick={() => setShowListaDePrecios(false)}
+                    >
+                        Cerrar
+                    </Button>
+
+                </Modal.Footer>
+            </Modal>
         </>
     );
 }
