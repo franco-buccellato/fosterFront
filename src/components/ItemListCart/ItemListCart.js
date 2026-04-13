@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
-import './ItemListCart.css'; // Usaremos solo este CSS ahora
+import './ItemListCart.css';
 import ItemCart from '../ItemCart/ItemCart';
 import CartContext from '../Context/CartContext';
 import UsuarioContext from '../Context/UsuarioContext';
-import Modal from 'react-bootstrap/Modal';
+import Modal from 'react-bootstrap/Modal'; // Asegúrate de tener instalado react-bootstrap y bootstrap
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,12 @@ const ItemListCart = () => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    // Función para procesar el envío y cerrar el popup
+    const confirmarEnvio = () => {
+        enviarPedido();
+        handleClose();
+    };
 
     return (
         <div className="fosters-main-container">
@@ -63,6 +69,26 @@ const ItemListCart = () => {
                     </>
                 )}
             </div>
+
+            {/* --- POP-UP DE CONFIRMACIÓN --- */}
+            <Modal show={show} onHide={handleClose} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Confirmar Pedido</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    ¿Estás seguro de que deseas enviar tu pedido? 
+                    <br />
+                    El total a pagar es: <strong>${valorTotal().toLocaleString()}</strong>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Cancelar
+                    </Button>
+                    <Button variant="danger" onClick={confirmarEnvio}>
+                        Sí, enviar pedido
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 }
