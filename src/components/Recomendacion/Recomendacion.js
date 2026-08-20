@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import RecomendacionModalFoto from '../RecomendacionModalFoto/RecomendacionModalFoto';
+import clienteAxios from '../../api/axios';
 
 const Recomendacion = ({ show, onClose }) => {
 
@@ -11,20 +12,16 @@ const Recomendacion = ({ show, onClose }) => {
 
         setLoading(true);
 
-        fetch("https://back-fosters.azurewebsites.net/api/recomendaciones")
-            .then((res) => {
-                if (!res.ok) throw new Error("Error al traer recomendaciones");
-                return res.json();
-            })
-            .then((data) => {
-                setProductos(data);
-            })
-            .catch((err) => {
-                console.error(err);
-            })
-            .finally(() => {
-                setLoading(false);
-            });
+        clienteAxios.get('/recomendaciones')
+        .then((res) => {
+            setProductos(res.data);
+        })
+        .catch((err) => {
+            console.error('Error al traer recomendaciones:', err);
+        })
+        .finally(() => {
+            setLoading(false);
+        });
 
     }, [show]);
 

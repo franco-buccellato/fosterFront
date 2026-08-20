@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import Loader from '../Loader/Loader';
 import { useParams } from 'react-router-dom';
+import clienteAxios from '../../api/axios';
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState();
@@ -10,9 +11,10 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setProducto(null); // Limpiar para mostrar loader al cambiar de ID
-        fetch(`https://back-fosters.azurewebsites.net/api/productos2/detail?id=${productId}`)
-            .then(res => res.json())
-            .then(data => setProducto(data))
+        
+        // Usamos clienteAxios pasando los query params de forma limpia
+        clienteAxios.get('/productos2/detail', { params: { id: productId } })
+            .then(res => setProducto(res.data))
             .catch(err => console.error('Error fetching data:', err));
     }, [productId]);
 

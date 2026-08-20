@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Modal, Form, Card } from 'react-bootstrap';
-import axios from 'axios';
+import clienteAxios from '../../api/axios';
 
 const Login = () => {
     const [show, setShow] = useState(false);
@@ -19,18 +19,18 @@ const Login = () => {
         let userVal = document.getElementById("usuario").value;
         let passVal = document.getElementById("contrasenia").value;
         
-        axios.post('https://back-fosters.azurewebsites.net/api/usuario/', 
-            { nombre: userVal, contrasenia: passVal },
-            { headers: { 'content-type': 'application/json' } }
-        ).then(res => {
+        // Usamos clienteAxios con la ruta relativa /usuario/
+        clienteAxios.post('/usuario/', { nombre: userVal, contrasenia: passVal })
+        .then(res => {
             if (res.data) {
                 loguearUsuario(res.data);
                 navigate("/productos", { state: { showModal: true } });
             } else {
                 handleShow();
             }
-        }).catch(() => handleShow())
-          .finally(() => setLoading(false));
+        })
+        .catch(() => handleShow())
+        .finally(() => setLoading(false));
     };
 
     const handleKeyPress = (e) => {

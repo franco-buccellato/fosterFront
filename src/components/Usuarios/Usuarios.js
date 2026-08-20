@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Table from 'react-bootstrap/Table';
 import uniqid from 'uniqid';
-import axios from 'axios';
+import clienteAxios from '../../api/axios';
 import UsuarioItem from './UsuarioItem';
 
 const Usuarios = () => {
@@ -23,20 +23,18 @@ const Usuarios = () => {
     
 
     useEffect(() => {
-        fetch(`https://back-fosters.azurewebsites.net/api/usuario/?proveedor=${encodeURIComponent(usuario.nombre)}`)
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return res.json();
-            })
-            .then(data => {
-                console.log(data);
-                setListaUsuarios(data);
-            })
-            .catch(err => {
-                console.log(err);
-            });
+        clienteAxios.get('/usuario/', {
+            params: {
+                proveedor: usuario.nombre
+            }
+        })
+        .then(res => {
+            console.log(res.data);
+            setListaUsuarios(res.data);
+        })
+        .catch(err => {
+            console.error('Error al obtener lista de usuarios:', err);
+        });
     }, [tablaUsuarios, usuario.nombre]);
     
 
@@ -76,26 +74,14 @@ const Usuarios = () => {
         }
         console.log(nuevoUsuario);
         
-        fetch('https://back-fosters.azurewebsites.net/api/usuario/nuevo', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json', // Asegúrate de establecer el tipo de contenido
-            },
-            body: JSON.stringify(nuevoUsuario), // Convierte el objeto nuevoUsuario a una cadena JSON
-        })
+        clienteAxios.post('/usuario/nuevo', nuevoUsuario)
         .then(res => {
-            if (!res.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return res.json(); // Devuelve la respuesta como JSON
-        })
-        .then(data => {
-            //alert(data); // Puedes descomentar esto si necesitas mostrar un alert con la respuesta
+            // alert(res.data);
             handleShowOk();
             setTablaUsuarios(1);
         })
         .catch(err => {
-            console.log('Error:', err);
+            console.error('Error al crear usuario:', err);
             handleShowError();
         });
         

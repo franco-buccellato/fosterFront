@@ -3,22 +3,22 @@ import { useContext, useEffect, useState } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
 import Table from 'react-bootstrap/Table';
 import ProductoItem from './ProductoItem';
-import axios from 'axios';
+import clienteAxios from '../../api/axios';
 
 const Catalogo = () => {
     const { esAdministrador } = useContext(UsuarioContext);
     const [listaProductos, setListaProductos] = useState([]);
 
+    const fetchProductos = async () => {
+        try {
+            const res = await clienteAxios.get('/productos2/');
+            setListaProductos(res.data);
+        } catch (err) {
+            console.error('Error al obtener el catálogo:', err);
+        }
+    };
+
     useEffect(() => {
-        const fetchProductos = async () => {
-            try {
-                const res = await axios.get('https://back-fosters.azurewebsites.net/api/productos2/'); // URL completa de Azure
-                setListaProductos(res.data);
-                console.log(res.data); // Cambié listaProductos a res.data para reflejar la respuesta correcta
-            } catch (err) {
-                console.error(err);
-            }
-        };
         fetchProductos();
     }, []);
 
@@ -27,28 +27,36 @@ const Catalogo = () => {
     return (
         <div className='container-productos'>
             <div className="container-tabla-productos">
-                <h1 className='titulo-tabla-productos'>Listado de Productos</h1>
-                <Table striped="columns">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Descripción</th>
-                            <th>Medida</th>
-                            <th>Código Fábrica</th>
-                            <th>Marca</th>
-                            <th>Precio</th>
-                            <th>Modelos</th>
-                            <th>Categoria</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            listaProductos.map(unProducto => (
-                                <ProductoItem key={unProducto.id} producto={unProducto} />
-                            ))
-                        }
-                    </tbody>
-                </Table>
+                <h1 className='titulo-tabla-productos mb-4'>Listado de Productos</h1>
+                
+                {/* Contenedor responsivo con scroll suave */}
+                <div className="table-responsive">
+                    <Table striped hover className="tabla-custom align-middle">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Foto</th>
+                                <th>Descripción</th>
+                                <th>Medida</th>
+                                <th>Cód. Fábrica</th>
+                                <th>Marca</th>
+                                <th>Precio</th>
+                                <th>Modelos</th>
+                                <th>Categoría</th>
+                                <th className="col-acciones">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {listaProductos.map((unProducto, index) => (
+                                <ProductoItem 
+                                    key={unProducto._id || `${unProducto.id}-${index}`}
+                                    producto={unProducto} 
+                                    onActualizado={fetchProductos} 
+                                />
+                            ))}
+                        </tbody>
+                    </Table>
+                </div>
             </div>
         </div>
     );

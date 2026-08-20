@@ -6,6 +6,7 @@ import Background from '../Background/Background';
 import marcasModelos from './marcasmodelos.json';
 import { useParams, useLocation } from 'react-router-dom';
 import Recomendacion from '../Recomendacion/Recomendacion';
+import clienteAxios from '../../api/axios';
 
 const ItemListContainer = () => {
 
@@ -95,26 +96,22 @@ const ItemListContainer = () => {
     // Fetch productos
     useEffect(() => {
         limpiarFiltro();
-        fetch("https://back-fosters.azurewebsites.net/api/productos2/")
+        clienteAxios.get("/productos2/")
         .then((res) => {
-            if (!res.ok) throw new Error("Network response was not ok");
-            return res.json();
-        })
-        .then((data) => {
+            const data = res.data;
             let filtrados = data;
 
             if (categoria && categoria.toLowerCase() !== "todascategorias") {
                 filtrados = data.filter(
                   (p) => p.categoria?.toLowerCase() === categoria.toLowerCase()
                 );
-              }
-              
+            }
 
             setProductos(filtrados);
             setProductosBase(filtrados);
         })
         .catch((err) => {
-            console.error(err);
+            console.error('Error al obtener productos:', err);
         });
     }, [categoria]);
 
@@ -228,19 +225,16 @@ const ItemListContainer = () => {
       
         setHayFiltros(false);
       
-        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
-          .then(res => {
-            if (!res.ok) throw new Error('Network response was not ok');
-            return res.json();
-          })
-          .then(data => {
-            let filtrados =
+        clienteAxios.get('/productos2/')
+        .then(res => {
+          const data = res.data;
+          let filtrados =
             categoria && categoria.toLowerCase() !== "todascategorias"
               ? data.filter(p => p.categoria?.toLowerCase() === categoria.toLowerCase())
               : data;          
-            setProductos(filtrados);
-          })
-          .catch(err => console.log(err));
+          setProductos(filtrados);
+        })
+        .catch(err => console.log('Error al obtener productos:', err));
       };
       
     const filtrarProductosSiHayFiltros = (

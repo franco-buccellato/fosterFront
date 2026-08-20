@@ -1,9 +1,9 @@
-
 import './Aumento.css';
 import { useContext, useState, useEffect } from 'react';
 import UsuarioContext from '../Context/UsuarioContext';
 import { Button, Modal, Form } from 'react-bootstrap';
-import axios from 'axios';
+// Importamos la instancia centralizada de Axios que ya tiene configurada la BaseURL
+import clienteAxios from '../../api/axios';
 
 const Aumento = () => {
     const { esAdministrador } = useContext(UsuarioContext);
@@ -15,10 +15,11 @@ const Aumento = () => {
     useEffect(() => {
         const fetchProductos = async () => {
             try {
-                const res = await axios.get('https://back-fosters.azurewebsites.net/api/productos2/'); // URL completa de Azure
+                // Petición al endpoint relativo usará la BaseURL configurada en clienteAxios
+                const res = await clienteAxios.get('/productos2/');
                 setListaProductos(res.data);
             } catch (err) {
-                console.error(err);
+                console.error('Error al obtener productos:', err);
             }
         };
         fetchProductos();
@@ -34,15 +35,14 @@ const Aumento = () => {
               aumento
             )
             .map(unProducto => {
-              // calcular nuevo precio
               const nuevoPrecio = parseFloat(
                 aumento > 100
                   ? unProducto.precio + parseInt(aumento)
                   : (unProducto.precio * ((100 + parseInt(aumento)) / 100))
-              ); // -> número, no string
+              );
               return {
                 id: unProducto.id.toString(),
-                nuevoPrecio // así lo espera /aumento2
+                nuevoPrecio
               };
             });
       
@@ -52,11 +52,10 @@ const Aumento = () => {
             return;
           }
       
-          // 2. POST al endpoint masivo
-          const res = await axios.post(
-            'https://back-fosters.azurewebsites.net/api/productos2/aumento2',
-            { productos: nuevosPrecios }
-          );
+          // 2. POST masivo mediante clienteAxios
+          const res = await clienteAxios.post('/productos2/aumento2', { 
+            productos: nuevosPrecios 
+          });
       
           console.log('✅ Backend respondió:', res.data);
       
@@ -68,8 +67,6 @@ const Aumento = () => {
           handleShowModal(false);
         }
       };
-      
-    
 
     const handleShowModal = (success) => {
         setShowModal({ show: true, success });

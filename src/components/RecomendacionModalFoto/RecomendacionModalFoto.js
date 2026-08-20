@@ -15,9 +15,19 @@ const RecomendacionModalFoto = ({ productos, show, onClose }) => {
 
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
 
-    const getImagen = (id) => {
+    // Función adaptada con fallback a las imágenes locales
+    const getImagen = (producto) => {
+        // 1. Si viene una URL desde Cloudinary (o backend), la usa directamente
+        if (producto.imagenUrl) {
+            return producto.imagenUrl;
+        }
+        if (producto.imagen) {
+            return producto.imagen;
+        }
+
+        // 2. Si no hay URL de Cloudinary, busca la foto local por su ID
         try {
-            return cargarImagen(`./${id}.jpg`);
+            return cargarImagen(`./${producto.id}.jpg`);
         } catch {
             return cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
         }
@@ -45,7 +55,7 @@ const RecomendacionModalFoto = ({ productos, show, onClose }) => {
                                 <div className="image-wrapper">
                                     <img
                                         className="carousel-img"
-                                        src={getImagen(producto.id)}
+                                        src={getImagen(producto)} // Pasamos el objeto 'producto' completo
                                         alt={producto.descripcion}
                                     />
                                 </div>

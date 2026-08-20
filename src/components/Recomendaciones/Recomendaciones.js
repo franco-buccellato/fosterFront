@@ -1,10 +1,11 @@
 import './Recomendaciones.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Table from 'react-bootstrap/Table';
 import Modal from 'react-bootstrap/Modal';
 import RecomendacionItem from './RecomendacionItem';
+import clienteAxios from '../../api/axios';
 
 const Recomendaciones = () => {
     const [lista, setLista] = useState([]);
@@ -12,53 +13,102 @@ const Recomendaciones = () => {
 
     const [idProducto, setIdProducto] = useState('');
     const [descripcion, setDescripcion] = useState('');
-    const [orden, setOrden] = useState(''); // Estado para el orden
+    const [orden, setOrden] = useState('');
+    const [imagen, setImagen] = useState(null);
 
     const [showOk, setShowOk] = useState(false);
     const [showError, setShowError] = useState(false);
 
+    const fileInputRef = useRef(null);
+
     const refrescar = () => setRefresh(prev => prev + 1);
 
-    // GET: Obtenemos las recomendaciones
+    // Configuración de Cloudinary
+    const CLOUD_NAME = process.env.CLOUDINARY_CLOUD_NAME; // 👈 Cambia por tu Cloud Name de Cloudinary
+    const UPLOAD_PRESET = process.env.TU_UPLOAD_PRESET; // 👈 Cambia por tu Unsigned Upload Preset
+
+    // GET: Obtener recomendaciones
     useEffect(() => {
-        fetch('https://back-fosters.azurewebsites.net/api/recomendaciones')
-            .then(res => res.json())
-            .then(data => {
-                // Ordenamos la lista localmente por el campo 'orden'
-                const listaOrdenada = data.sort((a, b) => (a.orden || 0) - (b.orden || 0));
+        clienteAxios.get('/recomendaciones')
+            .then(res => {
+                const listaOrdenada = res.data.sort((a, b) => (a.orden || 0) - (b.orden || 0));
                 setLista(listaOrdenada);
             })
-            .catch(err => console.log(err));
+            .catch(err => console.log('Error al obtener recomendaciones:', err));
     }, [refresh]);
 
-    // POST: Agregamos una nueva recomendación con orden
-    const agregar = () => {
+    const handleImagenChange = (e) => {
+        if (e.target.files && e.target.files[0]) {
+            setImagen(e.target.files[0]);
+        }
+    };
+
+    // POST: Subir foto a Cloudinary y luego crear en Backend
+    // POST: Subir foto a Cloudinary y luego crear en Backend
+    const agregar = async () => {
         if (!idProducto || !descripcion || !orden) {
             setShowError(true);
             return;
         }
 
-        fetch('https://back-fosters.azurewebsites.net/api/recomendaciones', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-                id: idProducto, 
-                descripcion, 
-                orden: Number(orden) // Enviamos el orden como número
-            })
-        })
-        .then(res => {
-            if (!res.ok) throw new Error();
-            return res.json();
-        })
-        .then(() => {
+        // ⚠️ Reemplazá por los strings directos de tu cuenta NUEVA y tu preset
+        const CLOUD_NAME = "gcmfztce"; 
+        const UPLOAD_PRESET = "ml_default";
+
+        try {
+            let urlImagenCloudinary = '';
+
+            if (imagen) {
+                const dataCloudinary = new FormData();
+                dataCloudinary.append('file', imagen);
+                dataCloudinary.append('upload_preset', UPLOAD_PRESET);
+
+                // 🔍 LOG 1: Mirá en consola qué URL exacta se está llamando
+                console.log("URL solicitada:", `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`);
+
+                const resCloudinary = await fetch(
+                    `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, 
+                    {
+                        method: 'POST',
+                        body: dataCloudinary
+                    }
+                ).then(res => res.json());
+
+                // 🔍 LOG 2: Respuesta de Cloudinary
+                console.log("Respuesta de Cloudinary:", resCloudinary);
+
+                if (resCloudinary.secure_url) {
+                    urlImagenCloudinary = resCloudinary.secure_url;
+                } else {
+                    console.error("Cloudinary no devolvió secure_url. Error:", resCloudinary.error?.message);
+                }
+            }
+
+            const payload = {
+                id: idProducto,
+                descripcion: descripcion,
+                orden: Number(orden),
+                imagenUrl: urlImagenCloudinary
+            };
+
+            console.log("Payload enviado al backend:", payload);
+
+            await clienteAxios.post('/recomendaciones', payload);
+
             setShowOk(true);
             setIdProducto('');
             setDescripcion('');
             setOrden('');
+            setImagen(null);
+            if (fileInputRef.current) {
+                fileInputRef.current.value = '';
+            }
             refrescar();
-        })
-        .catch(() => setShowError(true));
+
+        } catch (err) {
+            console.error('Error al agregar recomendación:', err);
+            setShowError(true);
+        }
     };
 
     return (
@@ -95,6 +145,16 @@ const Recomendaciones = () => {
                         />
                     </Form.Group>
 
+                    <Form.Group className="mt-2">
+                        <Form.Label>Imagen de la Recomendación</Form.Label>
+                        <Form.Control
+                            type="file"
+                            accept="image/*"
+                            ref={fileInputRef}
+                            onChange={handleImagenChange}
+                        />
+                    </Form.Group>
+
                     <Button className="mt-3" onClick={agregar}>
                         Agregar Recomendación
                     </Button>
@@ -108,6 +168,7 @@ const Recomendaciones = () => {
                             <th>Orden</th>
                             <th>ID</th>
                             <th>Descripción</th>
+                            <th>Imagen</th>
                             <th>Editar</th>
                             <th>Eliminar</th>
                         </tr>

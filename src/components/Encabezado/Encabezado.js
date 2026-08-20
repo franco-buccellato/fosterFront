@@ -13,6 +13,7 @@ import logoFosters from '../../imagenes/LOGO-FOSTERS.png';
 import logoSKF from '../../imagenes/SKF-LOGO.png';
 import ExportExcel from 'react-export-excel';
 import marcasModelos from "../ItemListContainer/marcasmodelos.json";
+import clienteAxios from '../../api/axios';
 
 function Encabezado({ cantidadCarrito }) {
     const ExcelFile = ExportExcel.ExcelFile;
@@ -28,10 +29,10 @@ function Encabezado({ cantidadCarrito }) {
     const [selectedMarca, setSelectedMarca] = useState("");
 
     useEffect(() => {
-        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
-            .then(res => res.json())
-            .then(data => setListaDeProducto(data))
-            .catch(err => console.log(err));
+        // En lugar de fetch nativo con la URL completa de Azure
+        clienteAxios.get('/productos2/')
+            .then(res => setListaDeProducto(res.data))
+            .catch(err => console.log('Error al obtener productos:', err));
     }, []);
 
     useEffect(() => {
@@ -45,18 +46,18 @@ function Encabezado({ cantidadCarrito }) {
             idUsuario: usuario.idUsuario
         };
 
-        fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(usuarioActualizado),
-        })
-            .then(res => res.ok ? res.text() : Promise.reject())
+        // En lugar de fetch POST manual
+        clienteAxios.post('/usuario/actualizar', usuarioActualizado)
             .then(() => {
                 setUtilidadUsuario(usuarioActualizado.utilidad);
                 setShow(false);
             })
             .catch(() => setShowFallida(true));
     };
+
+    useEffect(() => {
+        if (usuario) setUtilidadUsuario(usuario.utilidad);
+    }, [usuario]);
 
     const marcas = Object.keys(marcasModelos).sort();
     const dataFiltrada = selectedMarca

@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-import axios from 'axios';
+import clienteAxios from '../../api/axios';
 
 const UsuarioItem = ({ usuario, esAdministrador, onUsuarioActualizado }) => {
 
@@ -59,41 +59,23 @@ const UsuarioItem = ({ usuario, esAdministrador, onUsuarioActualizado }) => {
             idUsuario: usuario.idUsuario
         };
         
+        console.log('Datos del usuario actualizados:', usuarioActualizado);
         
-        
-        console.log('Datos del usuario actualizados:', usuarioActualizado); // Log para verificar
-        fetch('https://back-fosters.azurewebsites.net/api/usuario/actualizar', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(usuarioActualizado),
-})
-.then(res => {
-    console.log('Código de respuesta:', res.status);
-    if (!res.ok) {
-        return res.text().then(text => { 
-            console.log('Respuesta del servidor (error):', text);
-            throw new Error(`Error ${res.status}: ${text || 'desconocido'}`); 
+        clienteAxios.post('/usuario/actualizar', usuarioActualizado)
+        .then(res => {
+            console.log('Respuesta del servidor:', res.data);
+            // Si el servidor responde "OK" (o 200 Exitoso)
+            if (res.data === "OK" || res.status === 200) {
+                handleShowOkEditar();
+                onUsuarioActualizado(); // 🔥 refresca la tabla
+            } else {
+                handleShowFallida();
+            }
+        })
+        .catch(err => {
+            console.error('Error en la modificación:', err.response?.data || err.message);
+            handleShowFallida();
         });
-    }
-    return res.text(); // Cambia esto a text() para manejar texto simple
-})
-.then(data => {
-    if (data === "OK") {
-        handleShowOkEditar();
-        onUsuarioActualizado(); // 🔥 ACÁ se refresca la tabla
-    } else {
-        handleShowFallida();
-    }
-})
-
-.catch(err => {
-    console.log('Error en la modificación:', err.message);
-    handleShowFallida(); // Esto se llama solo en caso de un error real
-});
-        
-
     }
     
 
@@ -101,31 +83,16 @@ const UsuarioItem = ({ usuario, esAdministrador, onUsuarioActualizado }) => {
     const elimnarUsuarioDefinitivo = (usuario) => {
         console.log('Eliminar usuario: ' + usuario.nombre);
         handleCloseEliminar();
-        fetch(
-            'https://back-fosters.azurewebsites.net/api/usuario/eliminar', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(usuario),
-        })
-        .then(res => {
-            if (!res.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return res.text(); // Cambia a text() si no siempre regresa JSON
-        })
+        
+        clienteAxios.post('/usuario/eliminar', usuario)
         .then(() => {
             handleShowOkEliminar();
             onUsuarioActualizado(); // 🔥 refresca la tabla
         })           
         .catch(err => {
-            console.log('Error:', err);
+            console.error('Error al eliminar usuario:', err);
             handleShowFallida();
         });
-
-        
-
     }
 
     const [nombre, setNombre] = useState('');

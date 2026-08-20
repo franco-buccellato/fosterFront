@@ -1,182 +1,83 @@
-.container-productos {
-    width: 100%;
-    margin: 20vh 0 0 0;
-    margin-top: 20vh;
+/* ==========================================
+   MEJORAS UX/UI PARA LA TABLA DE CATÁLOGO
+   ========================================== */
+
+   .container-tabla-productos {
+    width: 95%;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.container-tabla-productos {
-    width: 90%;
-    margin: 0 5% 0 5%;
+.tabla-custom {
+    vertical-align: middle;
+    margin-bottom: 0;
 }
 
-
-.section-item-list-container {
-    margin-left: 5%;
-    margin-right: 5%;
+.tabla-custom thead th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #dee2e6;
+    padding: 12px 10px;
+    white-space: nowrap;
 }
 
-.item-list-container {
-    position: relative;
-    display: flex;
-    color: #3479d2;
+.tabla-custom tbody td {
+    padding: 10px;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+/* Formateo de columna Acciones Fija */
+.col-acciones {
+    position: sticky;
+    right: 0;
+    background-color: #ffffff !important;
+    z-index: 2;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.05);
     text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 50px;
+    width: 90px;
+    min-width: 90px;
 }
 
-.container-titulo {
-    display: flex;
-    margin: 0 10%;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+tr:nth-child(even) .col-acciones {
+    background-color: #f2f2f2 !important; /* Mantiene la cebra de Bootstrap */
 }
 
-.container-titulo h4 {
-    font-size: 30px;
-    color: #CD1F26;
+.btn-accion {
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
 }
 
+.btn-accion.edit { color: #0d6efd; }
+.btn-accion.edit:hover { background-color: #e7f1ff; }
 
-.container-filtros {
-    width: 40%;
-    margin: 0 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #3479d2;
-    border-radius: 20px;
-    height: 4vw;
-}
+.btn-accion.delete { color: #dc3545; }
+.btn-accion.delete:hover { background-color: #ffe8e8; }
 
-.container-filtros-botones-usuarios {
-    width: 40%;
-    margin: 0 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* Contenedores de texto con límite para evitar tablas anchas */
+.texto-truncado {
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.container-filtros-botones-usuarios a {
-/*     width: 50%;
-    display: flex; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1vw 1vw;
-}
-
-.container-filtros-botones-usuarios div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 4vw;
-    width: 50%;
-}
-.container-input-error {
-    visibility: hidden;
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 6vw;
-    width: 100%;
-    background-color: #cd1f2591;
-    margin-top: 20px;
-}
-
-.container-input label {
-    display: flex;
-    width: 30%;
-    font-weight: bold;
-}
-.container-input-error label {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-weight:normal;
-    color: #fff;
-}
-
-.container-input input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-
-.container-input-submit-usuarios {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1% 0;
-    border-radius: 10px;
-    background-color: #3479d2;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.container-input-submit-usuarios:hover {
-    box-shadow: 3px 4px 7px 5px rgba(0, 0, 0, 0.15);
-}
-
-.container-input-submit-usuarios input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-
-.titulo-tabla-productos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-@media (max-width: 1600px) {
-    .container-filtros {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: auto;
-    }
-    .container-input {
-        height: 4vw;
-        width: 100%;
-    }
-}
-@media (max-width: 800px) {
-    .container-filtros {
-        width: 40%;
-        margin: 0 30%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #3479d2;
-        border-radius: 20px;
-        height: 4vw;
-    }
-    .container-input {
-        flex-direction: column;
-        height: 8vw;
-    }
+.badge-modelo {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    display: inline-block;
+    margin: 1px;
 }

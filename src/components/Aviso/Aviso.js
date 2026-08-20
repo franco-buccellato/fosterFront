@@ -28,7 +28,7 @@ import AvisoModalMensaje from '../AvisoModalMensaje/AvisoModalMensaje';
 
 const Aviso = () => {
     const avisoMensajeActivado = false;
-    const avisoFotoActivado = true;
+    const avisoFotoActivado = false;
 
     return (
         <div>

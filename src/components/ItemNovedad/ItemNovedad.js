@@ -1,15 +1,23 @@
 import './ItemNovedad.css';
 import { Link } from 'react-router-dom';
 
-const ItemNovedad = ({id, descripcion, marca, modelos, codigoFabrica}) => {
+const ItemNovedad = ({ id, descripcion, marca, modelos = [], codigoFabrica, imagenUrl, linkImagen }) => {
     const cargarImagen = require.context('../../imagenes/Fotos Foster', true);
-    let imagen = '';
     
-    try {
-        imagen = cargarImagen(`./${id}.jpg`);
-    } catch (e) {
-        try { imagen = cargarImagen(`./${id}.png`); } 
-        catch (e2) { imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`); }
+    // 1. Prioridad a la imagen de Cloudinary
+    let imagen = imagenUrl || linkImagen || '';
+
+    // 2. Si no hay URL remota, busca en las carpetas locales
+    if (!imagen) {
+        try {
+            imagen = cargarImagen(`./${id}.jpg`);
+        } catch (e) {
+            try { 
+                imagen = cargarImagen(`./${id}.png`); 
+            } catch (e2) { 
+                imagen = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`); 
+            }
+        }
     }
 
     return (
@@ -17,7 +25,20 @@ const ItemNovedad = ({id, descripcion, marca, modelos, codigoFabrica}) => {
             <div className="novedad-card">
                 <div className="novedad-box-up">
                     <div className="novedad-badge">NUEVO</div>
-                    <img className="novedad-img" src={imagen} alt={id} />
+                    <img 
+                        className="novedad-img" 
+                        src={imagen} 
+                        alt={codigoFabrica || id} 
+                        onError={(e) => {
+                            // Si la URL de Cloudinary/remota falla, carga el fallback local
+                            e.target.onerror = null;
+                            try {
+                                e.target.src = cargarImagen(`./PRODUCTO SIN IMAGEN.jpg`);
+                            } catch {
+                                e.target.style.display = 'none';
+                            }
+                        }}
+                    />
                     
                     <div className="novedad-overlay">
                         <p className="novedad-desc">{descripcion}</p>
@@ -40,5 +61,6 @@ const ItemNovedad = ({id, descripcion, marca, modelos, codigoFabrica}) => {
             </div>
         </Link>
     );
-}
+};
+
 export default ItemNovedad;

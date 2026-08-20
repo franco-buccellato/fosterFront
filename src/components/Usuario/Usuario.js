@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import uniqid from 'uniqid';
-import axios from 'axios';
+import clienteAxios from '../../api/axios';
 
 const Usuario = () => {
 
@@ -13,29 +13,20 @@ const Usuario = () => {
     const [listaUsuarios, setListaUsuarios] = useState([]);
     const [tablaUsuarios, setTablaUsuarios] = useState();
 
-    useEffect( 
-        () => {
-        axios.get(
-            'https://back-fosters.azurewebsites.net/api/usuario/',  // Cambiado a la URL completa de Azure
-            {
-                params: {
-                    proveedor: usuario.nombre
-                }
+    useEffect(() => {
+        clienteAxios.get('/usuario/', {
+            params: {
+                proveedor: usuario.nombre
             }
-        )
-        .then(
-            res => {
-                console.log(res.data);
-                setListaUsuarios(res.data);
-            }
-        )
-        .catch(
-            err => {
-                console.log(err);
-            }
-        )
-        }, [tablaUsuarios, usuario.nombre]
-    )
+        })
+        .then(res => {
+            console.log(res.data);
+            setListaUsuarios(res.data);
+        })
+        .catch(err => {
+            console.error('Error al obtener lista de usuarios:', err);
+        });
+    }, [tablaUsuarios, usuario.nombre]);
 
     /* MODAL Ok*/
     const [showOk, setShowOk] = useState(false);
@@ -73,20 +64,16 @@ const Usuario = () => {
         
         console.log(nuevoUsuario);
         
-        axios.post('https://back-fosters.azurewebsites.net/api/usuario/nuevo', nuevoUsuario)  // Cambiado a la URL completa de Azure
-            .then(
-                res => {
-                    //alert(res.data);
-                    handleShowOk();
-                    setTablaUsuarios(1);
-                }
-            )
-            .catch(
-                err => {
-                    console.log('Error:' + err);
-                    handleShowError();
-                }
-            )
+        clienteAxios.post('/usuario/nuevo', nuevoUsuario)
+        .then(res => {
+            //alert(res.data);
+            handleShowOk();
+            setTablaUsuarios(1);
+        })
+        .catch(err => {
+            console.error('Error al crear usuario:', err);
+            handleShowError();
+        });
     }
 
     if(esAdministrador()) {

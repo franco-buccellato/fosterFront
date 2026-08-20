@@ -1,21 +1,18 @@
 import './SectionNovedades.css';
 import ItemNovedad from '../ItemNovedad/ItemNovedad';
 import { useEffect, useState } from 'react';
+import clienteAxios from '../../api/axios';
 
 function SectionNovedades() {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        fetch('https://back-fosters.azurewebsites.net/api/productos2/')
+        clienteAxios.get('/productos2/')
             .then(res => {
-                if (!res.ok) throw new Error('Error en la red');
-                return res.json();
+                // Tomamos los últimos 6 productos y los invertimos
+                setProductos(res.data.slice(-6).reverse());
             })
-            .then(data => {
-                // Tomamos los últimos 8 productos
-                setProductos(data.slice(-6).reverse());
-            })
-            .catch(err => console.error(err));
+            .catch(err => console.error('Error al obtener los productos:', err));
     }, []);
 
     return (
